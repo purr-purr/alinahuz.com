@@ -1,0 +1,41 @@
+@import 'vars';
+@import 'mixins';
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html,
+body {
+  font-family: 'Poppins', sans-serif;
+  font-size: 16px;
+  line-height: 1;
+  font-weight: 400;
+  height: 100%;
+}
+
+body {
+  overflow-x: hidden;
+  color: var(--main-text-color);
+  background-color: var(--body-bg-color);
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+#root {
+  height: 100%;
+}
+
+ul,
+ol {
+  list-style-type: none;
+}
