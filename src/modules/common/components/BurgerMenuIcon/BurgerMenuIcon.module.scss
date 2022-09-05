@@ -1,0 +1,33 @@
+.container {
+  width: 60px;
+  height: 8px;
+  position: relative;
+  cursor: pointer;
+  margin-left: auto;
+
+  &:before,
+  &:after {
+    content: '';
+    position: absolute;
+    left: 0;
+    height: 2px;
+    width: 100%;
+    background-color: $main-gray-color;
+    z-index: 5;
+  }
+
+  &:before {
+    top: 0;
+  }
+
+  &:after {
+    bottom: 0;
+  }
+
+  &.blackState {
+    &:before,
+    &:after {
+      background-color: $main-black-color;
+    }
+  }
+}

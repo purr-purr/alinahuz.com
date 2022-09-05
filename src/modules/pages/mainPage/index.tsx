@@ -1,6 +1,7 @@
 import React, { useEffect } from 'react';
 
 import s from './MainPage.module.scss';
+import MainScreen from '@modules/pages/mainPage/components/MainScreen';
 
 const MainPage = () => {
   useEffect(() => {
@@ -9,7 +10,7 @@ const MainPage = () => {
 
   return (
     <article className={s.container}>
-      <h1>Main Page 12</h1>
+      <MainScreen />
     </article>
   );
 };

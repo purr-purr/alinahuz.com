@@ -1,0 +1,52 @@
+.container {
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 6;
+  background-color: $main-gray-color;
+  transition: width .7s linear;
+
+  &.isClose:before {
+    content: '';
+    position: absolute;
+    bottom: 28px;
+    right: 22px;
+    height: 60px;
+    width: 6px;
+    background: url('../../../../../assets/images/arrow_down_icon.svg');
+  }
+}
+
+.shortHeading {
+  position: absolute;
+  top: 75px;
+  right: -28px;
+  width: 120px;
+  height: 34px;
+  font-family: 'Syne', sans-serif;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 17px;
+  text-align: right;
+  color: $secondary-gray-color;
+  transform: rotate(-90deg);
+}
+
+.fullInfo {
+  max-width: 804px;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+
+  h1 {
+    font-family: 'Syne', sans-serif;
+    font-weight: 800;
+    font-size: 90px;
+    line-height: 108px;
+    text-transform: uppercase;
+    margin-top: 84px;
+    margin-bottom: 129px;
+  }
+}
