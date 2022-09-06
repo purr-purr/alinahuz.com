@@ -1,8 +1,10 @@
 import { FC } from 'react';
+import cn from 'classnames';
+
+import messages from 'src/helpers/messages';
 
 import s from './AsideIntroduce.module.scss';
-import cn from 'classnames';
-import messages from 'src/helpers/messages';
+import MainHeading from '@modules/common/components/MainHeading';
 
 const AsideIntroduce: FC<{
   isOpen?: boolean;
@@ -14,12 +16,12 @@ const AsideIntroduce: FC<{
     >
       {isOpen ? (
         <div className={s.fullInfo}>
-          <p>
+          <p className={s[`fullInfo-hello`]}>
             <i>{messages.HELLO}</i>
           </p>
           <p>{messages.MY_NAME_IS_ALINA_HUZ_AND_I}</p>
-          <h1>{messages.UI_UX_DESIGNER}</h1>
-          <p>{messages.DESIGN_FOR_ME_IS}</p>
+          <MainHeading text={messages.UI_UX_DESIGNER} isH1Tag className={s[`fullInfo-title`]} />
+          <p className={s[`fullInfo-about`]}>{messages.DESIGN_FOR_ME_IS}</p>
           <p>{messages.I_WANT_TO_HELP}</p>
         </div>
       ) : (

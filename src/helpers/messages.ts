@@ -13,6 +13,8 @@ const messages = {
     'I believe that good experiences change lives and it is our role' +
     ' to deliver the best brand experiences to users, converting' +
     ' access into sales and building customer loyalty.',
+  ALINA_HUZ_LOGO: 'Alina Huz Logo',
+  SELECTED_WORKS: 'Selected works',
 };
 
 export default messages;

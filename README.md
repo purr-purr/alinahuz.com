@@ -1,4 +1,4 @@
-# PROJECT NAME
+# AlinaHuz.com UI/UX Designer portfolio
 
 ## Installation
 
@@ -13,3 +13,9 @@ yarn build
 ```
 
 Application will start on http://localhost:3000
+
+## ClassName naming
+
+```
+blockItem-element--modificator
+```

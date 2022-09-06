@@ -1,11 +1,12 @@
 .container {
+  display: flex;
   height: 100vh;
   position: fixed;
   top: 0;
   left: 0;
   z-index: 6;
   background-color: $main-gray-color;
-  transition: width .7s linear;
+  transition: width 0.7s linear;
 
   &.isClose:before {
     content: '';
@@ -34,19 +35,31 @@
 }
 
 .fullInfo {
-  max-width: 804px;
-  width: 100%;
-  margin-left: auto;
-  margin-right: auto;
+  width: 804px;
+  margin: auto;
   text-align: center;
+  animation-name: fadeInFullInfo;
+  animation-duration: 2s;
 
-  h1 {
-    font-family: 'Syne', sans-serif;
-    font-weight: 800;
-    font-size: 90px;
-    line-height: 108px;
-    text-transform: uppercase;
+  &-hello {
+    margin-bottom: 20px;
+  }
+
+  &-title {
     margin-top: 84px;
     margin-bottom: 129px;
+  }
+
+  &-about {
+    margin-bottom: 45px;
+  }
+}
+
+@keyframes fadeInFullInfo {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
   }
 }
