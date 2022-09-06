@@ -4,12 +4,14 @@ import BurgerMenuIcon from '@modules/common/components/BurgerMenuIcon';
 
 import s from './Header.module.scss';
 
-const Header: FC<{ isHideLogo?: boolean }> = ({ isHideLogo = false }) => {
-  console.log('1');
+const Header: FC<{
+  isDarkModeActive?: boolean;
+  isHideLogo?: boolean;
+}> = ({ isHideLogo = false, isDarkModeActive = false }) => {
   return (
     <header className={s.container}>
-      {isHideLogo && <Logo />}
-      <BurgerMenuIcon />
+      {isHideLogo && <Logo isBlackColor={isDarkModeActive} />}
+      <BurgerMenuIcon isBlackColor={isDarkModeActive} />
     </header>
   );
 };

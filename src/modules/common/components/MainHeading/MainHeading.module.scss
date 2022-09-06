@@ -1,0 +1,15 @@
+.container {
+  font-family: 'Syne', sans-serif;
+  font-weight: 800;
+  font-size: 90px;
+  line-height: 108px;
+  text-transform: uppercase;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+
+  &.isWhiteColor {
+    color: $main-gray-color;
+  }
+}
