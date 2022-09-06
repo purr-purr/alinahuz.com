@@ -36,11 +36,13 @@ const MainScreen: FC = () => {
   return (
     <div className={s.container}>
       <AsideIntroduce isOpen={isSecondScreen} />
-      <img className={s.logo} src={ALINA_HUZ_LOGO_WHITE} alt={messages.ALINA_HUZ_LOGO} />
-      <div className={s.waves}>
-        <video width="100%" height="100%" preload="auto" autoPlay loop controls={false} muted>
-          <source src={WAVES_VIDEO} type="video/mp4" />
-        </video>
+      <div className={s.content}>
+        <img className={s.logo} src={ALINA_HUZ_LOGO_WHITE} alt={messages.ALINA_HUZ_LOGO} />
+        <div className={s.waves}>
+          <video width="100%" height="100%" preload="auto" autoPlay loop controls={false} muted>
+            <source src={WAVES_VIDEO} type="video/mp4" />
+          </video>
+        </div>
       </div>
     </div>
   );

@@ -15,6 +15,7 @@ const messages = {
     ' access into sales and building customer loyalty.',
   ALINA_HUZ_LOGO: 'Alina Huz Logo',
   SELECTED_WORKS: 'Selected works',
+  POSTER: 'poster',
 };
 
 export default messages;

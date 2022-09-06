@@ -1,4 +1,20 @@
 .container {
   min-height: 2000px;
   background-color: $main-black-color;
+  padding-top: 238px;
+  padding-bottom: 180px;
+}
+
+.headingFigure {
+  position: relative;
+
+  &:after {
+    content: '';
+    position: absolute;
+    bottom: -278px;
+    left: calc((100% - 360px) / 2);
+    width: 360px;
+    height: 248px;
+    background: url("../../../../../assets/images/heading_figure.svg") no-repeat center / 100%;
+  }
 }

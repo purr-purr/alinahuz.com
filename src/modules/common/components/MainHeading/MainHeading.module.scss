@@ -4,8 +4,12 @@
   font-size: 90px;
   line-height: 108px;
   text-transform: uppercase;
-}
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
 
-.red {
-  color: red;
+  &.isWhiteColor {
+    color: $main-gray-color;
+  }
 }
