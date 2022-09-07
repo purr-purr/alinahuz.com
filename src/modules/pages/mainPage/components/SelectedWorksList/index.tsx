@@ -3,11 +3,11 @@ import { FC, useState } from 'react';
 import messages from '@helpers/messages';
 import { selectedWorks } from '@helpers/data';
 import SelectedWorksItem from '@modules/pages/mainPage/components/SelectedWorksItem';
+import SocialsLink from '@modules/common/components/SocialsLink';
 
 import ARROW_DOWN from '@assets/images/arrow_down_icon--white.svg';
 
 import s from './SelectedWorksList.module.scss';
-import SocialsLink from '@modules/common/components/SocialsLink';
 
 const SelectedWorksList: FC = () => {
   const [fullView, setFullView] = useState(false);

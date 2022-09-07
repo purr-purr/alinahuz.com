@@ -6,7 +6,7 @@ import s from './BurgerMenuIcon.module.scss';
 const BurgerMenuIcon: FC<{
   isBlackColor?: boolean;
 }> = ({ isBlackColor = false }) => {
-  return <div className={cn(s.container, { [s.blackState]: isBlackColor })} />;
+  return <button className={cn(s.container, { [s.blackState]: isBlackColor })} />;
 };
 
 export default BurgerMenuIcon;
