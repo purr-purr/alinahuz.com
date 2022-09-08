@@ -8,12 +8,13 @@
   position: relative;
   padding-right: 50px;
 
-  &:before, &:after {
+  &:before,
+  &:after {
     content: '';
     position: absolute;
     right: 0;
     opacity: 0;
-    transition: opacity .5s ease-in-out;
+    transition: opacity 0.5s ease-in-out;
   }
 
   &:before {
@@ -27,13 +28,29 @@
     top: calc((100% - 26px) / 2);
     width: 30px;
     height: 26px;
-    background: url("../../../../assets/images/arrow_right_icon--white-bold.svg") no-repeat center / 100%;
+    background: url('../../../../assets/images/arrow_right_icon--white-bold.svg') no-repeat center /
+      100%;
   }
 
   &:hover {
-    &:before, &:after {
+    &:before,
+    &:after {
       opacity: 1;
-      transition: opacity .5s ease-in-out;
+      transition: opacity 0.5s ease-in-out;
+    }
+  }
+
+  &--black {
+    color: $main-black-color;
+
+    &:before {
+      background-color: $full-black-color;
+    }
+
+    &:after {
+      background: url('../../../../assets/images/arrow_right_icon--black-bold.svg') no-repeat center /
+      100%;
     }
   }
 }
+

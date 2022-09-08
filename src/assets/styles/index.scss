@@ -39,3 +39,22 @@ ul,
 ol {
   list-style-type: none;
 }
+
+::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+}
+
+::-webkit-scrollbar-button {
+  height: 0;
+  width: 100%;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: $main-gray-color;
+  border-radius: 50px;
+}
+
+::-webkit-scrollbar-track-piece {
+  background-color: $main-black-color;
+}

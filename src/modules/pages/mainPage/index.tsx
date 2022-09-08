@@ -1,19 +1,24 @@
 import { useEffect } from 'react';
 
-import s from './MainPage.module.scss';
 import MainScreen from '@modules/pages/mainPage/components/MainScreen';
 import SelectedWorks from '@modules/pages/mainPage/components/SelectedWorks';
+import AboutMe from '@modules/pages/mainPage/components/AboutMe';
+import Skills from '@modules/pages/mainPage/components/Skills';
+import Experience from '@modules/pages/mainPage/components/Experience';
 
 const MainPage = () => {
   useEffect(() => {
-    document.title = `Main Page`;
+    document.title = `Alina Huz`;
   }, []);
 
   return (
-    <article className={s.container}>
+    <>
       <MainScreen />
       <SelectedWorks />
-    </article>
+      <AboutMe />
+      <Skills />
+      <Experience />
+    </>
   );
 };
 

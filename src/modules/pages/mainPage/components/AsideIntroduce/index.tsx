@@ -2,9 +2,9 @@ import { FC } from 'react';
 import cn from 'classnames';
 
 import messages from 'src/helpers/messages';
+import MainHeading from '@modules/common/components/MainHeading';
 
 import s from './AsideIntroduce.module.scss';
-import MainHeading from '@modules/common/components/MainHeading';
 
 const AsideIntroduce: FC<{
   isOpen?: boolean;
@@ -12,7 +12,7 @@ const AsideIntroduce: FC<{
   return (
     <aside
       style={{ width: isOpen ? '100%' : '79px' }}
-      className={cn(s.container, { [s.isClose]: !isOpen })}
+      className={cn(s.container, { [s[`container--close`]]: !isOpen })}
     >
       {isOpen ? (
         <div className={s.fullInfo}>

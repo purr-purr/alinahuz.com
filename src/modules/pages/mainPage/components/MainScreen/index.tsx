@@ -1,7 +1,7 @@
 import { FC, useContext, useEffect, useState } from 'react';
 
 import AsideIntroduce from '@modules/pages/mainPage/components/AsideIntroduce';
-
+import AppContext from '@modules/layout/context/AppContext';
 import messages from 'src/helpers/messages';
 
 // @ts-ignore
@@ -9,7 +9,6 @@ import WAVES_VIDEO from '@assets/images/waves_video.mp4';
 import ALINA_HUZ_LOGO_WHITE from '@assets/images/ALINA_HUZ--white.svg';
 
 import s from './MainScreen.module.scss';
-import AppContext from '@modules/layout/context/AppContext';
 
 const MainScreen: FC = () => {
   const [scrollPosition, setPosition] = useState(0);
@@ -25,16 +24,16 @@ const MainScreen: FC = () => {
     return () => window.removeEventListener('scroll', updatePosition);
   }, []);
 
-  const isSecondScreen = scrollPosition >= 700;
+  const isSecondScreen = scrollPosition >= 700 && scrollPosition < 2500;
 
-  const { handleSwitchLightMode } = useContext(AppContext);
+  const { handleSwitchDarkMode } = useContext(AppContext);
 
   useEffect(() => {
-    isSecondScreen ? handleSwitchLightMode(true) : handleSwitchLightMode(false);
+    isSecondScreen ? handleSwitchDarkMode(true) : handleSwitchDarkMode(false);
   }, [scrollPosition]);
 
   return (
-    <div className={s.container}>
+    <article className={s.container}>
       <AsideIntroduce isOpen={isSecondScreen} />
       <div className={s.content}>
         <img className={s.logo} src={ALINA_HUZ_LOGO_WHITE} alt={messages.ALINA_HUZ_LOGO} />
@@ -44,7 +43,7 @@ const MainScreen: FC = () => {
           </video>
         </div>
       </div>
-    </div>
+    </article>
   );
 };
 export default MainScreen;

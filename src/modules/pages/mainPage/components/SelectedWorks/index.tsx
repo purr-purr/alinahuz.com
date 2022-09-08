@@ -8,7 +8,7 @@ import s from './SelectedWorks.module.scss';
 
 const SelectedWorks: FC = () => {
   return (
-    <div className={s.container}>
+    <article className={s.container} id="works">
       <MainHeading
         text={messages.SELECTED_WORKS}
         isWhiteColor
@@ -16,7 +16,7 @@ const SelectedWorks: FC = () => {
         className={s.headingFigure}
       />
       <SelectedWorksList />
-    </div>
+    </article>
   );
 };
 export default SelectedWorks;

@@ -26,7 +26,7 @@
     bottom: 0;
   }
 
-  &.blackState {
+  &--black {
     &:before,
     &:after {
       background-color: $main-black-color;

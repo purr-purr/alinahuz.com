@@ -8,7 +8,7 @@
   background-color: $main-gray-color;
   transition: width 0.7s linear;
 
-  &.isClose:before {
+  &--close:before {
     content: '';
     position: absolute;
     bottom: 28px;
