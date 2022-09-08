@@ -1,0 +1,42 @@
+.container {
+  min-height: 100vh;
+  padding-top: 140px;
+  padding-bottom: 250px;
+  @include block-padding(28px);
+  background: $main-black-color url("../../../../../assets/images/waves_static.jpg") no-repeat center / 100%;
+  background-size: cover;
+}
+
+.description {
+  margin-top: 100px;
+  margin-bottom: 200px;
+  max-width: 825px;
+  font-weight: 600;
+  font-size: 28px;
+  line-height: 34px;
+  color: $full-white-color;
+}
+
+.columns {
+  @include flex-justify(space-between);
+  min-height: 218px;
+
+  & li {
+    width: 33%;
+    gap: 20px;
+
+    &:nth-child(2) {
+      align-self: center;
+    }
+
+    &:last-child {
+      align-self: flex-end;
+    }
+  }
+
+  & p {
+    font-size: 14px;
+    line-height: 17px;
+    color: $full-white-color;
+  }
+}

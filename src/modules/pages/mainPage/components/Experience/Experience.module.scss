@@ -1,0 +1,19 @@
+.container {
+  display: flex;
+  padding-top: 130px;
+  padding-bottom: 200px;
+  @include block-padding(28px);
+  background-color: $main-gray-color;
+}
+
+.description {
+  margin-bottom: 28px;
+  max-width: 544px;
+  font-size: 14px;
+  line-height: 17px;
+}
+
+.infoBlock {
+  width: 50%;
+  margin-left: auto;
+}

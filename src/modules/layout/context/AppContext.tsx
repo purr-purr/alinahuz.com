@@ -2,12 +2,16 @@ import React from 'react';
 
 type AppContextType = {
   isDarkMode: boolean;
-  handleSwitchLightMode: (isDarkMode: boolean) => void;
+  handleSwitchDarkMode: (isDarkMode: boolean) => void;
+  isNavigationMode: boolean;
+  handleSwitchNavigationMode: (isNavigationMode: boolean) => void;
 };
 
 const AppContext = React.createContext<AppContextType>({
   isDarkMode: false,
-  handleSwitchLightMode: () => {},
+  handleSwitchDarkMode: () => {},
+  isNavigationMode: false,
+  handleSwitchNavigationMode: () => {},
 });
 
 export default AppContext;

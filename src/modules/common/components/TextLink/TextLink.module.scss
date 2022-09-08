@@ -1,0 +1,40 @@
+.container {
+  font-size: 16px;
+  line-height: 20px;
+  color: $main-black-color;
+  position: relative;
+  padding-right: 18px;
+  padding-bottom: 8px;
+
+  &:before,
+  &:after {
+    content: '';
+    position: absolute;
+    right: 0;
+    transition: opacity 0.5s ease-in-out;
+  }
+
+  &:before {
+    bottom: 0;
+    width: 100%;
+    height: 1px;
+    background-color: $main-black-color;
+  }
+
+  &:after {
+    top: 7px;
+    width: 10px;
+    height: 7px;
+    background: url('../../../../assets/images/arrow_right_icon--black-thin.svg') no-repeat center /
+      100%;
+  }
+
+  &:hover {
+    &:before,
+    &:after {
+      opacity: 0.5;
+      transition: opacity 0.5s ease-in-out;
+    }
+  }
+}
+

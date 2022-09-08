@@ -204,10 +204,10 @@ export const selectedWorks = [
 ];
 
 export const menuLinks = [
-  { title: `${messages.MAIN}`, link: '#' },
-  { title: `${messages.WORKS}`, link: '#' },
-  { title: `${messages.ABOUT_ME}`, link: '#' },
-  { title: `${messages.SKILLS}`, link: '#' },
-  { title: `${messages.EDUCATION}`, link: '#' },
-  { title: `${messages.CONTACTS}`, link: '#' },
+  { title: `${messages.MAIN}`, link: '/' },
+  { title: `${messages.WORKS}`, link: '/#works' },
+  { title: `${messages.ABOUT_ME}`, link: '/#about' },
+  { title: `${messages.SKILLS}`, link: '/#skills' },
+  { title: `${messages.EDUCATION}`, link: '/#education' },
+  { title: `${messages.CONTACTS}`, link: '/#contacts' },
 ];

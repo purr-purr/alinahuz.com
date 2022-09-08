@@ -15,7 +15,7 @@
   align-items: $align-position;
 }
 
-/* Breakpoint mixins */
+// Breakpoint mixins
 @mixin media-tablet {
   @media (max-width: $tablet-bp) {
     @content;
@@ -32,4 +32,11 @@
   @media (max-width: $low-mobile-bp) {
     @content;
   }
+}
+
+//Block paddings
+
+@mixin block-padding($padding) {
+  padding-left: $padding;
+  padding-right: $padding;
 }

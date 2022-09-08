@@ -42,5 +42,15 @@
 
   &--black {
     color: $main-black-color;
+
+    &:before {
+      background-color: $full-black-color;
+    }
+
+    &:after {
+      background: url('../../../../assets/images/arrow_right_icon--black-bold.svg') no-repeat center /
+      100%;
+    }
   }
 }
+

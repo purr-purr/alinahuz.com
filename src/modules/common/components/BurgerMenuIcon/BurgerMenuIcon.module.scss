@@ -32,33 +32,4 @@
       background-color: $main-black-color;
     }
   }
-
-  &.openState {
-    &:before,
-    &:after {
-      background-color: red;
-    }
-  }
-}
-
-.menu {
-  width: 100%;
-  min-height: 100vh;
-  height: 100%;
-  background-color: $main-gray-color;
-  padding: 165px;
-  overflow-y: auto;
-  position: absolute;
-  top: 0;
-  left: 0;
-
-  & li {
-    width: fit-content;
-    margin-left: auto;
-    margin-right: auto;
-
-    &:not(:last-of-type) {
-      margin-bottom: 90px;
-    }
-  }
 }

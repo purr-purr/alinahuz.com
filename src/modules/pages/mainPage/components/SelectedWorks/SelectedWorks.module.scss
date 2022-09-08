@@ -2,6 +2,7 @@
   min-height: 2000px;
   background-color: $main-black-color;
   padding-top: 238px;
+  @include block-padding(28px);
 }
 
 .headingFigure {
