@@ -1,0 +1,39 @@
+.container {
+  font-family: 'Syne', sans-serif;
+  font-weight: 800;
+  font-size: 40px;
+  line-height: 48px;
+  text-transform: uppercase;
+  color: $full-white-color;
+  position: relative;
+  padding-right: 50px;
+
+  &:before, &:after {
+    content: '';
+    position: absolute;
+    right: 0;
+    opacity: 0;
+    transition: opacity .5s ease-in-out;
+  }
+
+  &:before {
+    bottom: -10px;
+    width: 100%;
+    height: 4px;
+    background-color: $full-white-color;
+  }
+
+  &:after {
+    top: calc((100% - 26px) / 2);
+    width: 30px;
+    height: 26px;
+    background: url("../../../../assets/images/arrow_right_icon--white-bold.svg") no-repeat center / 100%;
+  }
+
+  &:hover {
+    &:before, &:after {
+      opacity: 1;
+      transition: opacity .5s ease-in-out;
+    }
+  }
+}

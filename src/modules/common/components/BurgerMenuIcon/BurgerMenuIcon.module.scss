@@ -4,6 +4,8 @@
   position: relative;
   cursor: pointer;
   margin-left: auto;
+  background-color: transparent;
+  border: 0;
 
   &:before,
   &:after {

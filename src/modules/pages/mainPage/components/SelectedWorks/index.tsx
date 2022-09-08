@@ -1,6 +1,6 @@
 import { FC } from 'react';
-import messages from 'src/helpers/messages';
 
+import messages from '@helpers/messages';
 import MainHeading from '@modules/common/components/MainHeading';
 import SelectedWorksList from '@modules/pages/mainPage/components/SelectedWorksList';
 

@@ -16,6 +16,11 @@ const messages = {
   ALINA_HUZ_LOGO: 'Alina Huz Logo',
   SELECTED_WORKS: 'Selected works',
   POSTER: 'poster',
+  DRIBBBLE: 'dribbble',
+  BEHANCE: 'behance',
+  SEE_MORE_WORKS: 'See more works',
+  IF_YOU_WANT_YOU_CAN_FIND_MORE:
+    'If you want, you can find more of my work' + ' on' + ' these' + ' resources',
 };
 
 export default messages;
