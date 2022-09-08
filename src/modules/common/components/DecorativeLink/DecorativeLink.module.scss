@@ -36,4 +36,8 @@
       transition: opacity .5s ease-in-out;
     }
   }
+
+  &--black {
+    color: $main-black-color;
+  }
 }

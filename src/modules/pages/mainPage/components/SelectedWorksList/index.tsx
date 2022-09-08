@@ -3,7 +3,7 @@ import { FC, useState } from 'react';
 import messages from '@helpers/messages';
 import { selectedWorks } from '@helpers/data';
 import SelectedWorksItem from '@modules/pages/mainPage/components/SelectedWorksItem';
-import SocialsLink from '@modules/common/components/SocialsLink';
+import DecorativeLink from '@modules/common/components/DecorativeLink';
 
 import ARROW_DOWN from '@assets/images/arrow_down_icon--white.svg';
 
@@ -33,8 +33,8 @@ const SelectedWorksList: FC = () => {
           <div className={s.findMore}>
             <p className={s[`findMore-text`]}>{messages.IF_YOU_WANT_YOU_CAN_FIND_MORE}</p>
             <div className={s[`findMore-links`]}>
-              <SocialsLink text={messages.DRIBBBLE} href={'#'} />
-              <SocialsLink text={messages.BEHANCE} href={'#'} />
+              <DecorativeLink text={messages.DRIBBBLE} href={'#'} isExternalLink />
+              <DecorativeLink text={messages.BEHANCE} href={'#'} isExternalLink />
             </div>
           </div>
         ) : (

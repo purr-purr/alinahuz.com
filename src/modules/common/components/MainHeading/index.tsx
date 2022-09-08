@@ -13,14 +13,14 @@ const MainHeading: FC<{
   return isH1Tag ? (
     <h1
       style={{ maxWidth: `${maxWidth}px` }}
-      className={cn(s.container, className, { [s.isWhiteColor]: isWhiteColor })}
+      className={cn(s.container, className, { [s[`container--white`]]: isWhiteColor })}
     >
       {text}
     </h1>
   ) : (
     <h2
       style={{ maxWidth: `${maxWidth}px` }}
-      className={cn(s.container, className, { [s.isWhiteColor]: isWhiteColor })}
+      className={cn(s.container, className, { [s[`container--white`]]: isWhiteColor })}
     >
       {text}
     </h2>

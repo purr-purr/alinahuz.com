@@ -1,3 +1,5 @@
+import messages from '@helpers/messages';
+
 export const posterPath = (path: string) => {
   return require(`@assets/images/selectedWorks/posters/poster_${path}.jpg`).default;
 };
@@ -199,4 +201,13 @@ export const selectedWorks = [
       { image: `${screenShotsPath('new-year-3')}` },
     ],
   },
+];
+
+export const menuLinks = [
+  { title: `${messages.MAIN}`, link: '#' },
+  { title: `${messages.WORKS}`, link: '#' },
+  { title: `${messages.ABOUT_ME}`, link: '#' },
+  { title: `${messages.SKILLS}`, link: '#' },
+  { title: `${messages.EDUCATION}`, link: '#' },
+  { title: `${messages.CONTACTS}`, link: '#' },
 ];

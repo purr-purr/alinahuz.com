@@ -21,6 +21,12 @@ const messages = {
   SEE_MORE_WORKS: 'See more works',
   IF_YOU_WANT_YOU_CAN_FIND_MORE:
     'If you want, you can find more of my work' + ' on' + ' these' + ' resources',
+  MAIN: 'Main',
+  WORKS: 'works',
+  ABOUT_ME: 'About me',
+  SKILLS: 'skills',
+  EDUCATION: 'education',
+  CONTACTS: 'Contacts',
 };
 
 export default messages;
