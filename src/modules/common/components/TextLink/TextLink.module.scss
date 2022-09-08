@@ -5,6 +5,9 @@
   position: relative;
   padding-right: 18px;
   padding-bottom: 8px;
+  width: fit-content;
+  transition: opacity 0.5s ease-in-out;
+  cursor: pointer;
 
   &:before,
   &:after {
@@ -30,6 +33,9 @@
   }
 
   &:hover {
+    opacity: 0.5;
+    transition: opacity 0.5s ease-in-out;
+
     &:before,
     &:after {
       opacity: 0.5;

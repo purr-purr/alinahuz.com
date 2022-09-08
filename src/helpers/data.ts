@@ -211,3 +211,39 @@ export const menuLinks = [
   { title: `${messages.EDUCATION}`, link: '/#education' },
   { title: `${messages.CONTACTS}`, link: '/#contacts' },
 ];
+
+export const experience = [
+  {
+    title: `${messages.UI_UX_DESIGNER}`,
+    workInfo: `${messages.WORK_EXPERIENCE_1}`,
+    responsibilities: [
+      `${messages.WORK_EXPERIENCE_1_RESPONSIBILITIES_ITEM_1}`,
+      `${messages.WORK_EXPERIENCE_1_RESPONSIBILITIES_ITEM_2}`,
+      `${messages.WORK_EXPERIENCE_1_RESPONSIBILITIES_ITEM_3}`,
+      `${messages.WORK_EXPERIENCE_1_RESPONSIBILITIES_ITEM_4}`,
+    ],
+    achievements: `${messages.WORK_EXPERIENCE_1_ACHIEVEMENTS}`,
+  },
+  {
+    title: `${messages.UI_UX_DESIGNER}`,
+    workInfo: `${messages.WORK_EXPERIENCE_2}`,
+    responsibilities: [
+      `${messages.WORK_EXPERIENCE_2_RESPONSIBILITIES_ITEM_1}`,
+      `${messages.WORK_EXPERIENCE_2_RESPONSIBILITIES_ITEM_2}`,
+      `${messages.WORK_EXPERIENCE_2_RESPONSIBILITIES_ITEM_3}`,
+      `${messages.WORK_EXPERIENCE_2_RESPONSIBILITIES_ITEM_4}`,
+      `${messages.WORK_EXPERIENCE_2_RESPONSIBILITIES_ITEM_5}`,
+    ],
+    achievements: `${messages.WORK_EXPERIENCE_2_ACHIEVEMENTS}`,
+  },
+  {
+    title: `${messages.UI_UX_DESIGNER}`,
+    workInfo: `${messages.WORK_EXPERIENCE_3}`,
+    responsibilities: [
+      `${messages.WORK_EXPERIENCE_3_RESPONSIBILITIES_ITEM_1}`,
+      `${messages.WORK_EXPERIENCE_3_RESPONSIBILITIES_ITEM_2}`,
+      `${messages.WORK_EXPERIENCE_3_RESPONSIBILITIES_ITEM_3}`,
+    ],
+    achievements: `${messages.WORK_EXPERIENCE_3_ACHIEVEMENTS}`,
+  },
+];

@@ -7,13 +7,11 @@ import s from './TextLink.module.scss';
 const TextLink: FC<{
   text: string;
   href?: string;
-  isButtonType?: boolean;
+  isTextType?: boolean;
   isBlackColorState?: boolean;
-}> = ({ text, href, isButtonType = false, isBlackColorState = false }) => {
-  return isButtonType ? (
-    <button className={cn(s.container, { [s[`container--black`]]: isBlackColorState })}>
-      {text}
-    </button>
+}> = ({ text, href, isTextType = false, isBlackColorState = false }) => {
+  return isTextType ? (
+    <p className={cn(s.container, { [s[`container--black`]]: isBlackColorState })}>{text}</p>
   ) : (
     <Link
       className={cn(s.container, { [s[`container--black`]]: isBlackColorState })}
