@@ -1,0 +1,23 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  width: 262px;
+  height: 280px;
+  border: 2px solid $full-white-color;
+  padding: 28px 18px;
+}
+
+.title {
+  font-weight: 600;
+  font-size: 28px;
+  line-height: 1.2;
+  color: $full-white-color;
+  margin-bottom: auto;
+}
+
+.description {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.2;
+  color: $main-gray-color;
+}

@@ -247,3 +247,31 @@ export const experience = [
     achievements: `${messages.WORK_EXPERIENCE_3_ACHIEVEMENTS}`,
   },
 ];
+
+export const educationCourses = [
+  {
+    title: 'Digital Skills: User Experienc',
+    platform: 'FutureLearn',
+    date: '2022',
+  },
+  {
+    title: 'Design Basics',
+    platform: 'Mate Academy',
+    date: '2022',
+  },
+  {
+    title: 'UX from scratch: how to become a UI designer',
+    platform: 'Udemy',
+    date: '2022',
+  },
+  {
+    title: 'UX Crash Course: Fundamental',
+    platform: 'Information resource "Medium"',
+    date: '2019',
+  },
+  {
+    title: 'Web designer course ',
+    platform: 'Educational platform "WayUp"',
+    date: '2019',
+  },
+];

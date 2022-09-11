@@ -153,6 +153,14 @@ const messages = {
     'collaboration with Frontend developer.',
   MAIN_RESPONSIBILITIES: 'Main responsibilities:',
   MAIN_ACHIEVEMENTS: 'Main achievements:',
+  DEGREE: 'Degree',
+  PUBLIC_INSTITUTION_BERYSLAV:
+    'Public institution Beryslav Medical College' + ' Kherson Regional Council',
+  SECONDARY_VOCATIONAL_PHARMACY: 'Secondary vocational, Pharmacy/',
+  SECONDARY_VOCATIONAL_DATE: 'sept. 2013 - June 2016',
+  ZAPORIZHZHIA_STATE_MEDICAL_UNIVERSITY: 'Zaporizhzhia State Medical' + ' University',
+  BACHELOR_PHARMACY: 'Bachelor, Pharmacy/',
+  BACHELOR_PHARMACY_DATE: 'sept. 2016 - Jun 2018 ',
 };
 
 export default messages;

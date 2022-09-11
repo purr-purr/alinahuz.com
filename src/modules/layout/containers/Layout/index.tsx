@@ -2,6 +2,7 @@ import { FC, useCallback, useState } from 'react';
 import { useLocation } from 'react-router';
 import AppContext from '../../context/AppContext';
 import Header from '@modules/layout/containers/Header';
+import Footer from '@modules/layout/containers/Footer';
 import PageNotFound from '@modules/staticPages/PageNotFound';
 
 import s from './Layout.module.scss';
@@ -36,6 +37,7 @@ const Layout: FC<{}> = ({ children }) => {
               isHideLogo={window.scrollY > 700}
             />
             <section className={s.section}>{children}</section>
+            <Footer />
           </>
         ) : (
           <PageNotFound />
