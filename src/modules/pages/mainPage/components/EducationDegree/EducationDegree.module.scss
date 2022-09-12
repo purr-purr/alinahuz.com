@@ -1,0 +1,26 @@
+.container {
+  color: $full-white-color;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.2;
+
+  &:not(:last-child) {
+    margin-bottom: 17px;
+  }
+
+  dd {
+    font-weight: 400;
+  }
+
+  span {
+    color: $secondary-gray-color;
+  }
+}
+
+.title {
+  margin-bottom: 28px;
+  font-weight: 600;
+  font-size: 28px;
+  line-height: 1.2;
+  color: $full-white-color;
+}

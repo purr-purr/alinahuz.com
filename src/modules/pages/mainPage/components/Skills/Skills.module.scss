@@ -4,6 +4,20 @@
   padding-bottom: 200px;
   @include block-padding(28px);
   background-color: $main-gray-color;
+  position: relative;
+  z-index: 2;
+
+  &:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 417px;
+    height: 463px;
+    background: url("../../../../../assets/images/patterns/patterns_right-side--small.svg") no-repeat center / 100%;
+    z-index: 1;
+    pointer-events: none;
+  }
 }
 
 .description {

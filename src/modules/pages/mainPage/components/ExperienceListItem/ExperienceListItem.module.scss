@@ -1,0 +1,62 @@
+.container {
+  &:not(:last-of-type) {
+    margin-bottom: 50px;
+  }
+}
+
+.title {
+  font-weight: 600;
+  font-size: 28px;
+  line-height: 34px;
+  margin-bottom: 17px;
+}
+
+.workInfo {
+  margin-bottom: 17px;
+  font-size: 14px;
+  line-height: 1.2;
+  color: $secondary-gray-color;
+}
+
+.desc {
+  &[open] &-heading {
+    display: none;
+  }
+
+  dd {
+    font-size: 14px;
+    line-height: 17px;
+    color: $main-black-color;
+  }
+
+  li {
+    position: relative;
+
+    &::first-letter {
+      padding-left: 9px;
+    }
+
+    &::before {
+      content: '•';
+      position: absolute;
+      left: 2px;
+      color: $main-black-color;
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 17px;
+    }
+  }
+}
+
+.desc-list {
+  &:not(:last-child) {
+    margin-bottom: 17px;
+  }
+}
+
+.desc-title {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 17px;
+  color: $main-black-color;
+}

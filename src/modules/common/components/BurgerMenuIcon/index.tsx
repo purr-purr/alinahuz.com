@@ -1,28 +1,32 @@
-import { FC, useContext, useEffect, useState } from 'react';
+import { FC, useContext, useEffect } from 'react';
 import cn from 'classnames';
-
-import s from './BurgerMenuIcon.module.scss';
 import Navigation from '@modules/common/components/Navigation';
 import AppContext from '@modules/layout/context/AppContext';
+
+import s from './BurgerMenuIcon.module.scss';
 
 const BurgerMenuIcon: FC<{
   isBlackColor?: boolean;
 }> = ({ isBlackColor = false }) => {
-  const [menuOpen, setMenuOpen] = useState(false);
+  // const [menuOpen, setMenuOpen] = useState(false);
 
-  const { handleSwitchNavigationMode } = useContext(AppContext);
+  const { handleSwitchNavigationMode, isNavigationMode } = useContext(AppContext);
 
   useEffect(() => {
-    menuOpen ? handleSwitchNavigationMode(true) : handleSwitchNavigationMode(false);
-  }, [menuOpen]);
+    isNavigationMode ? handleSwitchNavigationMode(true) : handleSwitchNavigationMode(false);
+  }, [isNavigationMode]);
 
   return (
     <>
       <button
-        onClick={() => setMenuOpen(!menuOpen)}
-        className={cn(s.container, { [s[`container--black`]]: isBlackColor || menuOpen })}
+        onClick={() => handleSwitchNavigationMode(!isNavigationMode)}
+        className={cn(
+          s.container,
+          { [s[`container--black`]]: isBlackColor || isNavigationMode },
+          { [s[`container--open`]]: isNavigationMode },
+        )}
       />
-      {menuOpen && <Navigation />}
+      {isNavigationMode && <Navigation />}
     </>
   );
 };

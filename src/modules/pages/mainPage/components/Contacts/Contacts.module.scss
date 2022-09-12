@@ -1,0 +1,41 @@
+.container {
+  display: flex;
+  padding-top: 340px;
+  padding-bottom: 68px;
+  @include block-padding(28px);
+  background-color: $main-black-color;
+  position: relative;
+  z-index: 2;
+
+  &:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: calc((100% - 624px) / 2);
+    width: 624px;
+    height: 430px;
+    background: url("../../../../../assets/images/patterns/patterns_contacts.svg") no-repeat center / 100%;
+    pointer-events: none;
+    z-index: 1;
+  }
+}
+
+.description {
+  margin-left: auto;
+  max-width: 544px;
+  width: 100%;
+  font-weight: 600;
+  font-size: 28px;
+  line-height: 1.2;
+  color: $full-white-color;
+}
+
+.links {
+  width: 50%;
+  margin-top: 290px;
+  padding-left: 20px;
+
+  & li:not(:last-child) {
+    margin-bottom: 50px;
+  }
+}

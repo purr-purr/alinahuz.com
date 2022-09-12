@@ -5,6 +5,7 @@
   @include block-padding(28px);
   background: $main-black-color url("../../../../../assets/images/waves_static.jpg") no-repeat center / 100%;
   background-size: cover;
+  position: relative;
 }
 
 .description {

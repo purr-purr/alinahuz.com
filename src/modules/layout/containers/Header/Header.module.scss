@@ -1,6 +1,6 @@
 .container {
   @include flex-justify-align(space-between, center);
-  padding: 28px;
+  padding: 8px 18px 8px 28px;
   position: fixed;
   top: 0;
   left: 0;

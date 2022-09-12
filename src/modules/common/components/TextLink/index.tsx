@@ -7,16 +7,27 @@ import s from './TextLink.module.scss';
 const TextLink: FC<{
   text: string;
   href?: string;
-  isButtonType?: boolean;
-  isBlackColorState?: boolean;
-}> = ({ text, href, isButtonType = false, isBlackColorState = false }) => {
-  return isButtonType ? (
-    <button className={cn(s.container, { [s[`container--black`]]: isBlackColorState })}>
+  isTextType?: boolean;
+  isWhiteColorState?: boolean;
+  size?: 'sm' | 'md';
+}> = ({ text, href, isTextType = false, isWhiteColorState = false, size = 'sm' }) => {
+  return isTextType ? (
+    <p
+      className={cn(
+        s.container,
+        isWhiteColorState && s[`container--white`],
+        size && s[`container--${size}`],
+      )}
+    >
       {text}
-    </button>
+    </p>
   ) : (
     <Link
-      className={cn(s.container, { [s[`container--black`]]: isBlackColorState })}
+      className={cn(
+        s.container,
+        isWhiteColorState && s[`container--white`],
+        size && s[`container--${size}`],
+      )}
       to={href ? href : ''}
     >
       {text}

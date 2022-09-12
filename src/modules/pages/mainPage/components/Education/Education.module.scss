@@ -1,0 +1,13 @@
+.container {
+  display: flex;
+  padding-top: 140px;
+  padding-bottom: 200px;
+  @include block-padding(28px);
+  background-color: $main-black-color;
+  position: relative;
+}
+
+.infoBlock {
+  width: 50%;
+  margin-left: auto;
+}

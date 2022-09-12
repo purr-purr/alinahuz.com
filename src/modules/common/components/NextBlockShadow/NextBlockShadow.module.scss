@@ -1,0 +1,38 @@
+.container {
+  width: 100%;
+  height: 200px;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  pointer-events: none;
+
+  &--black {
+    background-image: url("../../../../assets/images/patterns/patterns_next-block-blur--black.svg");
+  }
+
+  &--white {
+    background-image: url("../../../../assets/images/patterns/patterns_next-block-blur--white.svg");
+  }
+}
+
+.scrollDownIcon {
+  position: absolute;
+  bottom: 28px;
+  left: calc((100% - 7px) / 2);
+  animation: floating 3s infinite ease-in-out;
+}
+
+@keyframes floating {
+  0% {
+    transform: translate(0, 0px);
+  }
+  50% {
+    transform: translate(0, 15px);
+  }
+  100% {
+    transform: translate(0, -0px);
+  }
+}

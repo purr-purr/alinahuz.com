@@ -4,10 +4,25 @@
   padding-bottom: 200px;
   @include block-padding(28px);
   background-color: $main-gray-color;
+  position: relative;
+  z-index: 2;
+  overflow-y: hidden;
+
+  &:before {
+    content: '';
+    position: absolute;
+    top: 130px;
+    left: 0;
+    width: 621px;
+    height: 919px;
+    background: url("../../../../../assets/images/patterns/patterns_left-side.svg") no-repeat center / 100%;
+    pointer-events: none;
+    z-index: 1;
+  }
 }
 
 .description {
-  margin-bottom: 28px;
+  margin-bottom: 50px;
   max-width: 544px;
   font-size: 14px;
   line-height: 17px;
