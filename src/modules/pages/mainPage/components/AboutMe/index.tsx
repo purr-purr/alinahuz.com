@@ -4,6 +4,7 @@ import messages from '@helpers/messages';
 import MainHeading from '@modules/common/components/MainHeading';
 
 import s from './AboutMe.module.scss';
+import NextBlockShadow from '@modules/common/components/NextBlockShadow';
 
 const AboutMe: FC = () => {
   return (
@@ -22,6 +23,7 @@ const AboutMe: FC = () => {
           <p>{messages.DUE_TO_THE_WAR_IN_MY_COUNTY}</p>
         </li>
       </ul>
+      <NextBlockShadow colorScheme="transparent" />
     </article>
   );
 };

@@ -18,6 +18,7 @@ const messages = {
   POSTER: 'poster',
   DRIBBBLE: 'dribbble',
   BEHANCE: 'behance',
+  LINKEDIN: 'linkedin',
   SEE_MORE_WORKS: 'See more works',
   IF_YOU_WANT_YOU_CAN_FIND_MORE:
     'If you want, you can find more of my work' + ' on' + ' these' + ' resources',
@@ -29,6 +30,7 @@ const messages = {
   EXPERIENCE: 'experience',
   CONTACTS: 'Contacts',
   VIEW_CV: 'View CV',
+  MAIL_ME: 'mail me',
   I_DECIDED_TO_BECOME_A_DESIGNER:
     'I decided to become a designer because I' +
     ' wanted to have a creative' +
@@ -161,6 +163,16 @@ const messages = {
   ZAPORIZHZHIA_STATE_MEDICAL_UNIVERSITY: 'Zaporizhzhia State Medical' + ' University',
   BACHELOR_PHARMACY: 'Bachelor, Pharmacy/',
   BACHELOR_PHARMACY_DATE: 'sept. 2016 - Jun 2018 ',
+  ALL_RIGHTS_RESERVED: 'All rights reserved/',
+  CURRENT_YEAR: '2022',
+  OR: 'or',
+  SCROLL_TO_NEXT_SCREEN: 'scroll to next screen',
+  I_HAVE_A_GREAT_DESIRE_TO_DEVELOP:
+    'I have a great desire to develop and' +
+    ' gain' +
+    ' experience in the field' +
+    ' of web design, work in a cool design studio or IT company,' +
+    ' so if you know or have any positions that I could apply for, feel free to connect with me.',
 };
 
 export default messages;

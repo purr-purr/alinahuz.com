@@ -1,3 +1,29 @@
 .container {
+  @include block-padding(67px);
+  padding-bottom: 36px;
+  text-align: right;
+  background-color: $main-black-color;
+  position: relative;
 
+  &:before {
+    content: '';
+    position: absolute;
+    left: 28px;
+    bottom: 28px;
+    width: 7px;
+    height: 60px;
+    background: url("../../../../assets/images/arrow_top_icon--gray.svg") no-repeat center / contain;
+    z-index: 2;
+  }
+
+  p {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.2;
+    color: $secondary-gray-color;
+  }
+
+  span {
+    font-weight: 700;
+  }
 }

@@ -8,13 +8,26 @@ const TextLink: FC<{
   text: string;
   href?: string;
   isTextType?: boolean;
-  isBlackColorState?: boolean;
-}> = ({ text, href, isTextType = false, isBlackColorState = false }) => {
+  isWhiteColorState?: boolean;
+  size?: 'sm' | 'md';
+}> = ({ text, href, isTextType = false, isWhiteColorState = false, size = 'sm' }) => {
   return isTextType ? (
-    <p className={cn(s.container, { [s[`container--black`]]: isBlackColorState })}>{text}</p>
+    <p
+      className={cn(
+        s.container,
+        isWhiteColorState && s[`container--white`],
+        size && s[`container--${size}`],
+      )}
+    >
+      {text}
+    </p>
   ) : (
     <Link
-      className={cn(s.container, { [s[`container--black`]]: isBlackColorState })}
+      className={cn(
+        s.container,
+        isWhiteColorState && s[`container--white`],
+        size && s[`container--${size}`],
+      )}
       to={href ? href : ''}
     >
       {text}

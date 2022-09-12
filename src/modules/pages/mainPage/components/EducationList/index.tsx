@@ -9,7 +9,12 @@ const EducationList: FC = () => {
   return (
     <ul className={s.container}>
       {educationCourses.map((item) => (
-        <EducationListItem title={item.title} platform={item.platform} date={item.date} />
+        <EducationListItem
+          key={item.title}
+          title={item.title}
+          platform={item.platform}
+          date={item.date}
+        />
       ))}
     </ul>
   );

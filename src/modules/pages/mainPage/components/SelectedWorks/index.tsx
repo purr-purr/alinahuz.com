@@ -5,6 +5,7 @@ import MainHeading from '@modules/common/components/MainHeading';
 import SelectedWorksList from '@modules/pages/mainPage/components/SelectedWorksList';
 
 import s from './SelectedWorks.module.scss';
+import NextBlockShadow from '@modules/common/components/NextBlockShadow';
 
 const SelectedWorks: FC = () => {
   return (
@@ -16,6 +17,7 @@ const SelectedWorks: FC = () => {
         className={s.headingFigure}
       />
       <SelectedWorksList />
+      <NextBlockShadow colorScheme="white" />
     </article>
   );
 };

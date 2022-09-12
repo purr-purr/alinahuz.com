@@ -24,8 +24,8 @@ const ExperienceListItem: FC<{
           <dt className={s[`desc-title`]}>{messages.MAIN_RESPONSIBILITIES}</dt>
           <dd>
             <ul>
-              {responsibilities.map((item) => (
-                <li>{item}</li>
+              {responsibilities.map((item, index) => (
+                <li key={index}>{item}</li>
               ))}
             </ul>
           </dd>

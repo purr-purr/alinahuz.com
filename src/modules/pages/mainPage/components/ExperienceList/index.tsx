@@ -7,8 +7,9 @@ import s from './ExperienceList.module.scss';
 const ExperienceList: FC = () => {
   return (
     <ul className={s.container}>
-      {experience.map((item) => (
+      {experience.map((item, index) => (
         <ExperienceListItem
+          key={index}
           title={item.title}
           workInfo={item.workInfo}
           responsibilities={item.responsibilities}

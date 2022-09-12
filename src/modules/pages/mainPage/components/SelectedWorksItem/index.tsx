@@ -22,8 +22,8 @@ const SelectedWorksItem: FC<{
       <div className={cn(s.info, { [s[`info--reverse`]]: isReverseState })}>
         <p className={cn(s.number, { [s[`number--reverse`]]: isReverseState })}>{number}</p>
         <h3 className={s.title}>
-          {splitTitle.map((item) => (
-            <span>{item}</span>
+          {splitTitle.map((item, index) => (
+            <span key={index}>{item}</span>
           ))}
         </h3>
         <p className={s.description}>{description}</p>

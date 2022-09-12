@@ -24,7 +24,7 @@ const MainScreen: FC = () => {
     return () => window.removeEventListener('scroll', updatePosition);
   }, []);
 
-  const isSecondScreen = scrollPosition >= 700 && scrollPosition < 2500;
+  const isSecondScreen = scrollPosition >= 700;
 
   const { handleSwitchDarkMode } = useContext(AppContext);
 

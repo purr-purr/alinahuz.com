@@ -5,7 +5,7 @@ import s from './EducationListItem.module.scss';
 const EducationListItem: FC<{
   title: string;
   platform: string;
-  date: string;
+  date: number;
 }> = ({ title, platform, date }) => {
   return (
     <li className={s.container}>

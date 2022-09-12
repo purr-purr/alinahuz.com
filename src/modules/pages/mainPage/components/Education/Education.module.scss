@@ -4,6 +4,7 @@
   padding-bottom: 200px;
   @include block-padding(28px);
   background-color: $main-black-color;
+  position: relative;
 }
 
 .infoBlock {

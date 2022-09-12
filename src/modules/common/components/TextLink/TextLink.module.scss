@@ -1,9 +1,6 @@
 .container {
-  font-size: 16px;
-  line-height: 20px;
   color: $main-black-color;
   position: relative;
-  padding-right: 18px;
   padding-bottom: 8px;
   width: fit-content;
   cursor: pointer;
@@ -46,6 +43,48 @@
       background: url('../../../../assets/images/arrow_right_icon--black-long-thin.svg') no-repeat center /
       100%;
       transition: all 0.5s ease-in-out;
+    }
+  }
+
+  &--md {
+    font-weight: 600;
+    font-size: 28px;
+    line-height: 1.2;
+    padding-right: 27px;
+
+    &:after {
+      top: 12px;
+      width: 16px;
+      height: 12px;
+      background-image: url('../../../../assets/images/arrow_right_icon--white-medium.svg');
+    }
+
+    &:hover {
+      padding-right: 40px;
+
+      &:before {
+        width: 24px;
+      }
+
+      &:after {
+        width: 24px;
+        background-image: url('../../../../assets/images/arrow_right_icon--white-long-medium.svg');
+      }
+    }
+  }
+
+  &--sm {
+    font-size: 16px;
+    line-height: 20px;
+    padding-right: 18px;
+  }
+
+  &--white {
+    color: $full-white-color;
+
+    &:before {
+      height: 2px;
+      background-color: $full-white-color;
     }
   }
 }

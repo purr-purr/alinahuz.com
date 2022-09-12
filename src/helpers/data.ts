@@ -8,9 +8,74 @@ export const screenShotsPath = (path: string) => {
   return require(`@assets/images/selectedWorks/screenShots/screenShots_${path}.jpg`).default;
 };
 
+export const menuLinks = [
+  { title: messages.MAIN, link: '/' },
+  { title: messages.WORKS, link: '/#works' },
+  { title: messages.ABOUT_ME, link: '/#about' },
+  { title: messages.SKILLS, link: '/#skills' },
+  { title: messages.EDUCATION, link: '/#education' },
+  { title: messages.CONTACTS, link: '/#contacts' },
+];
+
+export const educationCourses = [
+  {
+    title: 'Digital Skills: User Experienc',
+    platform: 'FutureLearn',
+    date: 2022,
+  },
+  {
+    title: 'Design Basics',
+    platform: 'Mate Academy',
+    date: 2022,
+  },
+  {
+    title: 'UX from scratch: how to become a UI designer',
+    platform: 'Udemy',
+    date: 2022,
+  },
+  {
+    title: 'UX Crash Course: Fundamental',
+    platform: 'Information resource "Medium"',
+    date: 2019,
+  },
+  {
+    title: 'Web designer course ',
+    platform: 'Educational platform "WayUp"',
+    date: 2019,
+  },
+];
+
+export const SOCIALS_LINKS = {
+  linkedin: 'https://www.linkedin.com/in/alina-huz-design/',
+  behance: 'https://www.behance.net/alinahuz',
+  dribbble: 'https://dribbble.com/Adelhaid',
+  mail: 'mailto:alina.huz.design@gmail.com',
+};
+
+export const CV_PDF = '/cv.pdf';
+
+export const contactsLinks = [
+  {
+    title: messages.MAIL_ME,
+    href: SOCIALS_LINKS.mail,
+  },
+  {
+    title: messages.LINKEDIN,
+    href: SOCIALS_LINKS.linkedin,
+  },
+  {
+    title: messages.BEHANCE,
+    href: SOCIALS_LINKS.behance,
+  },
+  {
+    title: messages.DRIBBBLE,
+    href: SOCIALS_LINKS.dribbble,
+  },
+];
+
 export const selectedWorks = [
   {
-    poster: `${posterPath('web')}`,
+    poster: posterPath('web'),
     number: 1,
     reverseState: false,
     title: 'Web-dev portfolio',
@@ -26,13 +91,13 @@ export const selectedWorks = [
       'chosen as accent colors for the landing page.',
     link: '#',
     screenShots: [
-      { image: `${screenShotsPath('web-1')}` },
-      { image: `${screenShotsPath('web-2')}` },
-      { image: `${screenShotsPath('web-3')}` },
+      { image: screenShotsPath('web-1') },
+      { image: screenShotsPath('web-2') },
+      { image: screenShotsPath('web-3') },
     ],
   },
   {
-    poster: `${posterPath('poland')}`,
+    poster: posterPath('poland'),
     number: 2,
     reverseState: true,
     title: 'Delivery International Poland',
@@ -50,13 +115,13 @@ export const selectedWorks = [
       ' as accent colors for the landing page.',
     link: '#',
     screenShots: [
-      { image: `${screenShotsPath('poland-1')}` },
-      { image: `${screenShotsPath('poland-2')}` },
-      { image: `${screenShotsPath('poland-3')}` },
+      { image: screenShotsPath('poland-1') },
+      { image: screenShotsPath('poland-2') },
+      { image: screenShotsPath('poland-3') },
     ],
   },
   {
-    poster: `${posterPath('delivery')}`,
+    poster: posterPath('delivery'),
     number: 3,
     reverseState: false,
     title: 'Delivery Group',
@@ -75,13 +140,13 @@ export const selectedWorks = [
       'as accent colors for the landing page.',
     link: '#',
     screenShots: [
-      { image: `${screenShotsPath('delivery-1')}` },
-      { image: `${screenShotsPath('delivery-2')}` },
-      { image: `${screenShotsPath('delivery-3')}` },
+      { image: screenShotsPath('delivery-1') },
+      { image: screenShotsPath('delivery-2') },
+      { image: screenShotsPath('delivery-3') },
     ],
   },
   {
-    poster: `${posterPath('fund')}`,
+    poster: posterPath('fund'),
     number: 4,
     reverseState: true,
     title: 'Charity Fund',
@@ -100,13 +165,13 @@ export const selectedWorks = [
       'chosen as accent colors for the landing page.',
     link: '#',
     screenShots: [
-      { image: `${screenShotsPath('fund-1')}` },
-      { image: `${screenShotsPath('fund-2')}` },
-      { image: `${screenShotsPath('fund-3')}` },
+      { image: screenShotsPath('fund-1') },
+      { image: screenShotsPath('fund-2') },
+      { image: screenShotsPath('fund-3') },
     ],
   },
   {
-    poster: `${posterPath('blash')}`,
+    poster: posterPath('blash'),
     number: 5,
     reverseState: false,
     title: 'Blash Vintage',
@@ -123,13 +188,13 @@ export const selectedWorks = [
       ' chosen as accent colors for the landing page.',
     link: '#',
     screenShots: [
-      { image: `${screenShotsPath('blash-1')}` },
-      { image: `${screenShotsPath('blash-2')}` },
-      { image: `${screenShotsPath('blash-3')}` },
+      { image: screenShotsPath('blash-1') },
+      { image: screenShotsPath('blash-2') },
+      { image: screenShotsPath('blash-3') },
     ],
   },
   {
-    poster: `${posterPath('jewelry')}`,
+    poster: posterPath('jewelry'),
     number: 6,
     reverseState: true,
     title: 'Jewelry.UA',
@@ -147,13 +212,13 @@ export const selectedWorks = [
       ' chosen as accent colors for the landing page.',
     link: '#',
     screenShots: [
-      { image: `${screenShotsPath('jewelry-1')}` },
-      { image: `${screenShotsPath('jewelry-2')}` },
-      { image: `${screenShotsPath('jewelry-3')}` },
+      { image: screenShotsPath('jewelry-1') },
+      { image: screenShotsPath('jewelry-2') },
+      { image: screenShotsPath('jewelry-3') },
     ],
   },
   {
-    poster: `${posterPath('astramed')}`,
+    poster: posterPath('astramed'),
     number: 7,
     reverseState: false,
     title: 'Astramed',
@@ -170,13 +235,13 @@ export const selectedWorks = [
       ' chosen as accent colors for the landing page.',
     link: '#',
     screenShots: [
-      { image: `${screenShotsPath('astramed-1')}` },
-      { image: `${screenShotsPath('astramed-2')}` },
-      { image: `${screenShotsPath('astramed-3')}` },
+      { image: screenShotsPath('astramed-1') },
+      { image: screenShotsPath('astramed-2') },
+      { image: screenShotsPath('astramed-3') },
     ],
   },
   {
-    poster: `${posterPath('new-year')}`,
+    poster: posterPath('new-year'),
     number: 8,
     reverseState: true,
     title: 'New-Year Company',
@@ -196,82 +261,45 @@ export const selectedWorks = [
       ' chosen as accent colors for the landing page.',
     link: '#',
     screenShots: [
-      { image: `${screenShotsPath('new-year-1')}` },
-      { image: `${screenShotsPath('new-year-2')}` },
-      { image: `${screenShotsPath('new-year-3')}` },
+      { image: screenShotsPath('new-year-1') },
+      { image: screenShotsPath('new-year-2') },
+      { image: screenShotsPath('new-year-3') },
     ],
   },
-];
-
-export const menuLinks = [
-  { title: `${messages.MAIN}`, link: '/' },
-  { title: `${messages.WORKS}`, link: '/#works' },
-  { title: `${messages.ABOUT_ME}`, link: '/#about' },
-  { title: `${messages.SKILLS}`, link: '/#skills' },
-  { title: `${messages.EDUCATION}`, link: '/#education' },
-  { title: `${messages.CONTACTS}`, link: '/#contacts' },
 ];
 
 export const experience = [
   {
-    title: `${messages.UI_UX_DESIGNER}`,
-    workInfo: `${messages.WORK_EXPERIENCE_1}`,
+    title: messages.UI_UX_DESIGNER,
+    workInfo: messages.WORK_EXPERIENCE_1,
     responsibilities: [
-      `${messages.WORK_EXPERIENCE_1_RESPONSIBILITIES_ITEM_1}`,
-      `${messages.WORK_EXPERIENCE_1_RESPONSIBILITIES_ITEM_2}`,
-      `${messages.WORK_EXPERIENCE_1_RESPONSIBILITIES_ITEM_3}`,
-      `${messages.WORK_EXPERIENCE_1_RESPONSIBILITIES_ITEM_4}`,
+      messages.WORK_EXPERIENCE_1_RESPONSIBILITIES_ITEM_1,
+      messages.WORK_EXPERIENCE_1_RESPONSIBILITIES_ITEM_2,
+      messages.WORK_EXPERIENCE_1_RESPONSIBILITIES_ITEM_3,
+      messages.WORK_EXPERIENCE_1_RESPONSIBILITIES_ITEM_4,
     ],
-    achievements: `${messages.WORK_EXPERIENCE_1_ACHIEVEMENTS}`,
+    achievements: messages.WORK_EXPERIENCE_1_ACHIEVEMENTS,
   },
   {
-    title: `${messages.UI_UX_DESIGNER}`,
-    workInfo: `${messages.WORK_EXPERIENCE_2}`,
+    title: messages.UI_UX_DESIGNER,
+    workInfo: messages.WORK_EXPERIENCE_2,
     responsibilities: [
-      `${messages.WORK_EXPERIENCE_2_RESPONSIBILITIES_ITEM_1}`,
-      `${messages.WORK_EXPERIENCE_2_RESPONSIBILITIES_ITEM_2}`,
-      `${messages.WORK_EXPERIENCE_2_RESPONSIBILITIES_ITEM_3}`,
-      `${messages.WORK_EXPERIENCE_2_RESPONSIBILITIES_ITEM_4}`,
-      `${messages.WORK_EXPERIENCE_2_RESPONSIBILITIES_ITEM_5}`,
+      messages.WORK_EXPERIENCE_2_RESPONSIBILITIES_ITEM_1,
+      messages.WORK_EXPERIENCE_2_RESPONSIBILITIES_ITEM_2,
+      messages.WORK_EXPERIENCE_2_RESPONSIBILITIES_ITEM_3,
+      messages.WORK_EXPERIENCE_2_RESPONSIBILITIES_ITEM_4,
+      messages.WORK_EXPERIENCE_2_RESPONSIBILITIES_ITEM_5,
     ],
-    achievements: `${messages.WORK_EXPERIENCE_2_ACHIEVEMENTS}`,
+    achievements: messages.WORK_EXPERIENCE_2_ACHIEVEMENTS,
   },
   {
-    title: `${messages.UI_UX_DESIGNER}`,
-    workInfo: `${messages.WORK_EXPERIENCE_3}`,
+    title: messages.UI_UX_DESIGNER,
+    workInfo: messages.WORK_EXPERIENCE_3,
     responsibilities: [
-      `${messages.WORK_EXPERIENCE_3_RESPONSIBILITIES_ITEM_1}`,
-      `${messages.WORK_EXPERIENCE_3_RESPONSIBILITIES_ITEM_2}`,
-      `${messages.WORK_EXPERIENCE_3_RESPONSIBILITIES_ITEM_3}`,
+      messages.WORK_EXPERIENCE_3_RESPONSIBILITIES_ITEM_1,
+      messages.WORK_EXPERIENCE_3_RESPONSIBILITIES_ITEM_2,
+      messages.WORK_EXPERIENCE_3_RESPONSIBILITIES_ITEM_3,
     ],
-    achievements: `${messages.WORK_EXPERIENCE_3_ACHIEVEMENTS}`,
-  },
-];
-
-export const educationCourses = [
-  {
-    title: 'Digital Skills: User Experienc',
-    platform: 'FutureLearn',
-    date: '2022',
-  },
-  {
-    title: 'Design Basics',
-    platform: 'Mate Academy',
-    date: '2022',
-  },
-  {
-    title: 'UX from scratch: how to become a UI designer',
-    platform: 'Udemy',
-    date: '2022',
-  },
-  {
-    title: 'UX Crash Course: Fundamental',
-    platform: 'Information resource "Medium"',
-    date: '2019',
-  },
-  {
-    title: 'Web designer course ',
-    platform: 'Educational platform "WayUp"',
-    date: '2019',
+    achievements: messages.WORK_EXPERIENCE_3_ACHIEVEMENTS,
   },
 ];
