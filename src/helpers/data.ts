@@ -8,6 +8,16 @@ export const screenShotsPath = (path: string) => {
   return require(`@assets/images/selectedWorks/screenShots/screenShots_${path}.jpg`).default;
 };
 
+export const certificatePicturePath = (path: string) => {
+  return require(`@assets/images/certificate/certificate_${path}.jpg`).default;
+};
+
+export const certificatePicture = [
+  { path: certificatePicturePath('first') },
+  { path: certificatePicturePath('second') },
+  { path: certificatePicturePath('third') },
+];
+
 export const menuLinks = [
   { title: messages.MAIN, link: '/' },
   { title: messages.WORKS, link: '/#works' },

@@ -1,5 +1,4 @@
 import { useEffect } from 'react';
-
 import MainScreen from '@modules/pages/mainPage/components/MainScreen';
 import SelectedWorks from '@modules/pages/mainPage/components/SelectedWorks';
 import AboutMe from '@modules/pages/mainPage/components/AboutMe';

@@ -166,6 +166,7 @@ const messages = {
   ALL_RIGHTS_RESERVED: 'All rights reserved/',
   CURRENT_YEAR: '2022',
   OR: 'or',
+  CERTIFICATE: 'certificate',
   SCROLL_TO_NEXT_SCREEN: 'scroll to next screen',
   I_HAVE_A_GREAT_DESIRE_TO_DEVELOP:
     'I have a great desire to develop and' +

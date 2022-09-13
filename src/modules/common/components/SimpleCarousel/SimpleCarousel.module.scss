@@ -1,0 +1,17 @@
+.container {
+  position: relative;
+  margin-top: 100px;
+  width: 544px;
+
+  img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    width: 100%;
+
+    &:hover {
+      cursor: url("../../../../assets/images/cursor/cursor_pause.svg") 50 50, pointer;
+    }
+  }
+}
