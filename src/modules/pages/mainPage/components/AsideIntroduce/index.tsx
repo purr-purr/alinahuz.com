@@ -1,11 +1,11 @@
-import { FC, useEffect, useState } from 'react';
+import { FC, SetStateAction, useEffect, useState } from 'react';
 import cn from 'classnames';
 
 import messages from 'src/helpers/messages';
 import MainHeading from '@modules/common/components/MainHeading';
+import NextBlockShadow from '@modules/common/components/NextBlockShadow';
 
 import s from './AsideIntroduce.module.scss';
-import NextBlockShadow from '@modules/common/components/NextBlockShadow';
 
 const AsideIntroduce: FC<{
   isOpen?: boolean;
@@ -16,60 +16,83 @@ const AsideIntroduce: FC<{
     third: false,
     four: false,
     five: false,
+    six: false,
   };
 
   const [showText, setShowText] = useState(initialShowText);
 
+  const timeoutAnimation = (
+    delay: number,
+    value: SetStateAction<{
+      first: boolean;
+      second: boolean;
+      third: boolean;
+      four: boolean;
+      five: boolean;
+      six: boolean;
+    }>,
+  ) => {
+    let timer = setTimeout(() => {
+      setShowText(value);
+    }, delay);
+
+    return () => clearTimeout(timer);
+  };
+
   const showTextDelay = () => {
-    setTimeout(() => {
-      setShowText({
-        first: false,
-        second: false,
-        third: true,
-        four: false,
-        five: false,
-      });
-    }, 1000);
+    timeoutAnimation(1000, {
+      first: false,
+      second: false,
+      third: true,
+      four: false,
+      five: false,
+      six: false,
+    });
 
-    setTimeout(() => {
-      setShowText({
-        first: true,
-        second: false,
-        third: true,
-        four: false,
-        five: false,
-      });
-    }, 2000);
+    timeoutAnimation(2000, {
+      first: true,
+      second: false,
+      third: true,
+      four: false,
+      five: false,
+      six: false,
+    });
 
-    setTimeout(() => {
-      setShowText({
-        first: true,
-        second: true,
-        third: true,
-        four: false,
-        five: false,
-      });
-    }, 2500);
+    timeoutAnimation(2500, {
+      first: true,
+      second: true,
+      third: true,
+      four: false,
+      five: false,
+      six: false,
+    });
 
-    setTimeout(() => {
-      setShowText({
-        first: true,
-        second: true,
-        third: true,
-        four: true,
-        five: false,
-      });
-    }, 3000);
+    timeoutAnimation(3000, {
+      first: true,
+      second: true,
+      third: true,
+      four: true,
+      five: false,
+      six: false,
+    });
 
-    setTimeout(() => {
-      setShowText({
-        first: true,
-        second: true,
-        third: true,
-        four: true,
-        five: true,
-      });
-    }, 3500);
+    timeoutAnimation(3500, {
+      first: true,
+      second: true,
+      third: true,
+      four: true,
+      five: true,
+      six: false,
+    });
+
+    timeoutAnimation(4000, {
+      first: true,
+      second: true,
+      third: true,
+      four: true,
+      five: true,
+      six: true,
+    });
   };
 
   useEffect(() => {
@@ -113,7 +136,9 @@ const AsideIntroduce: FC<{
             </p>
           </div>
 
-          <NextBlockShadow colorScheme="black" />
+          <div className={cn(s.appearance, showText.six && s.appearanceShow)}>
+            <NextBlockShadow colorScheme="black" />
+          </div>
         </>
       ) : (
         <div className={s.shortHeading}>
