@@ -5,6 +5,11 @@ type AppContextType = {
   handleSwitchDarkMode: (isDarkMode: boolean) => void;
   isNavigationMode: boolean;
   handleSwitchNavigationMode: (isNavigationMode: boolean) => void;
+  isFullScreenCarouselMode: {
+    index: number;
+    isActive: boolean;
+  };
+  handleSwitchFullScreenCarouselMode: (index: number, isActive: boolean) => void;
 };
 
 const AppContext = React.createContext<AppContextType>({
@@ -12,6 +17,8 @@ const AppContext = React.createContext<AppContextType>({
   handleSwitchDarkMode: () => {},
   isNavigationMode: false,
   handleSwitchNavigationMode: () => {},
+  isFullScreenCarouselMode: { index: 0, isActive: false },
+  handleSwitchFullScreenCarouselMode: () => {},
 });
 
 export default AppContext;

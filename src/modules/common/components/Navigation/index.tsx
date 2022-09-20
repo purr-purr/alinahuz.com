@@ -6,9 +6,7 @@ import DecorativeLink from '@modules/common/components/DecorativeLink';
 import s from './Navigation.module.scss';
 import AppContext from '@modules/layout/context/AppContext';
 
-const Navigation: FC<{
-  isBlackColor?: boolean;
-}> = ({ isBlackColor = false }) => {
+const Navigation: FC = () => {
   const { handleSwitchNavigationMode } = useContext(AppContext);
 
   return (

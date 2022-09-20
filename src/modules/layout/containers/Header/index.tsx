@@ -1,4 +1,6 @@
-import { FC } from 'react';
+import { FC, useContext, useEffect } from 'react';
+import Navigation from '@modules/common/components/Navigation';
+import AppContext from '@modules/layout/context/AppContext';
 import Logo from '@modules/common/components/Logo';
 import BurgerMenuIcon from '@modules/common/components/BurgerMenuIcon';
 
@@ -8,10 +10,21 @@ const Header: FC<{
   isDarkModeActive?: boolean;
   isHideLogo?: boolean;
 }> = ({ isHideLogo = false, isDarkModeActive = false }) => {
+  const { handleSwitchNavigationMode, isNavigationMode } = useContext(AppContext);
+
+  useEffect(() => {
+    isNavigationMode ? handleSwitchNavigationMode(true) : handleSwitchNavigationMode(false);
+  }, [isNavigationMode]);
+
   return (
     <header className={s.container}>
       {isHideLogo && <Logo isBlackColor={isDarkModeActive} />}
-      <BurgerMenuIcon isBlackColor={isDarkModeActive} />
+      <BurgerMenuIcon
+        isOpenState={isNavigationMode}
+        isBlackColor={isDarkModeActive}
+        onClick={() => handleSwitchNavigationMode(!isNavigationMode)}
+      />
+      {isNavigationMode && <Navigation />}
     </header>
   );
 };

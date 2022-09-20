@@ -3,7 +3,6 @@ import messages from '@helpers/messages';
 import SubHeading from '@modules/common/components/SubHeading';
 import EducationList from '@modules/pages/mainPage/components/EducationList';
 import EducationDegree from '@modules/pages/mainPage/components/EducationDegree';
-import NextBlockShadow from '@modules/common/components/NextBlockShadow';
 import SimpleCarousel from '@modules/common/components/SimpleCarousel';
 
 import s from './Education.module.scss';
@@ -19,7 +18,6 @@ const Education: FC = () => {
         <EducationList />
         <EducationDegree />
       </div>
-      <NextBlockShadow colorScheme="white" />
     </article>
   );
 };

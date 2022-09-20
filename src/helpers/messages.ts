@@ -164,7 +164,6 @@ const messages = {
   BACHELOR_PHARMACY: 'Bachelor, Pharmacy/',
   BACHELOR_PHARMACY_DATE: 'sept. 2016 - Jun 2018 ',
   ALL_RIGHTS_RESERVED: 'All rights reserved/',
-  CURRENT_YEAR: '2022',
   OR: 'or',
   CERTIFICATE: 'certificate',
   SCROLL_TO_NEXT_SCREEN: 'scroll to next screen',

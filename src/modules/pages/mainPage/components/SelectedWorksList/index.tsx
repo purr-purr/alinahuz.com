@@ -1,23 +1,31 @@
-import { FC, useState } from 'react';
+import { FC, useContext, useState } from 'react';
+import AppContext from '@modules/layout/context/AppContext';
 
 import messages from '@helpers/messages';
 import { selectedWorks, SOCIALS_LINKS } from '@helpers/data';
 import SelectedWorksItem from '@modules/pages/mainPage/components/SelectedWorksItem';
 import DecorativeLink from '@modules/common/components/DecorativeLink';
+import TextLink from '@modules/common/components/TextLink';
 
 import s from './SelectedWorksList.module.scss';
-import TextLink from '@modules/common/components/TextLink';
 
 const SelectedWorksList: FC = () => {
   const [fullView, setFullView] = useState(false);
   const sliceArray = fullView ? selectedWorks : selectedWorks.slice(0, 3);
 
+  const { handleSwitchFullScreenCarouselMode, isFullScreenCarouselMode } = useContext(AppContext);
+
+  const test = (a: number) => {
+    handleSwitchFullScreenCarouselMode(a, !isFullScreenCarouselMode.isActive);
+    console.log(a);
+  };
   return (
     <>
       <ul className={s.container}>
         {sliceArray.map((item) => (
           <SelectedWorksItem
             key={item.number}
+            onClick={() => test(item.number)}
             title={item.title}
             description={item.description}
             number={item.number}
@@ -26,7 +34,6 @@ const SelectedWorksList: FC = () => {
           />
         ))}
       </ul>
-
       {fullView ? (
         <div className={s.findMore}>
           <p className={s[`findMore-text`]}>{messages.IF_YOU_WANT_YOU_CAN_FIND_MORE}</p>
@@ -40,7 +47,6 @@ const SelectedWorksList: FC = () => {
           <button className={s[`seeMore-item`]} onClick={() => setFullView(true)}>
             <TextLink text={messages.SEE_MORE_WORKS} isTextType isWhiteColorState size="md" />
           </button>
-
           <p className={s[`seeMore-desc`]}>{messages.OR}</p>
           <p className={s[`seeMore-desc`]}>{messages.SCROLL_TO_NEXT_SCREEN}</p>
         </div>
