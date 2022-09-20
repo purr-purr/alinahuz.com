@@ -17,7 +17,7 @@ const SelectedWorks: FC = () => {
         className={s.headingFigure}
       />
       <SelectedWorksList />
-      <NextBlockShadow colorScheme="white" />
+      <NextBlockShadow colorScheme="transparent" />
     </article>
   );
 };

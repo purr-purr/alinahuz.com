@@ -4,7 +4,6 @@ import SubHeading from '@modules/common/components/SubHeading';
 import ExperienceList from '@modules/pages/mainPage/components/ExperienceList';
 
 import s from './Experience.module.scss';
-import NextBlockShadow from '@modules/common/components/NextBlockShadow';
 
 const Experience: FC = () => {
   return (
@@ -14,7 +13,6 @@ const Experience: FC = () => {
         <p className={s.description}>{messages.MY_MAIN_TOOL_IS_FIGMA_I_HAVE_A_HIGH_LEVEL}</p>
         <ExperienceList />
       </div>
-      <NextBlockShadow colorScheme="black" />
     </article>
   );
 };

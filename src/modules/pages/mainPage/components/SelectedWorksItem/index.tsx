@@ -11,11 +11,12 @@ const SelectedWorksItem: FC<{
   poster: string;
   number: number;
   isReverseState?: boolean;
-}> = ({ title, description, poster, number, isReverseState = false }) => {
+  onClick?: () => void;
+}> = ({ title, description, poster, number, isReverseState = false, onClick }) => {
   const splitTitle = title.split(' ');
 
   return (
-    <li className={s.container}>
+    <li className={s.container} onClick={onClick}>
       <div className={s.poster}>
         <img src={poster} alt={`${title} ${messages.POSTER}`} />
       </div>
