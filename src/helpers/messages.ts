@@ -25,6 +25,7 @@ const messages = {
   MAIN: 'Main',
   WORKS: 'works',
   ABOUT_ME: 'About me',
+  ABOUT: 'About',
   SKILLS: 'skills',
   EDUCATION: 'education',
   EXPERIENCE: 'experience',
@@ -166,6 +167,7 @@ const messages = {
   ALL_RIGHTS_RESERVED: 'All rights reserved/',
   OR: 'or',
   CERTIFICATE: 'certificate',
+  IMPLEMENTATION: 'Implementation',
   SCROLL_TO_NEXT_SCREEN: 'scroll to next screen',
   I_HAVE_A_GREAT_DESIRE_TO_DEVELOP:
     'I have a great desire to develop and' +

@@ -8,12 +8,110 @@
   z-index: 8;
 }
 
-.carousel {
-  min-height: 100vh;
-}
-
 .closeBtn {
   position: absolute;
   top: 20px;
   right: 20px;
+}
+
+.carousel {
+  min-height: 100vh;
+
+  &-item {
+    display: flex;
+    overflow: hidden;
+    height: 100vh;
+
+    &:hover {
+      cursor: url("../../../../assets/images/cursor/cursor_carousel.svg") 50 50, pointer;
+    }
+  }
+}
+
+.info {
+  width: 50%;
+  padding: 0 20px 20px;
+  position: relative;
+  display: flex;
+
+  &-inner {
+    max-width: 544px;
+    width: 100%;
+    margin-left: auto;
+    margin-top: auto;
+    padding-left: 50px;
+  }
+}
+
+.textGroup {
+  margin-top: 50px;
+
+  &-subtitle {
+    font-family: 'Syne', sans-serif;
+    font-weight: 800;
+    font-size: 18px;
+    line-height: 22px;
+    color: $main-black-color;
+    margin-bottom: 10px;
+
+    &:first-child {
+      color: $secondary-gray-color;
+    }
+  }
+
+  &-desc {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+
+    &:first-of-type {
+      height: 154px;
+      color: $secondary-gray-color;
+      margin-bottom: 95px;
+    }
+
+    &:last-of-type {
+      height: 210px;
+    }
+  }
+}
+
+.number {
+  font-family: 'Syne', sans-serif;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 48px;
+  width: 50%;
+  position: absolute;
+  left: 28px;
+  top: 0;
+  color: $secondary-gray-color;
+}
+
+.title {
+  font-family: 'Syne', sans-serif;
+  font-weight: 800;
+  font-size: 60px;
+  line-height: 72px;
+  writing-mode: tb-rl;
+  transform: rotate(180deg);
+  position: absolute;
+  top: 0;
+  height: 100%;
+}
+
+.posters {
+  width: 50%;
+  position: relative;
+
+  img {
+    display: block;
+    width: 100%;
+  }
+}
+
+.postersCarousel {
+  position: absolute;
+  top: 0;
+  left: 0;
 }

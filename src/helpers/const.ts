@@ -1,0 +1,1 @@
+export const SIMPLE_CAROUSEL_DELAY = 3000;

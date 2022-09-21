@@ -15,17 +15,15 @@ const SelectedWorksList: FC = () => {
 
   const { handleSwitchFullScreenCarouselMode, isFullScreenCarouselMode } = useContext(AppContext);
 
-  const test = (a: number) => {
-    handleSwitchFullScreenCarouselMode(a, !isFullScreenCarouselMode.isActive);
-    console.log(a);
-  };
   return (
     <>
       <ul className={s.container}>
         {sliceArray.map((item) => (
           <SelectedWorksItem
             key={item.number}
-            onClick={() => test(item.number)}
+            onClick={() =>
+              handleSwitchFullScreenCarouselMode(item.number, !isFullScreenCarouselMode.isActive)
+            }
             title={item.title}
             description={item.description}
             number={item.number}

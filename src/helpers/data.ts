@@ -29,7 +29,7 @@ export const menuLinks = [
 
 export const educationCourses = [
   {
-    title: 'Digital Skills: User Experienc',
+    title: 'Digital Skills: User Experience',
     platform: 'FutureLearn',
     date: 2022,
   },
@@ -101,16 +101,16 @@ export const selectedWorks = [
       'chosen as accent colors for the landing page.',
     link: '#',
     screenShots: [
-      { image: screenShotsPath('web-1') },
-      { image: screenShotsPath('web-2') },
-      { image: screenShotsPath('web-3') },
+      { path: screenShotsPath('web-1') },
+      { path: screenShotsPath('web-2') },
+      { path: screenShotsPath('web-3') },
     ],
   },
   {
     poster: posterPath('poland'),
     number: 2,
     reverseState: true,
-    title: 'Delivery International Poland',
+    title: 'Delivery Poland',
     description:
       'A multi-page site for a logistics company whose main specialization' +
       ' is the provision of transport and logistics services for the B2B' +
@@ -125,9 +125,9 @@ export const selectedWorks = [
       ' as accent colors for the landing page.',
     link: '#',
     screenShots: [
-      { image: screenShotsPath('poland-1') },
-      { image: screenShotsPath('poland-2') },
-      { image: screenShotsPath('poland-3') },
+      { path: screenShotsPath('poland-1') },
+      { path: screenShotsPath('poland-2') },
+      { path: screenShotsPath('poland-3') },
     ],
   },
   {
@@ -150,9 +150,9 @@ export const selectedWorks = [
       'as accent colors for the landing page.',
     link: '#',
     screenShots: [
-      { image: screenShotsPath('delivery-1') },
-      { image: screenShotsPath('delivery-2') },
-      { image: screenShotsPath('delivery-3') },
+      { path: screenShotsPath('delivery-1') },
+      { path: screenShotsPath('delivery-2') },
+      { path: screenShotsPath('delivery-3') },
     ],
   },
   {
@@ -175,9 +175,9 @@ export const selectedWorks = [
       'chosen as accent colors for the landing page.',
     link: '#',
     screenShots: [
-      { image: screenShotsPath('fund-1') },
-      { image: screenShotsPath('fund-2') },
-      { image: screenShotsPath('fund-3') },
+      { path: screenShotsPath('fund-1') },
+      { path: screenShotsPath('fund-2') },
+      { path: screenShotsPath('fund-3') },
     ],
   },
   {
@@ -198,9 +198,9 @@ export const selectedWorks = [
       ' chosen as accent colors for the landing page.',
     link: '#',
     screenShots: [
-      { image: screenShotsPath('blash-1') },
-      { image: screenShotsPath('blash-2') },
-      { image: screenShotsPath('blash-3') },
+      { path: screenShotsPath('blash-1') },
+      { path: screenShotsPath('blash-2') },
+      { path: screenShotsPath('blash-3') },
     ],
   },
   {
@@ -222,9 +222,9 @@ export const selectedWorks = [
       ' chosen as accent colors for the landing page.',
     link: '#',
     screenShots: [
-      { image: screenShotsPath('jewelry-1') },
-      { image: screenShotsPath('jewelry-2') },
-      { image: screenShotsPath('jewelry-3') },
+      { path: screenShotsPath('jewelry-1') },
+      { path: screenShotsPath('jewelry-2') },
+      { path: screenShotsPath('jewelry-3') },
     ],
   },
   {
@@ -245,9 +245,9 @@ export const selectedWorks = [
       ' chosen as accent colors for the landing page.',
     link: '#',
     screenShots: [
-      { image: screenShotsPath('astramed-1') },
-      { image: screenShotsPath('astramed-2') },
-      { image: screenShotsPath('astramed-3') },
+      { path: screenShotsPath('astramed-1') },
+      { path: screenShotsPath('astramed-2') },
+      { path: screenShotsPath('astramed-3') },
     ],
   },
   {
@@ -271,9 +271,9 @@ export const selectedWorks = [
       ' chosen as accent colors for the landing page.',
     link: '#',
     screenShots: [
-      { image: screenShotsPath('new-year-1') },
-      { image: screenShotsPath('new-year-2') },
-      { image: screenShotsPath('new-year-3') },
+      { path: screenShotsPath('new-year-1') },
+      { path: screenShotsPath('new-year-2') },
+      { path: screenShotsPath('new-year-3') },
     ],
   },
 ];
