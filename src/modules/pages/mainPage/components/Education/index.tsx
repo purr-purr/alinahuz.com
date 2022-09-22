@@ -13,7 +13,7 @@ const Education: FC = () => {
     <article className={s.container} id="education">
       <div>
         <SubHeading text={messages.EDUCATION} isWhiteColor />
-        <SimpleCarousel picturesData={certificatePicture} />
+        <SimpleCarousel className={s.carousel} picturesData={certificatePicture} />
       </div>
       <div className={s.infoBlock}>
         <EducationList />

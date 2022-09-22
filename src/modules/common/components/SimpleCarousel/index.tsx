@@ -1,4 +1,6 @@
 import { FC, useEffect, useState } from 'react';
+import cn from 'classnames';
+
 import messages from '@helpers/messages';
 import { SIMPLE_CAROUSEL_DELAY } from '@helpers/const';
 
@@ -8,7 +10,8 @@ const SimpleCarousel: FC<{
   picturesData: {
     path: string;
   }[];
-}> = ({ picturesData }) => {
+  className?: string;
+}> = ({ picturesData, className }) => {
   const [curIndex, setCurIndex] = useState(0);
   const [isPlaying, setIsPlaying] = useState(true);
 
@@ -27,10 +30,11 @@ const SimpleCarousel: FC<{
   };
 
   return (
-    <div className={s.container}>
+    <div className={cn(s.container, className)}>
       <img
         onMouseEnter={onPlay}
         onMouseOut={onPlay}
+        className={s.item}
         key={curIndex}
         src={picturesData[curIndex].path}
         alt={messages.CERTIFICATE}

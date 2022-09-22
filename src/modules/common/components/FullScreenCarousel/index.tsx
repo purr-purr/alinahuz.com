@@ -1,5 +1,6 @@
 import { FC } from 'react';
 import Carousel from 'nuka-carousel';
+
 import { selectedWorks } from '@helpers/data';
 import messages from '@helpers/messages';
 import BurgerMenuIcon from '@modules/common/components/BurgerMenuIcon';
@@ -15,29 +16,33 @@ const FullScreenCarousel: FC<{
 }> = ({ isOpenState, burgerIconClick, activeSlide }) => {
   return (
     <div className={s.container}>
-      <div className={s.closeBtn}>
-        <BurgerMenuIcon onClick={burgerIconClick} isOpenState={isOpenState} />
-      </div>
       <Carousel className={s.carousel} withoutControls slideIndex={activeSlide}>
         {selectedWorks.map((item) => (
-          <div className={s[`carousel-item`]} key={item.number}>
-            <div className={s.info}>
-              <span className={s.number}>{item.number}</span>
-              <h3 className={s.title}>{item.title}</h3>
-              <div className={s[`info-inner`]}>
-                <TextLink text={messages.VIEW_CV} href={item.link} />
-                <dl className={s.textGroup}>
-                  <dt className={s[`textGroup-subtitle`]}>{messages.ABOUT}</dt>
-                  <dd className={s[`textGroup-desc`]}>{item.description}</dd>
-                  <dt className={s[`textGroup-subtitle`]}>{messages.IMPLEMENTATION}</dt>
-                  <dd className={s[`textGroup-desc`]}>{item.implementation}</dd>
-                </dl>
-              </div>
+          <div className={s[`carousel-inner`]} key={item.number}>
+            <div className={s.closeBtn}>
+              <BurgerMenuIcon
+                onClick={burgerIconClick}
+                isOpenState={isOpenState}
+                isBlackColor={item.isBlackState}
+              />
             </div>
-            <div className={s.posters}>
-              <img src={item.poster} alt={messages.POSTER} />
-              <div className={s.postersCarousel}>
-                <SimpleCarousel picturesData={item.screenShots} />
+            <div className={s[`carousel-item`]}>
+              <div className={s.info}>
+                <span className={s.number}>{item.number}</span>
+                <h3 className={s.title}>{item.title}</h3>
+                <div className={s[`info-inner`]}>
+                  <TextLink text={messages.VIEW_CV} href={item.link} />
+                  <dl className={s.textGroup}>
+                    <dt className={s[`textGroup-subtitle`]}>{messages.ABOUT}</dt>
+                    <dd className={s[`textGroup-desc`]}>{item.description}</dd>
+                    <dt className={s[`textGroup-subtitle`]}>{messages.IMPLEMENTATION}</dt>
+                    <dd className={s[`textGroup-desc`]}>{item.implementation}</dd>
+                  </dl>
+                </div>
+              </div>
+              <div className={s.posters}>
+                <img className={s[`posters-item`]} src={item.poster} alt={messages.POSTER} />
+                <SimpleCarousel className={s.postersCarousel} picturesData={item.screenShots} />
               </div>
             </div>
           </div>
