@@ -14,6 +14,7 @@
     height: 60px;
     background: url("../../../../assets/images/arrow_top_icon--gray.svg") no-repeat center / contain;
     z-index: 2;
+    @include floating-animation;
   }
 
   p {

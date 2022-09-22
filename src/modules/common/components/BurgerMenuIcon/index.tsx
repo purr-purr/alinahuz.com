@@ -13,7 +13,7 @@ const BurgerMenuIcon: FC<{
       onClick={onClick}
       className={cn(
         s.container,
-        { [s[`container--black`]]: isBlackColor || isOpenState },
+        { [s[`container--black`]]: isBlackColor },
         { [s[`container--open`]]: isOpenState },
       )}
     />

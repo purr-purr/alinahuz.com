@@ -1,17 +1,14 @@
 .container {
-  position: relative;
-  margin-top: 100px;
-  width: 544px;
+  width: 100%;
+  height: 100%;
+}
 
-  img {
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: 2;
-    width: 100%;
+.item {
+  z-index: 2;
+  width: 100%;
+  height: auto;
 
-    &:hover {
-      cursor: url("../../../../assets/images/cursor/cursor_pause.svg") 50 50, pointer;
-    }
+  &:hover {
+    cursor: url("../../../../assets/images/cursor/cursor_pause.svg") 50 50, pointer;
   }
 }

@@ -1,5 +1,6 @@
 import { FC } from 'react';
 import messages from '@helpers/messages';
+import { certificatePicture } from '@helpers/data';
 import SubHeading from '@modules/common/components/SubHeading';
 import EducationList from '@modules/pages/mainPage/components/EducationList';
 import EducationDegree from '@modules/pages/mainPage/components/EducationDegree';
@@ -12,7 +13,7 @@ const Education: FC = () => {
     <article className={s.container} id="education">
       <div>
         <SubHeading text={messages.EDUCATION} isWhiteColor />
-        <SimpleCarousel />
+        <SimpleCarousel className={s.carousel} picturesData={certificatePicture} />
       </div>
       <div className={s.infoBlock}>
         <EducationList />

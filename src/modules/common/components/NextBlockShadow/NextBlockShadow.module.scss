@@ -22,17 +22,5 @@
   position: absolute;
   bottom: 28px;
   left: calc((100% - 7px) / 2);
-  animation: floating 3s infinite ease-in-out;
-}
-
-@keyframes floating {
-  0% {
-    transform: translate(0, 0px);
-  }
-  50% {
-    transform: translate(0, 15px);
-  }
-  100% {
-    transform: translate(0, -0px);
-  }
+  @include floating-animation;
 }

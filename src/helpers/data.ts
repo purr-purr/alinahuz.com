@@ -29,7 +29,7 @@ export const menuLinks = [
 
 export const educationCourses = [
   {
-    title: 'Digital Skills: User Experienc',
+    title: 'Digital Skills: User Experience',
     platform: 'FutureLearn',
     date: 2022,
   },
@@ -87,6 +87,7 @@ export const selectedWorks = [
   {
     poster: posterPath('web'),
     number: 1,
+    isBlackState: true,
     reverseState: false,
     title: 'Web-dev portfolio',
     description:
@@ -99,18 +100,19 @@ export const selectedWorks = [
       ' a website with a modern minimalistic clean design.\n' +
       'The corporate colors of the project - blue and orange - were ' +
       'chosen as accent colors for the landing page.',
-    link: '#',
+    link: CV_PDF,
     screenShots: [
-      { image: screenShotsPath('web-1') },
-      { image: screenShotsPath('web-2') },
-      { image: screenShotsPath('web-3') },
+      { path: screenShotsPath('web-1') },
+      { path: screenShotsPath('web-2') },
+      { path: screenShotsPath('web-3') },
     ],
   },
   {
     poster: posterPath('poland'),
     number: 2,
+    isBlackState: false,
     reverseState: true,
-    title: 'Delivery International Poland',
+    title: 'Delivery Poland',
     description:
       'A multi-page site for a logistics company whose main specialization' +
       ' is the provision of transport and logistics services for the B2B' +
@@ -123,16 +125,17 @@ export const selectedWorks = [
       'to make a website with a modern minimalistic clean design.\n' +
       'The corporate colors of the project - blue and orange - were chosen' +
       ' as accent colors for the landing page.',
-    link: '#',
+    link: CV_PDF,
     screenShots: [
-      { image: screenShotsPath('poland-1') },
-      { image: screenShotsPath('poland-2') },
-      { image: screenShotsPath('poland-3') },
+      { path: screenShotsPath('poland-1') },
+      { path: screenShotsPath('poland-2') },
+      { path: screenShotsPath('poland-3') },
     ],
   },
   {
     poster: posterPath('delivery'),
     number: 3,
+    isBlackState: true,
     reverseState: false,
     title: 'Delivery Group',
     description:
@@ -148,16 +151,17 @@ export const selectedWorks = [
       ' a modern minimalistic clean design.\n' +
       'The corporate colors of the project - blue and orange - were chosen ' +
       'as accent colors for the landing page.',
-    link: '#',
+    link: CV_PDF,
     screenShots: [
-      { image: screenShotsPath('delivery-1') },
-      { image: screenShotsPath('delivery-2') },
-      { image: screenShotsPath('delivery-3') },
+      { path: screenShotsPath('delivery-1') },
+      { path: screenShotsPath('delivery-2') },
+      { path: screenShotsPath('delivery-3') },
     ],
   },
   {
     poster: posterPath('fund'),
     number: 4,
+    isBlackState: false,
     reverseState: true,
     title: 'Charity Fund',
     description:
@@ -173,16 +177,17 @@ export const selectedWorks = [
       'to make a website with a modern minimalistic clean design.\n' +
       'The corporate colors of the project - blue and orange - were ' +
       'chosen as accent colors for the landing page.',
-    link: '#',
+    link: CV_PDF,
     screenShots: [
-      { image: screenShotsPath('fund-1') },
-      { image: screenShotsPath('fund-2') },
-      { image: screenShotsPath('fund-3') },
+      { path: screenShotsPath('fund-1') },
+      { path: screenShotsPath('fund-2') },
+      { path: screenShotsPath('fund-3') },
     ],
   },
   {
     poster: posterPath('blash'),
     number: 5,
+    isBlackState: true,
     reverseState: false,
     title: 'Blash Vintage',
     description:
@@ -196,16 +201,17 @@ export const selectedWorks = [
       ' to make a website with a modern minimalistic clean design.\n' +
       'The corporate colors of the project - blue and orange - were' +
       ' chosen as accent colors for the landing page.',
-    link: '#',
+    link: CV_PDF,
     screenShots: [
-      { image: screenShotsPath('blash-1') },
-      { image: screenShotsPath('blash-2') },
-      { image: screenShotsPath('blash-3') },
+      { path: screenShotsPath('blash-1') },
+      { path: screenShotsPath('blash-2') },
+      { path: screenShotsPath('blash-3') },
     ],
   },
   {
     poster: posterPath('jewelry'),
     number: 6,
+    isBlackState: false,
     reverseState: true,
     title: 'Jewelry.UA',
     description:
@@ -222,14 +228,15 @@ export const selectedWorks = [
       ' chosen as accent colors for the landing page.',
     link: '#',
     screenShots: [
-      { image: screenShotsPath('jewelry-1') },
-      { image: screenShotsPath('jewelry-2') },
-      { image: screenShotsPath('jewelry-3') },
+      { path: screenShotsPath('jewelry-1') },
+      { path: screenShotsPath('jewelry-2') },
+      { path: screenShotsPath('jewelry-3') },
     ],
   },
   {
     poster: posterPath('astramed'),
     number: 7,
+    isBlackState: true,
     reverseState: false,
     title: 'Astramed',
     description:
@@ -243,16 +250,17 @@ export const selectedWorks = [
       ' to make a website with a modern minimalistic clean design.\n' +
       'The corporate colors of the project - blue and orange - were' +
       ' chosen as accent colors for the landing page.',
-    link: '#',
+    link: CV_PDF,
     screenShots: [
-      { image: screenShotsPath('astramed-1') },
-      { image: screenShotsPath('astramed-2') },
-      { image: screenShotsPath('astramed-3') },
+      { path: screenShotsPath('astramed-1') },
+      { path: screenShotsPath('astramed-2') },
+      { path: screenShotsPath('astramed-3') },
     ],
   },
   {
     poster: posterPath('new-year'),
     number: 8,
+    isBlackState: false,
     reverseState: true,
     title: 'New-Year Company',
     description:
@@ -269,11 +277,11 @@ export const selectedWorks = [
       ' minimalistic clean design.\n' +
       'The corporate colors of the project - blue and orange - were' +
       ' chosen as accent colors for the landing page.',
-    link: '#',
+    link: CV_PDF,
     screenShots: [
-      { image: screenShotsPath('new-year-1') },
-      { image: screenShotsPath('new-year-2') },
-      { image: screenShotsPath('new-year-3') },
+      { path: screenShotsPath('new-year-1') },
+      { path: screenShotsPath('new-year-2') },
+      { path: screenShotsPath('new-year-3') },
     ],
   },
 ];
@@ -281,35 +289,74 @@ export const selectedWorks = [
 export const experience = [
   {
     title: messages.UI_UX_DESIGNER,
-    workInfo: messages.WORK_EXPERIENCE_1,
+    workInfo: 'Freelance / February 2021 - April 2022',
     responsibilities: [
-      messages.WORK_EXPERIENCE_1_RESPONSIBILITIES_ITEM_1,
-      messages.WORK_EXPERIENCE_1_RESPONSIBILITIES_ITEM_2,
-      messages.WORK_EXPERIENCE_1_RESPONSIBILITIES_ITEM_3,
-      messages.WORK_EXPERIENCE_1_RESPONSIBILITIES_ITEM_4,
+      'Communication with clients, briefing, analysis of the received data, implementation of personas, ' +
+        'user flow cards, prediction of interaction scenarios, analysis of the target audience and competitors,' +
+        ' determination of the goals and objectives of the project;',
+      'Creation of moodboards and concepts, prototyping and quick sketching;',
+      'Development of design of landings, banners, multi-page sites, logos;\n',
+      'Presentation of your work, preparation of files for layout, collaboration ' +
+        'with Frontend developer.',
     ],
-    achievements: messages.WORK_EXPERIENCE_1_ACHIEVEMENTS,
+    achievements:
+      'During this period of time, I developed completely different types' +
+      ' of sites for different business areas. I can say that I am proud ' +
+      'of myself, because my clients are people to whom I was advised as a ' +
+      'good specialist by my previous clients. Also, for the first time, I ' +
+      'showed myself as a mentor for a novice designer.',
   },
   {
     title: messages.UI_UX_DESIGNER,
-    workInfo: messages.WORK_EXPERIENCE_2,
+    workInfo: '“Delivery group” (Kyiv, Ukraine) Contract / July 2020 - February 2021 ',
     responsibilities: [
-      messages.WORK_EXPERIENCE_2_RESPONSIBILITIES_ITEM_1,
-      messages.WORK_EXPERIENCE_2_RESPONSIBILITIES_ITEM_2,
-      messages.WORK_EXPERIENCE_2_RESPONSIBILITIES_ITEM_3,
-      messages.WORK_EXPERIENCE_2_RESPONSIBILITIES_ITEM_4,
-      messages.WORK_EXPERIENCE_2_RESPONSIBILITIES_ITEM_5,
+      'Communication with clients, briefing, analysis of the received data, ' +
+        'analysis of the target audience and competitors, determination of' +
+        ' the goals and objectives of the project, development of site' +
+        ' architecture, interaction scenarios;\n',
+      'Collection of information among employees of the main office of the' +
+        ' company, who were also part of the target audience;\n',
+      'Development and testing of ' + 'a prototype;\n',
+      'Development of design of multi-page sites, banners, redesign;\n',
+      'Presentation of your work directly to the product owner, preparation ' +
+        'of files for layout, collaboration with Frontend developer and digital manager.',
     ],
-    achievements: messages.WORK_EXPERIENCE_2_ACHIEVEMENTS,
+    achievements:
+      'I am proud of myself, because in this position I was able to make one ' +
+      'site, which can be characterized as modern, convenient, and' +
+      ' user-friendly, from two old, too voluminous sites, with many' +
+      ' pages that lead nowhere. The number of pages has decreased several' +
+      ' times without losing information.\n' +
+      'Despite the fact that the site has about 20 thousand visits per' +
+      ' day, the office has a whole service department whose main task is ' +
+      'to answer questions from all customers, support VIP customers and ' +
+      'create orders over the phone. Therefore, my redesign helped not' +
+      ' only to improve the appearance of the site, but also to create ' +
+      'a truly functional service for all users.\n' +
+      'The conversion increased and he got a lot of positive feedback from' +
+      ' regular users. This site was not only informational, but also had' +
+      ' significant functionality (business area - delivery of goods ' +
+      'throughout the country, therefore there were various types of ' +
+      'delivery order forms), which I managed to improve with the help of ' +
+      'UX research.',
   },
   {
     title: messages.UI_UX_DESIGNER,
-    workInfo: messages.WORK_EXPERIENCE_3,
+    workInfo: 'Freelance / March 2020 - July 2020',
     responsibilities: [
-      messages.WORK_EXPERIENCE_3_RESPONSIBILITIES_ITEM_1,
-      messages.WORK_EXPERIENCE_3_RESPONSIBILITIES_ITEM_2,
-      messages.WORK_EXPERIENCE_3_RESPONSIBILITIES_ITEM_3,
+      'Communication with clients, briefing, analysis of the received data,' +
+        ' analysis of the target audience and competitors, determination of' +
+        ' the goals and objectives of the project;',
+      'Development of design for landing pages, banners, multi-page sites,' + ' redesign;',
+      'Presentation of your work, preparation of files for layout, ' +
+        'collaboration with Frontend developer.',
     ],
-    achievements: messages.WORK_EXPERIENCE_3_ACHIEVEMENTS,
+    achievements:
+      'I redesigned the website of a logistics company, doing a complete ' +
+      'rethinking of the old design. As a result, the company received' +
+      ' an updated user-friendly website with clear functionality for ' +
+      'ordering auto transportation; and my work was evaluated after ' +
+      'the completion of the project, I was offered a contract to ' +
+      'redesign two more company sites.',
   },
 ];
