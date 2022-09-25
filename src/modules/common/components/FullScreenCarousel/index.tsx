@@ -26,6 +26,7 @@ const FullScreenCarousel: FC<{
                 isBlackColor={item.isBlackState}
               />
             </div>
+
             <div className={s[`carousel-item`]}>
               <div className={s.info}>
                 <span className={s.number}>{item.number}</span>

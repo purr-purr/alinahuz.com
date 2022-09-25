@@ -49,5 +49,11 @@ module.exports = {
     '@typescript-eslint/no-unused-expressions': 0,
     '@typescript-eslint/no-unused-vars': 0,
     '@typescript-eslint/naming-convention': 0,
+    'prettier/prettier': [
+      'error',
+      {
+        endOfLine: 'auto',
+      },
+    ],
   },
 };
