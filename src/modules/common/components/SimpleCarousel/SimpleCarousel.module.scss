@@ -12,3 +12,7 @@
     cursor: url("../../../../assets/images/cursor/cursor_pause.svg") 50 50, pointer;
   }
 }
+
+.hideMouseEvents {
+  pointer-events: none;
+}

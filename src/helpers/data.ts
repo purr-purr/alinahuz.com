@@ -1,5 +1,9 @@
 import messages from '@helpers/messages';
 
+export const openCvPdf = () => {
+  window.open('../Alina_Huz_UI_UX_designer_CV.pdf');
+};
+
 export const posterPath = (path: string) => {
   return require(`@assets/images/selectedWorks/posters/poster_${path}.jpg`).default;
 };
@@ -62,8 +66,6 @@ export const SOCIALS_LINKS = {
   mail: 'mailto:alina.huz.design@gmail.com',
 };
 
-export const CV_PDF = '/cv.pdf';
-
 export const contactsLinks = [
   {
     title: messages.MAIL_ME,
@@ -100,7 +102,7 @@ export const selectedWorks = [
       ' a website with a modern minimalistic clean design.\n' +
       'The corporate colors of the project - blue and orange - were ' +
       'chosen as accent colors for the landing page.',
-    link: CV_PDF,
+    link: '',
     screenShots: [
       { path: screenShotsPath('web-1') },
       { path: screenShotsPath('web-2') },
@@ -125,7 +127,7 @@ export const selectedWorks = [
       'to make a website with a modern minimalistic clean design.\n' +
       'The corporate colors of the project - blue and orange - were chosen' +
       ' as accent colors for the landing page.',
-    link: CV_PDF,
+    link: '',
     screenShots: [
       { path: screenShotsPath('poland-1') },
       { path: screenShotsPath('poland-2') },
@@ -151,7 +153,7 @@ export const selectedWorks = [
       ' a modern minimalistic clean design.\n' +
       'The corporate colors of the project - blue and orange - were chosen ' +
       'as accent colors for the landing page.',
-    link: CV_PDF,
+    link: '',
     screenShots: [
       { path: screenShotsPath('delivery-1') },
       { path: screenShotsPath('delivery-2') },
@@ -177,7 +179,7 @@ export const selectedWorks = [
       'to make a website with a modern minimalistic clean design.\n' +
       'The corporate colors of the project - blue and orange - were ' +
       'chosen as accent colors for the landing page.',
-    link: CV_PDF,
+    link: '',
     screenShots: [
       { path: screenShotsPath('fund-1') },
       { path: screenShotsPath('fund-2') },
@@ -201,7 +203,7 @@ export const selectedWorks = [
       ' to make a website with a modern minimalistic clean design.\n' +
       'The corporate colors of the project - blue and orange - were' +
       ' chosen as accent colors for the landing page.',
-    link: CV_PDF,
+    link: '',
     screenShots: [
       { path: screenShotsPath('blash-1') },
       { path: screenShotsPath('blash-2') },
@@ -250,7 +252,7 @@ export const selectedWorks = [
       ' to make a website with a modern minimalistic clean design.\n' +
       'The corporate colors of the project - blue and orange - were' +
       ' chosen as accent colors for the landing page.',
-    link: CV_PDF,
+    link: '',
     screenShots: [
       { path: screenShotsPath('astramed-1') },
       { path: screenShotsPath('astramed-2') },
@@ -277,7 +279,7 @@ export const selectedWorks = [
       ' minimalistic clean design.\n' +
       'The corporate colors of the project - blue and orange - were' +
       ' chosen as accent colors for the landing page.',
-    link: CV_PDF,
+    link: '',
     screenShots: [
       { path: screenShotsPath('new-year-1') },
       { path: screenShotsPath('new-year-2') },

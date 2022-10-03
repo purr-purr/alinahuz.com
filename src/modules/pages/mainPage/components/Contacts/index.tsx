@@ -13,7 +13,7 @@ const Contacts: FC = () => {
       <ul className={s.links}>
         {contactsLinks.map((item) => (
           <li key={item.title}>
-            <DecorativeLink isExternalLink text={item.title} href={item.href} />
+            <DecorativeLink text={item.title} href={item.href} />
           </li>
         ))}
       </ul>

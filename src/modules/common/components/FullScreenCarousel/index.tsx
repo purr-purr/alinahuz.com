@@ -32,7 +32,7 @@ const FullScreenCarousel: FC<{
                 <span className={s.number}>{item.number}</span>
                 <h3 className={s.title}>{item.title}</h3>
                 <div className={s[`info-inner`]}>
-                  <TextLink text={messages.VIEW_CV} href={item.link} />
+                  <TextLink text={messages.VIEW_PROJECT} href={item.link} />
                   <dl className={s.textGroup}>
                     <dt className={s[`textGroup-subtitle`]}>{messages.ABOUT}</dt>
                     <dd className={s[`textGroup-desc`]}>{item.description}</dd>
@@ -43,7 +43,11 @@ const FullScreenCarousel: FC<{
               </div>
               <div className={s.posters}>
                 <img className={s[`posters-item`]} src={item.poster} alt={messages.POSTER} />
-                <SimpleCarousel className={s.postersCarousel} picturesData={item.screenShots} />
+                <SimpleCarousel
+                  isPauseOff
+                  className={s.postersCarousel}
+                  picturesData={item.screenShots}
+                />
               </div>
             </div>
           </div>

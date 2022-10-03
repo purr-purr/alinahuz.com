@@ -31,6 +31,7 @@ const messages = {
   EXPERIENCE: 'experience',
   CONTACTS: 'Contacts',
   VIEW_CV: 'View CV',
+  VIEW_PROJECT: 'View project',
   MAIL_ME: 'mail me',
   I_DECIDED_TO_BECOME_A_DESIGNER:
     'I decided to become a designer because I' +
@@ -96,10 +97,9 @@ const messages = {
   BACHELOR_PHARMACY: 'Bachelor, Pharmacy/',
   BACHELOR_PHARMACY_DATE: 'sept. 2016 - Jun 2018 ',
   ALL_RIGHTS_RESERVED: 'All rights reserved/',
-  OR: 'or',
   CERTIFICATE: 'certificate',
   IMPLEMENTATION: 'Implementation',
-  SCROLL_TO_NEXT_SCREEN: 'scroll to next screen',
+  SCROLL_TOP: 'Scroll top',
   I_HAVE_A_GREAT_DESIRE_TO_DEVELOP:
     'I have a great desire to develop and' +
     ' gain' +

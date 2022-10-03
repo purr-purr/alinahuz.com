@@ -11,7 +11,8 @@ const SimpleCarousel: FC<{
     path: string;
   }[];
   className?: string;
-}> = ({ picturesData, className }) => {
+  isPauseOff?: boolean;
+}> = ({ picturesData, className, isPauseOff = false }) => {
   const [curIndex, setCurIndex] = useState(0);
   const [isPlaying, setIsPlaying] = useState(true);
 
@@ -26,7 +27,7 @@ const SimpleCarousel: FC<{
   }, [curIndex, isPlaying]);
 
   const onPlay = () => {
-    setIsPlaying(!isPlaying);
+    return !isPauseOff && setIsPlaying(!isPlaying);
   };
 
   return (
@@ -34,7 +35,7 @@ const SimpleCarousel: FC<{
       <img
         onMouseEnter={onPlay}
         onMouseOut={onPlay}
-        className={s.item}
+        className={cn(s.item, isPauseOff && [s.hideMouseEvents])}
         key={curIndex}
         src={picturesData[curIndex].path}
         alt={messages.CERTIFICATE}

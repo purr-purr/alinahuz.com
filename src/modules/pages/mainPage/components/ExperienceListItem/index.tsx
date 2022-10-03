@@ -17,7 +17,7 @@ const ExperienceListItem: FC<{
 
       <details className={s.desc}>
         <summary className={s[`desc-heading`]}>
-          <TextLink text={messages.RESPONSIBILITIES_AND_ACHIEVEMENTS} isTextType />
+          <TextLink text={messages.RESPONSIBILITIES_AND_ACHIEVEMENTS} type="text" />
         </summary>
 
         <dl className={s[`desc-list`]}>

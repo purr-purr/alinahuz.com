@@ -4,6 +4,8 @@
   padding-bottom: 8px;
   width: fit-content;
   cursor: pointer;
+  border: none;
+  background-color: transparent;
   transition: all 0.5s linear;
 
   &:before,
@@ -34,7 +36,7 @@
     transition: all 0.5s ease-in-out;
 
     &:before {
-      width: 16px;
+      width: 0;
       transition: all 0.5s ease-in-out;
     }
 
@@ -63,7 +65,7 @@
       padding-right: 40px;
 
       &:before {
-        width: 24px;
+        width: 0;
       }
 
       &:after {
