@@ -16,6 +16,11 @@
   width: 49%;
   min-width: 49%;
   height: 100%;
+  margin-left: auto;
+
+  &--reverse {
+    margin-right: auto;
+  }
 
   img {
     display: block;

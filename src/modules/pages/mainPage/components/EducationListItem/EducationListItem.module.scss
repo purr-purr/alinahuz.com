@@ -3,8 +3,36 @@
   flex-direction: column;
   width: 262px;
   height: 280px;
-  border: 2px solid $full-white-color;
+  position: relative;
+  
+  &:hover .shape1,
+  &:hover .shape2 {
+    stroke-dashoffset: 0;
+    stroke-dasharray: 1600;
+  }
+}
+
+.inner {
   padding: 28px 18px;
+  position: absolute;
+}
+
+.shape1,
+.shape2 {
+  stroke-dasharray: 1600;
+  stroke-width: 4px;
+  fill: transparent;
+  stroke: $full-white-color;
+  transition-timing-function: linear;
+  transition: stroke-dashoffset 4s, stroke-dasharray 4s;
+}
+
+.shape1 {
+  stroke-dashoffset: 1600;
+}
+
+.shape2 {
+  stroke-dashoffset: -1600;
 }
 
 .title {

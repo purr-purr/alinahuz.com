@@ -47,12 +47,12 @@ const Layout: FC = ({ children }) => {
   return (
     <main className={s.container}>
       <AppContext.Provider value={context}>
+        <Header
+          isDarkModeActive={isDarkMode || isNavigationMode}
+          isHideLogo={window.scrollY > 700 || pathname === '/404'}
+        />
         {pathname !== '/404' ? (
           <>
-            <Header
-              isDarkModeActive={isDarkMode || isNavigationMode}
-              isHideLogo={window.scrollY > 700}
-            />
             <section className={s.section}>{children}</section>
 
             {isFullScreenCarouselMode.isActive && (

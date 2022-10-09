@@ -1,7 +1,6 @@
-import { FC, useContext, useEffect, useState } from 'react';
+import { FC, useEffect, useState } from 'react';
 
 import AsideIntroduce from '@modules/pages/mainPage/components/AsideIntroduce';
-import AppContext from '@modules/layout/context/AppContext';
 import messages from 'src/helpers/messages';
 
 // @ts-ignore
@@ -26,11 +25,11 @@ const MainScreen: FC = () => {
 
   const isSecondScreen = scrollPosition >= 700;
 
-  const { handleSwitchDarkMode } = useContext(AppContext);
-
-  useEffect(() => {
-    isSecondScreen ? handleSwitchDarkMode(true) : handleSwitchDarkMode(false);
-  }, [scrollPosition]);
+  // const { handleSwitchDarkMode } = useContext(AppContext);
+  //
+  // useEffect(() => {
+  //   isSecondScreen ? handleSwitchDarkMode(true) : handleSwitchDarkMode(false);
+  // }, [scrollPosition]);
 
   return (
     <article className={s.container}>

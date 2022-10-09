@@ -9,7 +9,7 @@ const TextLink: FC<{
   href?: string;
   type?: 'button' | 'link' | 'text';
   isWhiteColorState?: boolean;
-  size?: 'sm' | 'md';
+  size?: 'sm' | 'md' | 'xs';
   onClick?: () => void;
 }> = ({ text, href, onClick, isWhiteColorState = false, size = 'sm', type = 'link' }) => {
   const classNameList = cn(
