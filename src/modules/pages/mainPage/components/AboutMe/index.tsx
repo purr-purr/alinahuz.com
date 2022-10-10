@@ -1,13 +1,13 @@
-import { FC } from 'react';
+import { forwardRef } from 'react';
 
 import messages from '@helpers/messages';
 import MainHeading from '@modules/common/components/MainHeading';
 
 import s from './AboutMe.module.scss';
 
-const AboutMe: FC = () => {
+const AboutMe = forwardRef<HTMLDivElement>((props, ref) => {
   return (
-    <article className={s.container} id="about">
+    <article ref={ref} className={s.container} id="about">
       <MainHeading text={messages.ABOUT_ME} isWhiteColor maxWidth={815} />
       <p className={s.description}>{messages.I_DECIDED_TO_BECOME_A_DESIGNER}</p>
 
@@ -24,5 +24,5 @@ const AboutMe: FC = () => {
       </ul>
     </article>
   );
-};
+});
 export default AboutMe;

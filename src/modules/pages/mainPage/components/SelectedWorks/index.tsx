@@ -1,4 +1,4 @@
-import { FC } from 'react';
+import { forwardRef } from 'react';
 
 import messages from '@helpers/messages';
 import MainHeading from '@modules/common/components/MainHeading';
@@ -6,9 +6,9 @@ import SelectedWorksList from '@modules/pages/mainPage/components/SelectedWorksL
 
 import s from './SelectedWorks.module.scss';
 
-const SelectedWorks: FC = () => {
+const SelectedWorks = forwardRef<HTMLDivElement>((props, ref) => {
   return (
-    <article className={s.container} id="works">
+    <article ref={ref} className={s.container} id="works">
       <MainHeading
         text={messages.SELECTED_WORKS}
         isWhiteColor
@@ -18,5 +18,5 @@ const SelectedWorks: FC = () => {
       <SelectedWorksList />
     </article>
   );
-};
+});
 export default SelectedWorks;
