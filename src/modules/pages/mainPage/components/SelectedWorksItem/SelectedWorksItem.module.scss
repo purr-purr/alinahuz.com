@@ -6,6 +6,7 @@
   margin-left: auto;
   margin-right: auto;
   background-color: $main-gray-color;
+  cursor: pointer;
 
   &:not(:last-of-type) {
     margin-bottom: 200px;
@@ -13,8 +14,8 @@
 }
 
 .poster {
-  width: 49%;
-  min-width: 49%;
+  width: 50%;
+  min-width: 50%;
   height: 100%;
   margin-left: auto;
 

@@ -1,4 +1,4 @@
-import { FC, useContext, useState } from 'react';
+import { useContext, useState } from 'react';
 import AppContext from '@modules/layout/context/AppContext';
 
 import messages from '@helpers/messages';
@@ -9,7 +9,7 @@ import TextLink from '@modules/common/components/TextLink';
 
 import s from './SelectedWorksList.module.scss';
 
-const SelectedWorksList: FC = () => {
+const SelectedWorksList = () => {
   const [fullView, setFullView] = useState(false);
   const sliceArray = fullView ? selectedWorks : selectedWorks.slice(0, 3);
 

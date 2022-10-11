@@ -17,6 +17,10 @@ const Layout: FC = ({ children }) => {
     isActive: false,
   });
 
+  useEffect(() => {
+    window.scrollTo({ top: 0, behavior: 'auto' });
+  }, []);
+
   const handleSwitchDarkMode = useCallback((value: boolean) => {
     setIsDarkMode(value);
   }, []);

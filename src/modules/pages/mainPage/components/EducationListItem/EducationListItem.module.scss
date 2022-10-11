@@ -4,12 +4,6 @@
   width: 262px;
   height: 280px;
   position: relative;
-  
-  &:hover .shape1,
-  &:hover .shape2 {
-    stroke-dashoffset: 0;
-    stroke-dasharray: 1600;
-  }
 }
 
 .inner {
@@ -33,6 +27,12 @@
 
 .shape2 {
   stroke-dashoffset: -1600;
+}
+
+.active .shape1,
+.active .shape2 {
+  stroke-dashoffset: 0;
+  stroke-dasharray: 1600;
 }
 
 .title {

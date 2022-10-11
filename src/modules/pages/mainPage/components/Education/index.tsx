@@ -8,7 +8,11 @@ import SimpleCarousel from '@modules/common/components/SimpleCarousel';
 
 import s from './Education.module.scss';
 
-const Education = forwardRef<HTMLDivElement>((props, ref) => {
+interface IEducation {
+  isActive: boolean;
+}
+
+const Education = forwardRef<HTMLDivElement, IEducation>((props, ref) => {
   return (
     <article ref={ref} className={s.container} id="education">
       <div>
@@ -16,7 +20,7 @@ const Education = forwardRef<HTMLDivElement>((props, ref) => {
         <SimpleCarousel className={s.carousel} picturesData={certificatePicture} />
       </div>
       <div className={s.infoBlock}>
-        <EducationList />
+        <EducationList isActive={props.isActive} />
         <EducationDegree />
       </div>
     </article>

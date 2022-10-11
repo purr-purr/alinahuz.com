@@ -1,5 +1,7 @@
 const messages = {
   UI_UX_DESIGNER: 'UI/UX Designer',
+  JUNIOR_UI_UX_DESIGNER: 'Junior UI/UX Designer',
+  WEB_DESIGNER: 'Web Designer',
   BASED_IN_IRELAND: 'based in Ireland',
   HELLO: 'Hello!',
   MY_NAME_IS_ALINA_HUZ_AND_I: 'My name is Alina Huz and I',

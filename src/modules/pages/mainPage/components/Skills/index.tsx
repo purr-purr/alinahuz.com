@@ -1,4 +1,4 @@
-import { FC } from 'react';
+import { forwardRef } from 'react';
 import { openCvPdf } from '@helpers/data';
 import messages from '@helpers/messages';
 
@@ -7,9 +7,9 @@ import SubHeading from '@modules/common/components/SubHeading';
 
 import s from './Skills.module.scss';
 
-const Skills: FC = () => {
+const Skills = forwardRef<HTMLDivElement>((props, ref) => {
   return (
-    <article className={s.container} id="skills">
+    <article ref={ref} className={s.container} id="skills">
       <SubHeading text={messages.SKILLS} />
       <div className={s.infoBlock}>
         <p className={s.description}>{messages.MY_MAIN_TOOL_IS_FIGMA_I_HAVE_A_HIGH_LEVEL}</p>
@@ -17,5 +17,5 @@ const Skills: FC = () => {
       </div>
     </article>
   );
-};
+});
 export default Skills;

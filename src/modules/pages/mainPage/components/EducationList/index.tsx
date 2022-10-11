@@ -5,11 +5,13 @@ import EducationListItem from '@modules/pages/mainPage/components/EducationListI
 
 import s from './EducationList.module.scss';
 
-const EducationList: FC = () => {
+const EducationList: FC<{ isActive: boolean }> = ({ isActive }) => {
   return (
     <ul className={s.container}>
-      {educationCourses.map((item) => (
+      {educationCourses.map((item, index) => (
         <EducationListItem
+          isActive={isActive}
+          id={index}
           key={item.title}
           title={item.title}
           platform={item.platform}

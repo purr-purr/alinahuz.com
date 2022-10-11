@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react';
 
-const useOnScreen = (ref: any) => {
+const useOnScreen = (ref: any, threshold?: number) => {
   const [isIntersecting, setIntersecting] = useState(false);
 
   const windowHeight = window.innerHeight - 50;
@@ -12,6 +12,7 @@ const useOnScreen = (ref: any) => {
     },
     {
       rootMargin: windowRootMargin,
+      threshold: threshold,
     },
   );
 
@@ -23,6 +24,10 @@ const useOnScreen = (ref: any) => {
   }, []);
 
   return isIntersecting;
+};
+
+useOnScreen.defaultProps = {
+  threshold: 1,
 };
 
 export default useOnScreen;

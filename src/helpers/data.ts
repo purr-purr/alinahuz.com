@@ -290,7 +290,7 @@ export const selectedWorks = [
 
 export const experience = [
   {
-    title: messages.UI_UX_DESIGNER,
+    title: messages.JUNIOR_UI_UX_DESIGNER,
     workInfo: 'Freelance / February 2021 - April 2022',
     responsibilities: [
       'Communication with clients, briefing, analysis of the received data, implementation of personas, ' +
@@ -309,7 +309,7 @@ export const experience = [
       'showed myself as a mentor for a novice designer.',
   },
   {
-    title: messages.UI_UX_DESIGNER,
+    title: messages.JUNIOR_UI_UX_DESIGNER,
     workInfo: '“Delivery group” (Kyiv, Ukraine) Contract / July 2020 - February 2021 ',
     responsibilities: [
       'Communication with clients, briefing, analysis of the received data, ' +
@@ -343,7 +343,7 @@ export const experience = [
       'UX research.',
   },
   {
-    title: messages.UI_UX_DESIGNER,
+    title: messages.WEB_DESIGNER,
     workInfo: 'Freelance / March 2020 - July 2020',
     responsibilities: [
       'Communication with clients, briefing, analysis of the received data,' +
