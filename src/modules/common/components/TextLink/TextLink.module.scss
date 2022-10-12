@@ -4,6 +4,8 @@
   padding-bottom: 8px;
   width: fit-content;
   cursor: pointer;
+  border: none;
+  background-color: transparent;
   transition: all 0.5s linear;
 
   &:before,
@@ -34,7 +36,7 @@
     transition: all 0.5s ease-in-out;
 
     &:before {
-      width: 16px;
+      width: 0;
       transition: all 0.5s ease-in-out;
     }
 
@@ -80,7 +82,7 @@
       padding-right: 40px;
 
       &:before {
-        width: 24px;
+        width: 0;
       }
 
       &:after {
@@ -96,12 +98,32 @@
     padding-right: 18px;
   }
 
+  &--xs {
+    font-size: 14px;
+    line-height: 17px;
+    padding-right: 18px;
+
+    &:after {
+      top: 5px;
+    }
+  }
+
   &--white {
     color: $full-white-color;
 
     &:before {
       height: 2px;
       background-color: $full-white-color;
+    }
+
+    &:after {
+      background-image: url('../../../../assets/images/arrow_right_icon--white-medium.svg');
+    }
+
+    &:hover {
+      &:after {
+        background-image: url('../../../../assets/images/arrow_right_icon--white-long-medium.svg');
+      }
     }
   }
 }
