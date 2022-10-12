@@ -17,7 +17,7 @@ const SelectedWorksItem: FC<{
 
   return (
     <li className={s.container} onClick={onClick}>
-      <div className={s.poster}>
+      <div className={cn(s.poster, { [s[`poster--reverse`]]: isReverseState })}>
         <img src={poster} alt={`${title} ${messages.POSTER}`} />
       </div>
       <div className={cn(s.info, { [s[`info--reverse`]]: isReverseState })}>

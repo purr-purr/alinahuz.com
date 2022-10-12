@@ -5,18 +5,6 @@
   background-color: $main-black-color;
   position: relative;
 
-  &:before {
-    content: '';
-    position: absolute;
-    left: 28px;
-    bottom: 28px;
-    width: 7px;
-    height: 60px;
-    background: url("../../../../assets/images/arrow_top_icon--gray.svg") no-repeat center / contain;
-    z-index: 2;
-    @include floating-animation;
-  }
-
   p {
     font-weight: 400;
     font-size: 14px;
@@ -27,4 +15,17 @@
   span {
     font-weight: 700;
   }
+}
+
+.scrollTop {
+  background-color: transparent;
+  border: none;
+  padding: 10px;
+  position: absolute;
+  left: 18px;
+  bottom: 18px;
+  width: 27px;
+  height: 80px;
+  z-index: 2;
+  @include floating-animation;
 }

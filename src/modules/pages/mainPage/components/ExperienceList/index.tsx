@@ -1,10 +1,9 @@
-import { FC } from 'react';
-import ExperienceListItem from '@modules/pages/mainPage/components/ExperienceListItem';
 import { experience } from '@helpers/data';
+import ExperienceListItem from '@modules/pages/mainPage/components/ExperienceListItem';
 
 import s from './ExperienceList.module.scss';
 
-const ExperienceList: FC = () => {
+const ExperienceList = () => {
   return (
     <ul className={s.container}>
       {experience.map((item, index) => (

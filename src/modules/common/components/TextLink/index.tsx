@@ -1,35 +1,33 @@
 import { FC } from 'react';
-import { Link } from 'react-router-dom';
 import cn from 'classnames';
+import { Link } from 'react-router-dom';
 
 import s from './TextLink.module.scss';
 
 const TextLink: FC<{
   text: string;
   href?: string;
-  isTextType?: boolean;
+  type?: 'button' | 'link' | 'text';
   isWhiteColorState?: boolean;
-  size?: 'sm' | 'md';
-}> = ({ text, href, isTextType = false, isWhiteColorState = false, size = 'sm' }) => {
-  return isTextType ? (
-    <p
-      className={cn(
-        s.container,
-        isWhiteColorState && s[`container--white`],
-        size && s[`container--${size}`],
-      )}
-    >
+  size?: 'sm' | 'md' | 'xs';
+  onClick?: () => void;
+}> = ({ text, href, onClick, isWhiteColorState = false, size = 'sm', type = 'link' }) => {
+  const classNameList = cn(
+    s.container,
+    isWhiteColorState && s[`container--white`],
+    size && s[`container--${size}`],
+  );
+
+  return type === 'button' ? (
+    <button className={classNameList} onClick={onClick}>
+      {text}
+    </button>
+  ) : type === 'text' ? (
+    <p className={classNameList} onClick={onClick}>
       {text}
     </p>
   ) : (
-    <Link
-      className={cn(
-        s.container,
-        isWhiteColorState && s[`container--white`],
-        size && s[`container--${size}`],
-      )}
-      to={href ? href : ''}
-    >
+    <Link className={classNameList} to={href ? href : ''} onClick={onClick}>
       {text}
     </Link>
   );

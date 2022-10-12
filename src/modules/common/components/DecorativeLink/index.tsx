@@ -1,6 +1,5 @@
 import { FC } from 'react';
-import { HashLink as Link } from 'react-router-hash-link';
-
+import { HashLink } from 'react-router-hash-link';
 import cn from 'classnames';
 
 import s from './DecorativeLink.module.scss';
@@ -11,24 +10,16 @@ const DecorativeLink: FC<{
   isExternalLink?: boolean;
   isBlackColorState?: boolean;
   onClick?: () => void;
-}> = ({ text, href, isExternalLink = false, isBlackColorState = false, onClick }) => {
+}> = ({ text, href, isExternalLink = true, isBlackColorState = false, onClick }) => {
+  const classNameList = cn(s.container, { [s[`container--black`]]: isBlackColorState });
   return isExternalLink ? (
-    <a
-      className={cn(s.container, { [s[`container--black`]]: isBlackColorState })}
-      href={href}
-      target="_blank"
-      onClick={onClick}
-    >
+    <a className={classNameList} href={href} onClick={onClick} target="_blank">
       {text}
     </a>
   ) : (
-    <Link
-      className={cn(s.container, { [s[`container--black`]]: isBlackColorState })}
-      to={href}
-      onClick={onClick}
-    >
+    <HashLink className={classNameList} to={href} onClick={onClick}>
       {text}
-    </Link>
+    </HashLink>
   );
 };
 export default DecorativeLink;
