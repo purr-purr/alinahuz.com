@@ -23,4 +23,16 @@
   font-size: 28px;
   line-height: 1.2;
   color: $full-white-color;
+
+  @include media-laptop {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 22px;
+  }
+
+  @include media-mobile {
+    font-size: 14px;
+    line-height: 17px;
+    margin-bottom: 33px;
+  }
 }

@@ -1,14 +1,19 @@
-import { FC } from 'react';
+import { forwardRef } from 'react';
+import cn from 'classnames';
 
 import messages from '@helpers/messages';
 import MainHeading from '@modules/common/components/MainHeading';
 
 import s from './AboutMe.module.scss';
 
-const AboutMe: FC = () => {
+interface IAboutMe {
+  isActive: boolean;
+}
+
+const AboutMe = forwardRef<HTMLDivElement, IAboutMe>((props, ref) => {
   return (
-    <article className={s.container} id="about">
-      <MainHeading text={messages.ABOUT_ME} isWhiteColor maxWidth={815} />
+    <article ref={ref} className={cn(s.container, props.isActive && s.active)} id="about">
+      <MainHeading className={s.heading} text={messages.ABOUT_ME} isWhiteColor maxWidth={815} />
       <p className={s.description}>{messages.I_DECIDED_TO_BECOME_A_DESIGNER}</p>
 
       <ul className={s.columns}>
@@ -24,5 +29,5 @@ const AboutMe: FC = () => {
       </ul>
     </article>
   );
-};
+});
 export default AboutMe;

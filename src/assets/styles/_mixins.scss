@@ -16,8 +16,8 @@
 }
 
 // Breakpoint mixins
-@mixin media-tablet {
-  @media (max-width: $tablet-bp) {
+@mixin media-laptop {
+  @media (max-width: $laptop-bp) {
     @content;
   }
 }
@@ -43,7 +43,7 @@
 
 @mixin floating-animation {
   animation: floating 3s infinite ease-in-out;
-  
+
   @keyframes floating {
     0% {
       transform: translate(0, 0px);

@@ -5,14 +5,42 @@
   @include block-padding(28px);
   background-color: $main-black-color;
   position: relative;
+
+  @include media-laptop {
+    @include block-padding(42px);
+    padding-top: 150px;
+    padding-bottom: 157px;
+  }
+
+  @include media-mobile {
+    @include block-padding(16px);
+    padding-top: 100px;
+    padding-bottom: 100px;
+    flex-direction: column;
+    align-items: baseline;
+  }
 }
 
 .infoBlock {
   width: 50%;
   margin-left: auto;
+
+  @include media-laptop {
+    width: 60%;
+  }
+
+  @include media-mobile {
+    width: 100%;
+    margin-top: 24px;
+  }
 }
 
 .carousel {
   margin-top: 100px;
   width: 544px;
+
+  @include media-laptop {
+    width: 310px;
+    margin-top: 50px;
+  }
 }

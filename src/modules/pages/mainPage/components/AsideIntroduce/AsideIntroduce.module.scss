@@ -51,6 +51,11 @@
   transform: rotate(-90deg);
   animation-name: loadShortHeading;
   animation-duration: 4s;
+
+  @include media-mobile {
+    font-size: 12px;
+    line-height: 14px;
+  }
 }
 
 @keyframes loadShortHeading {
@@ -69,17 +74,43 @@
   margin: auto;
   text-align: center;
 
+  @include media-laptop {
+    max-width: 700px;
+    width: 100%;
+  }
+
+  @include media-mobile {
+    max-width: 328px;
+  }
+
   &-hello {
     margin-bottom: 20px;
+
+    @include media-laptop {
+      margin-bottom: 50px;
+    }
   }
 
   &-title {
     margin-top: 84px;
     margin-bottom: 129px;
+
+    @include media-laptop {
+      margin-bottom: 150px;
+      margin-top: 50px;
+    }
+
+    @include media-mobile {
+      margin-bottom: 50px;
+    }
   }
 
   &-about {
     margin-bottom: 45px;
+
+    @include media-laptop {
+      margin-bottom: 28px;
+    }
   }
 }
 

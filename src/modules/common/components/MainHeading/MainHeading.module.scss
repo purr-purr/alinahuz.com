@@ -9,6 +9,16 @@
   margin-right: auto;
   text-align: center;
 
+  @include media-laptop {
+    font-size: 60px;
+    line-height: 72px;
+  }
+
+  @include media-mobile {
+    font-size: 30px;
+    line-height: 36px;
+  }
+
   &--white {
     color: $main-gray-color;
   }

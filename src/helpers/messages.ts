@@ -1,5 +1,7 @@
 const messages = {
   UI_UX_DESIGNER: 'UI/UX Designer',
+  JUNIOR_UI_UX_DESIGNER: 'Junior UI/UX Designer',
+  WEB_DESIGNER: 'Web Designer',
   BASED_IN_IRELAND: 'based in Ireland',
   HELLO: 'Hello!',
   MY_NAME_IS_ALINA_HUZ_AND_I: 'My name is Alina Huz and I',
@@ -31,6 +33,7 @@ const messages = {
   EXPERIENCE: 'experience',
   CONTACTS: 'Contacts',
   VIEW_CV: 'View CV',
+  VIEW_PROJECT: 'View project',
   MAIL_ME: 'mail me',
   I_DECIDED_TO_BECOME_A_DESIGNER:
     'I decided to become a designer because I' +
@@ -88,18 +91,23 @@ const messages = {
   MAIN_RESPONSIBILITIES: 'Main responsibilities:',
   MAIN_ACHIEVEMENTS: 'Main achievements:',
   DEGREE: 'Degree',
-  PUBLIC_INSTITUTION_BERYSLAV:
-    'Public institution Beryslav Medical College' + ' Kherson Regional Council',
+  BERYSLAV_MEDICAL_COLLEGE: 'Beryslav Medical College',
   SECONDARY_VOCATIONAL_PHARMACY: 'Secondary vocational, Pharmacy/',
   SECONDARY_VOCATIONAL_DATE: 'sept. 2013 - June 2016',
+  ENGLISH_LANGUAGE_DATE: 'sept. 2022 - Jun 2023',
   ZAPORIZHZHIA_STATE_MEDICAL_UNIVERSITY: 'Zaporizhzhia State Medical' + ' University',
-  BACHELOR_PHARMACY: 'Bachelor, Pharmacy/',
+  LIMERICK_AND_CLARE_EDUCATION_AND_TRAINING_BOARD:
+    'Limerick and Clare Education and Training Board',
+  ENGLISH_LANGUAGE: 'English Language, Cambridge B2/',
+  BACHELOR_PHARMACY: "Bachelor's degree, Pharmacy/",
   BACHELOR_PHARMACY_DATE: 'sept. 2016 - Jun 2018 ',
   ALL_RIGHTS_RESERVED: 'All rights reserved/',
-  OR: 'or',
   CERTIFICATE: 'certificate',
   IMPLEMENTATION: 'Implementation',
-  SCROLL_TO_NEXT_SCREEN: 'scroll to next screen',
+  SCROLL_TOP: 'Scroll top',
+  ERROR_CODE: '404',
+  GO_TO_MAIN: 'Go to main',
+  IM_SORRY_BUT_PAGE_NOT_AVAILABLE: "I'm sorry, but the page you requested is not available.",
   I_HAVE_A_GREAT_DESIRE_TO_DEVELOP:
     'I have a great desire to develop and' +
     ' gain' +

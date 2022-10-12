@@ -1,11 +1,25 @@
 .container {
   margin-top: 326px;
   @include block-padding(28px);
+
+  @include media-laptop {
+    @include block-padding(42px);
+  }
+
+  @include media-mobile {
+    margin-top: 0;
+    @include block-padding(16px);
+  }
 }
 
 .findMore {
-  padding-bottom: 190px;
-  margin-top: 200px;
+  padding-bottom: 180px;
+  margin-top: 100px;
+
+  @include media-laptop {
+    padding-bottom: 140px;
+    margin-top: 50px;
+  }
 
   &-text {
     max-width: 544px;
@@ -18,6 +32,13 @@
     text-align: center;
     color: $full-white-color;
     margin-bottom: 106px;
+
+    @include media-laptop {
+      max-width: 380px;
+      font-size: 18px;
+      line-height: 22px;
+      margin-bottom: 50px;
+    }
   }
 
   &-links {
@@ -26,19 +47,40 @@
     width: fit-content;
     margin-left: auto;
     margin-right: auto;
+
+    @include media-laptop {
+      gap: 80px;
+    }
   }
 }
 
 .seeMore {
   display: block;
-  margin: 200px auto 0;
-  padding-bottom: 140px;
+  margin: 100px auto 0;
+  padding-bottom: 200px;
   width: fit-content;
+
+  @include media-laptop {
+    margin-top: 50px;
+    padding-bottom: 150px;
+  }
+
+  @include media-mobile {
+    padding-bottom: 100px;
+  }
 
   &-item {
     background-color: transparent;
     border: 0;
     min-width: 255px;
+
+    @include media-laptop {
+      min-width: 175px;
+    }
+
+    @include media-mobile {
+      min-width: 144px;
+    }
   }
 
   &-desc {

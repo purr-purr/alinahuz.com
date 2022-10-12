@@ -1,10 +1,10 @@
 .container {
+  @include flex-justify(center);
+  flex-direction: column;
   width: 100%;
-  min-height: 100vh;
-  height: 100%;
+  height: 100vh;
   background-color: $main-gray-color;
-  padding: 165px;
-  overflow-y: auto;
+  padding: 30px;
   position: absolute;
   top: 0;
   left: 0;
@@ -14,11 +14,17 @@
   &:after {
     content: '';
     position: absolute;
-    top: 85px;
+    top: calc((100% - 919px) / 2);
     width: 621px;
     height: 919px;
     pointer-events: none;
     z-index: 1;
+
+    @include media-laptop {
+      top: calc((100% - 600px) / 2);
+      width: 406px;
+      height: 600px;
+    }
   }
 
   &:before {
@@ -38,7 +44,7 @@
     padding-left: 50px;
 
     &:not(:last-of-type) {
-      margin-bottom: 90px;
+      margin-bottom: 50px;
     }
   }
 }

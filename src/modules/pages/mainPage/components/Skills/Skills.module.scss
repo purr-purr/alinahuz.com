@@ -7,6 +7,20 @@
   position: relative;
   z-index: 2;
 
+  @include media-laptop {
+    padding-top: 150px;
+    padding-bottom: 150px;
+    @include block-padding(42px);
+  }
+
+  @include media-mobile {
+    padding-top: 100px;
+    padding-bottom: 50px;
+    @include block-padding(16px);
+    flex-direction: column;
+    align-items: baseline;
+  }
+
   &:before {
     content: '';
     position: absolute;
@@ -17,6 +31,18 @@
     background: url("../../../../../assets/images/patterns/patterns_right-side--small.svg") no-repeat center / 100%;
     z-index: 1;
     pointer-events: none;
+
+    @include media-laptop {
+      top: -50px;
+      width: 322px;
+      height: 476px;
+    }
+
+    @include media-mobile {
+      top: -35px;
+      width: 212px;
+      height: 313px;
+    }
   }
 }
 
@@ -25,9 +51,27 @@
   max-width: 544px;
   font-size: 14px;
   line-height: 17px;
+
+  @include media-laptop {
+    max-width: 460px;
+  }
+
+  @include media-mobile {
+    font-size: 12px;
+    line-height: 15px;
+    margin-top: 24px;
+  }
 }
 
 .infoBlock {
   width: 50%;
   margin-left: auto;
+
+  @include media-laptop {
+    width: 60%;
+  }
+
+  @include media-mobile {
+    width: 100%;
+  }
 }

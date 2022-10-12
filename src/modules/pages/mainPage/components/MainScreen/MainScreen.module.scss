@@ -20,6 +20,22 @@
   top: calc((100% - 50px) / 2);
   left: calc((100% - 682px) / 2);
   z-index: 5;
+
+  @include media-laptop {
+    width: 412px;
+    height: 30px;
+    position: sticky;
+    top: calc((100% - 30px) / 2);
+    left: calc((100% - 412px) / 2);
+  }
+
+  @include media-mobile {
+    width: 162px;
+    height: 13px;
+    position: sticky;
+    top: calc((100% - 13px) / 2);
+    left: calc((100% - 162px) / 2);
+  }
 }
 
 .waves {

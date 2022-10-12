@@ -5,4 +5,16 @@
   column-gap: 20px;
   max-width: 544px;
   margin-bottom: 100px;
+
+  @include media-laptop {
+    row-gap: 28px;
+    margin-bottom: 50px;
+    max-width: 460px;
+  }
+
+  @include media-laptop {
+    row-gap: 24px;
+    column-gap: 10px;
+    margin-bottom: 40px;
+  }
 }

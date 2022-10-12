@@ -52,11 +52,28 @@
     line-height: 1.2;
     padding-right: 27px;
 
+    @include media-laptop {
+      font-size: 18px;
+    }
+
+    @include media-mobile {
+      font-weight: 700;
+      font-size: 14px;
+    }
+
     &:after {
       top: 12px;
       width: 16px;
       height: 12px;
       background-image: url('../../../../assets/images/arrow_right_icon--white-medium.svg');
+
+      @include media-laptop {
+        top: 5px;
+      }
+
+      @include media-mobile {
+        top: 3px;
+      }
     }
 
     &:hover {

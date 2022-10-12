@@ -8,6 +8,11 @@
   position: relative;
   padding-right: 50px;
 
+  @include media-mobile {
+    font-size: 22px;
+    line-height: 26px;
+  }
+
   &:before,
   &:after {
     content: '';
@@ -30,6 +35,11 @@
     height: 26px;
     background: url('../../../../assets/images/arrow_right_icon--white-bold.svg') no-repeat center /
       100%;
+
+    @include media-mobile {
+      top: calc((100% - 23px) / 2);
+      height: 23px;
+    }
   }
 
   &:hover {

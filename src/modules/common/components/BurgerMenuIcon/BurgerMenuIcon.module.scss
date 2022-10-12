@@ -9,6 +9,10 @@
   padding: 10px;
   z-index: 9;
 
+  @include media-laptop {
+    width: 90px;
+  }
+
   &:before,
   &:after {
     content: '';
@@ -40,13 +44,13 @@
     margin-right: 5px;
 
     &:before {
-      transform: rotate(7deg);
+      transform: rotate(24deg);
       top: 13px;
       transition: all .3s ease-in-out;
     }
 
     &:after {
-      transform: rotate(-7deg);
+      transform: rotate(-24deg);
       bottom: 13px;
       transition: all .3s ease-in-out;
     }

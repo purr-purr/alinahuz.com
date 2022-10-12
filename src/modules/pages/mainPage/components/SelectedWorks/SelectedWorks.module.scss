@@ -1,8 +1,15 @@
 .container {
-  min-height: 2000px;
   background-color: $main-black-color;
   padding-top: 238px;
   position: relative;
+
+  @include media-laptop {
+    padding-top: 150px;
+  }
+
+  @include media-mobile {
+    padding-top: 100px;
+  }
 }
 
 .headingFigure {

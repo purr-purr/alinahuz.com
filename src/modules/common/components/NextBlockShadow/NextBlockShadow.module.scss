@@ -9,6 +9,14 @@
   background-position: center;
   pointer-events: none;
 
+  @include media-laptop {
+    height: 150px;
+  }
+
+  @include media-mobile {
+    height: 80px;
+  }
+
   &--black {
     background-image: url("../../../../assets/images/patterns/patterns_next-block-blur--black.svg");
   }
@@ -23,4 +31,8 @@
   bottom: 28px;
   left: calc((100% - 7px) / 2);
   @include floating-animation;
+
+  @include media-mobile {
+    bottom: 16px;
+  }
 }
