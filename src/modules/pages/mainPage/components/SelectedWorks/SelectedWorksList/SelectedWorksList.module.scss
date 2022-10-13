@@ -51,6 +51,13 @@
     @include media-laptop {
       gap: 80px;
     }
+
+    @include media-mobile {
+      flex-direction: column;
+      width: auto;
+      margin-left: 35px;
+      gap: 24px;
+    }
   }
 }
 

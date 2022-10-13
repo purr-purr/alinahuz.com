@@ -20,6 +20,7 @@ export const certificatePicture = [
   { path: certificatePicturePath('first') },
   { path: certificatePicturePath('second') },
   { path: certificatePicturePath('third') },
+  { path: certificatePicturePath('four') },
 ];
 
 export const menuLinks = [

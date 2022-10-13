@@ -16,7 +16,7 @@ const FullScreenCarousel: FC<{
 }> = ({ isOpenState, burgerIconClick, activeSlide }) => {
   return (
     <div className={s.container}>
-      <Carousel className={s.carousel} withoutControls slideIndex={activeSlide}>
+      <Carousel adaptiveHeight className={s.carousel} withoutControls slideIndex={activeSlide}>
         {selectedWorks.map((item) => (
           <div className={s[`carousel-inner`]} key={item.number}>
             <div className={s.closeBtn}>

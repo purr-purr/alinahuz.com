@@ -26,6 +26,11 @@
     overflow: hidden;
     height: 100vh;
 
+    @include media-laptop {
+      flex-direction: column;
+      overflow: scroll;
+    }
+
     &:hover {
       cursor: url("../../../../assets/images/cursor/cursor_carousel.svg") 50 50, pointer;
     }
@@ -38,11 +43,21 @@
   position: relative;
   display: flex;
 
+  @include media-laptop {
+    width: 100%;
+    flex-direction: column;
+  }
+
   &-inner {
     max-width: 544px;
     width: 100%;
     margin-left: 190px;
     margin-top: auto;
+
+    @include media-laptop {
+      max-width: 580px;
+      margin-left: 0;
+    }
   }
 }
 
@@ -102,6 +117,19 @@
   top: 0;
   height: 100%;
   padding-bottom: 50px;
+
+  @include media-laptop {
+    margin-top: 100px;
+    font-size: 40px;
+    line-height: 48px;
+    min-height: 96px;
+    margin-bottom: 50px;
+    padding-bottom: 0;
+    transform: rotate(0);
+    position: relative;
+    height: fit-content;
+    writing-mode: unset;
+  }
 }
 
 .posters {
@@ -109,6 +137,11 @@
   position: relative;
   padding-right: 20px;
   padding-left: 70px;
+
+  @include media-laptop {
+    width: 100%;
+    padding-left: 20px;
+  }
 
   &-item {
     position: absolute;

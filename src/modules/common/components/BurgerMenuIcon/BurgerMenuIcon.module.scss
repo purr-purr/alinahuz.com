@@ -1,4 +1,5 @@
 .container {
+  display: flex;
   width: 80px;
   height: 28px;
   position: relative;
@@ -10,49 +11,30 @@
   z-index: 9;
 
   @include media-laptop {
-    width: 90px;
+    width: 92px;
   }
 
-  &:before,
-  &:after {
-    content: '';
-    position: absolute;
-    left: 10px;
+  @include media-mobile {
+    width: 73px;
+  }
+}
+
+.icon {
+  width: 60px;
+  height: 8px;
+
+  @include media-laptop {
+    width: 72px;
+  }
+
+  @include media-mobile {
+    width: 53px;
+    height: 7px;
+  }
+
+  &-line {
+    width: 100%;
     height: 2px;
-    width: calc(100% - 20px);
-    background-color: $main-gray-color;
-    z-index: 5;
     transition: all .3s ease-in-out;
-  }
-
-  &:before {
-    top: 10px;
-  }
-
-  &:after {
-    bottom: 10px;
-  }
-
-  &--black {
-    &:before,
-    &:after {
-      background-color: $main-black-color;
-    }
-  }
-
-  &--open {
-    margin-right: 5px;
-
-    &:before {
-      transform: rotate(24deg);
-      top: 13px;
-      transition: all .3s ease-in-out;
-    }
-
-    &:after {
-      transform: rotate(-24deg);
-      bottom: 13px;
-      transition: all .3s ease-in-out;
-    }
   }
 }
