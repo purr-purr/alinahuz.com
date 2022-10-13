@@ -5,8 +5,8 @@ import useMediaQuery from '@modules/common/hooks/useMediaQuery';
 import messages from '@helpers/messages';
 import { certificatePicture } from '@helpers/data';
 import SubHeading from '@modules/common/components/SubHeading';
-import EducationList from '@modules/pages/mainPage/components/EducationList';
-import EducationDegree from '@modules/pages/mainPage/components/EducationDegree';
+import EducationList from '@modules/pages/mainPage/components/Education/EducationList';
+import EducationDegree from '@modules/pages/mainPage/components/Education/EducationDegree';
 import SimpleCarousel from '@modules/common/components/SimpleCarousel';
 
 import s from './Education.module.scss';

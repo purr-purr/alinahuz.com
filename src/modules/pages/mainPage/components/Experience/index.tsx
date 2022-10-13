@@ -1,7 +1,7 @@
 import { forwardRef } from 'react';
 import messages from '@helpers/messages';
 import SubHeading from '@modules/common/components/SubHeading';
-import ExperienceList from '@modules/pages/mainPage/components/ExperienceList';
+import ExperienceList from '@modules/pages/mainPage/components/Experience/ExperienceList';
 
 import s from './Experience.module.scss';
 

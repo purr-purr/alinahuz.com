@@ -10,8 +10,13 @@ const DecorativeLink: FC<{
   isExternalLink?: boolean;
   isBlackColorState?: boolean;
   onClick?: () => void;
-}> = ({ text, href, isExternalLink = true, isBlackColorState = false, onClick }) => {
-  const classNameList = cn(s.container, { [s[`container--black`]]: isBlackColorState });
+  className?: string;
+}> = ({ text, href, isExternalLink = true, isBlackColorState = false, onClick, className }) => {
+  const classNameList = cn(
+    s.container,
+    { [s[`container--black`]]: isBlackColorState },
+    className && className,
+  );
   return isExternalLink ? (
     <a className={classNameList} href={href} onClick={onClick} target="_blank">
       {text}

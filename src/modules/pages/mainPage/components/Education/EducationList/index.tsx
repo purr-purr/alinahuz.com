@@ -1,7 +1,7 @@
 import { FC } from 'react';
 import { educationCourses } from '@helpers/data';
 
-import EducationListItem from '@modules/pages/mainPage/components/EducationListItem';
+import EducationListItem from '@modules/pages/mainPage/components/Education/EducationListItem';
 
 import s from './EducationList.module.scss';
 

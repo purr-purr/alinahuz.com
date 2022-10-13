@@ -3,7 +3,7 @@ import useMediaQuery from '@modules/common/hooks/useMediaQuery';
 import { MOBILE_BP } from '@helpers/const';
 import messages from '@helpers/messages';
 import MainHeading from '@modules/common/components/MainHeading';
-import SelectedWorksList from '@modules/pages/mainPage/components/SelectedWorksList';
+import SelectedWorksList from '@modules/pages/mainPage/components/SelectedWorks/SelectedWorksList';
 
 import s from './SelectedWorks.module.scss';
 

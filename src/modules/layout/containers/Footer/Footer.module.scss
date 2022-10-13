@@ -5,11 +5,29 @@
   background-color: $main-black-color;
   position: relative;
 
+  @include media-laptop {
+    @include block-padding(42px);
+    padding-bottom: 28px;
+  }
+
+  @include media-mobile {
+    @include block-padding(16px);
+    padding-bottom: 16px;
+  }
+
   p {
     font-weight: 400;
     font-size: 14px;
     line-height: 1.2;
     color: $secondary-gray-color;
+
+    @include media-laptop {
+      font-size: 14px;
+    }
+
+    @include media-mobile {
+      font-size: 12px;
+    }
   }
 
   span {
@@ -28,4 +46,14 @@
   height: 80px;
   z-index: 2;
   @include floating-animation;
+
+  @include media-laptop {
+    left: 28px;
+  }
+
+  @include media-mobile {
+    left: 6px;
+    height: 60px;
+    bottom: 36px;
+  }
 }

@@ -1,7 +1,7 @@
 import { FC, SetStateAction, useEffect, useState } from 'react';
 import cn from 'classnames';
 
-import messages from 'src/helpers/messages';
+import messages from '@helpers/messages';
 import MainHeading from '@modules/common/components/MainHeading';
 import NextBlockShadow from '@modules/common/components/NextBlockShadow';
 

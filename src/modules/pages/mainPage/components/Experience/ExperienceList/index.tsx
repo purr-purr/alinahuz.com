@@ -1,5 +1,5 @@
 import { experience } from '@helpers/data';
-import ExperienceListItem from '@modules/pages/mainPage/components/ExperienceListItem';
+import ExperienceListItem from '@modules/pages/mainPage/components/Experience/ExperienceListItem';
 
 import s from './ExperienceList.module.scss';
 
