@@ -1,6 +1,5 @@
-import { FC } from 'react';
+import { createElement, FC } from 'react';
 import cn from 'classnames';
-import { Link } from 'react-router-dom';
 
 import s from './TextLink.module.scss';
 
@@ -9,6 +8,7 @@ const TextLink: FC<{
   href?: string;
   className?: string;
   type?: 'button' | 'link' | 'text';
+  inNewTab?: boolean;
   isWhiteColorState?: boolean;
   size?: 'sm' | 'md' | 'xs';
   onClick?: () => void;
@@ -20,6 +20,7 @@ const TextLink: FC<{
   size = 'sm',
   type = 'link',
   className,
+  inNewTab = false,
 }) => {
   const classNameList = cn(
     s.container,
@@ -28,18 +29,12 @@ const TextLink: FC<{
     className && className,
   );
 
-  return type === 'button' ? (
-    <button className={classNameList} onClick={onClick}>
-      {text}
-    </button>
-  ) : type === 'text' ? (
-    <p className={classNameList} onClick={onClick}>
-      {text}
-    </p>
-  ) : (
-    <Link className={classNameList} to={href ? href : ''} onClick={onClick}>
-      {text}
-    </Link>
+  const element = createElement(
+    type === 'button' ? 'button' : type === 'text' ? 'p' : 'a',
+    { class: classNameList, onClick: onClick, target: inNewTab ? '_blank' : '_self', href: href },
+    text,
   );
+
+  return element;
 };
 export default TextLink;

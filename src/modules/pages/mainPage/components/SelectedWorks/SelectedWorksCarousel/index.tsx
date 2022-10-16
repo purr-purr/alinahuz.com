@@ -1,38 +1,42 @@
 import { FC } from 'react';
 import Carousel from 'nuka-carousel';
 
+import useMediaQuery from '@modules/common/hooks/useMediaQuery';
+import { LAPTOP_BP } from '@helpers/const';
 import { selectedWorks } from '@helpers/data';
 import messages from '@helpers/messages';
+
 import BurgerMenuIcon from '@modules/common/components/BurgerMenuIcon';
 import TextLink from '@modules/common/components/TextLink';
 import SimpleCarousel from '@modules/common/components/SimpleCarousel';
 
-import s from './FullScreenCarousel.module.scss';
+import s from './SelectedWorksCarousel.module.scss';
 
-const FullScreenCarousel: FC<{
+const SelectedWorksCarousel: FC<{
   isOpenState: boolean;
   burgerIconClick: () => void;
   activeSlide?: number;
 }> = ({ isOpenState, burgerIconClick, activeSlide }) => {
+  const isLaptop = useMediaQuery(LAPTOP_BP);
+
   return (
     <div className={s.container}>
-      <Carousel className={s.carousel} withoutControls slideIndex={activeSlide}>
+      <Carousel adaptiveHeight className={s.carousel} withoutControls slideIndex={activeSlide}>
         {selectedWorks.map((item) => (
           <div className={s[`carousel-inner`]} key={item.number}>
             <div className={s.closeBtn}>
               <BurgerMenuIcon
                 onClick={burgerIconClick}
                 isOpenState={isOpenState}
-                isBlackColor={item.isBlackState}
+                isBlackColor={isLaptop ? true : item.isBlackState}
               />
             </div>
-
             <div className={s[`carousel-item`]}>
               <div className={s.info}>
                 <span className={s.number}>{item.number}</span>
                 <h3 className={s.title}>{item.title}</h3>
                 <div className={s[`info-inner`]}>
-                  <TextLink text={messages.VIEW_PROJECT} href={item.link} />
+                  <TextLink text={messages.VIEW_PROJECT} inNewTab href={item.link} />
                   <dl className={s.textGroup}>
                     <dt className={s[`textGroup-subtitle`]}>{messages.ABOUT}</dt>
                     <dd className={s[`textGroup-desc`]}>{item.description}</dd>
@@ -56,4 +60,4 @@ const FullScreenCarousel: FC<{
     </div>
   );
 };
-export default FullScreenCarousel;
+export default SelectedWorksCarousel;

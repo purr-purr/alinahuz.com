@@ -1,9 +1,5 @@
 import messages from '@helpers/messages';
 
-export const openCvPdf = () => {
-  window.open('../Alina_Huz_UI_UX_designer_CV.pdf');
-};
-
 export const posterPath = (path: string) => {
   return require(`@assets/images/selectedWorks/posters/poster_${path}.jpg`).default;
 };
@@ -20,6 +16,7 @@ export const certificatePicture = [
   { path: certificatePicturePath('first') },
   { path: certificatePicturePath('second') },
   { path: certificatePicturePath('third') },
+  { path: certificatePicturePath('four') },
 ];
 
 export const menuLinks = [
@@ -102,7 +99,7 @@ export const selectedWorks = [
       ' a website with a modern minimalistic clean design.\n' +
       'The corporate colors of the project - blue and orange - were ' +
       'chosen as accent colors for the landing page.',
-    link: '',
+    link: 'https://www.behance.net/gallery/149560407/Landing-page-portfolio-for-WEB-DEVELOPER',
     screenShots: [
       { path: screenShotsPath('web-1') },
       { path: screenShotsPath('web-2') },
@@ -127,7 +124,7 @@ export const selectedWorks = [
       'to make a website with a modern minimalistic clean design.\n' +
       'The corporate colors of the project - blue and orange - were chosen' +
       ' as accent colors for the landing page.',
-    link: '',
+    link: 'https://www.behance.net/gallery/149550087/Website-for-a-DELIVERY-INTERNATIONAL-POLAND',
     screenShots: [
       { path: screenShotsPath('poland-1') },
       { path: screenShotsPath('poland-2') },
@@ -153,7 +150,7 @@ export const selectedWorks = [
       ' a modern minimalistic clean design.\n' +
       'The corporate colors of the project - blue and orange - were chosen ' +
       'as accent colors for the landing page.',
-    link: '',
+    link: 'https://delivery-auto.com/en-us',
     screenShots: [
       { path: screenShotsPath('delivery-1') },
       { path: screenShotsPath('delivery-2') },
@@ -179,7 +176,7 @@ export const selectedWorks = [
       'to make a website with a modern minimalistic clean design.\n' +
       'The corporate colors of the project - blue and orange - were ' +
       'chosen as accent colors for the landing page.',
-    link: '',
+    link: 'https://www.behance.net/alinahuz',
     screenShots: [
       { path: screenShotsPath('fund-1') },
       { path: screenShotsPath('fund-2') },
@@ -203,7 +200,7 @@ export const selectedWorks = [
       ' to make a website with a modern minimalistic clean design.\n' +
       'The corporate colors of the project - blue and orange - were' +
       ' chosen as accent colors for the landing page.',
-    link: '',
+    link: 'https://www.behance.net/gallery/144175041/Landing-for-Blash-Vintage',
     screenShots: [
       { path: screenShotsPath('blash-1') },
       { path: screenShotsPath('blash-2') },
@@ -228,7 +225,7 @@ export const selectedWorks = [
       'decided to make a website with a modern minimalistic clean design.\n' +
       'The corporate colors of the project - blue and orange - were' +
       ' chosen as accent colors for the landing page.',
-    link: '#',
+    link: 'https://www.behance.net/gallery/101989775/Online-store-for-a-jewelry-company-JEWELRYUA',
     screenShots: [
       { path: screenShotsPath('jewelry-1') },
       { path: screenShotsPath('jewelry-2') },
@@ -252,7 +249,7 @@ export const selectedWorks = [
       ' to make a website with a modern minimalistic clean design.\n' +
       'The corporate colors of the project - blue and orange - were' +
       ' chosen as accent colors for the landing page.',
-    link: '',
+    link: 'https://astramed-ic.com/',
     screenShots: [
       { path: screenShotsPath('astramed-1') },
       { path: screenShotsPath('astramed-2') },
@@ -279,7 +276,7 @@ export const selectedWorks = [
       ' minimalistic clean design.\n' +
       'The corporate colors of the project - blue and orange - were' +
       ' chosen as accent colors for the landing page.',
-    link: '',
+    link: 'https://www.behance.net/gallery/111236373/landing-page-for-event-agency',
     screenShots: [
       { path: screenShotsPath('new-year-1') },
       { path: screenShotsPath('new-year-2') },

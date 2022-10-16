@@ -96,6 +96,27 @@
     font-size: 16px;
     line-height: 20px;
     padding-right: 18px;
+
+    @include media-laptop {
+      font-size: 14px;
+      line-height: 17px;
+      padding-bottom: 5px;
+    }
+
+    @include media-mobile {
+      font-size: 12px;
+      line-height: 15px;
+    }
+
+    &:after {
+      @include media-laptop {
+        top: 6px;
+      }
+
+      @include media-mobile {
+        top: 5px;
+      }
+    }
   }
 
   &--xs {

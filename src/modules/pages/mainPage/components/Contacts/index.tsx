@@ -13,7 +13,7 @@ const Contacts = forwardRef<HTMLDivElement>((props, ref) => {
       <ul className={s.links}>
         {contactsLinks.map((item) => (
           <li key={item.title}>
-            <DecorativeLink text={item.title} href={item.href} />
+            <DecorativeLink className={s[`links-item`]} text={item.title} href={item.href} />
           </li>
         ))}
       </ul>

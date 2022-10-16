@@ -1,6 +1,6 @@
 .container {
   width: 100%;
-  height: calc(100vh + 1500px);
+  height: 200vh;
   background-color: $main-black-color;
   position: relative;
 }
@@ -24,7 +24,6 @@
   @include media-laptop {
     width: 412px;
     height: 30px;
-    position: sticky;
     top: calc((100% - 30px) / 2);
     left: calc((100% - 412px) / 2);
   }
@@ -32,7 +31,6 @@
   @include media-mobile {
     width: 162px;
     height: 13px;
-    position: sticky;
     top: calc((100% - 13px) / 2);
     left: calc((100% - 162px) / 2);
   }

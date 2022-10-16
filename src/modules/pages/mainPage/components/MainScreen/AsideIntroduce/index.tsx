@@ -1,15 +1,18 @@
 import { FC, SetStateAction, useEffect, useState } from 'react';
 import cn from 'classnames';
 
-import messages from 'src/helpers/messages';
+import messages from '@helpers/messages';
 import MainHeading from '@modules/common/components/MainHeading';
 import NextBlockShadow from '@modules/common/components/NextBlockShadow';
 
 import s from './AsideIntroduce.module.scss';
+import useMediaQuery from '@modules/common/hooks/useMediaQuery';
+import { MOBILE_BP } from '@helpers/const';
 
 const AsideIntroduce: FC<{
   isOpen?: boolean;
 }> = ({ isOpen }) => {
+  const isMobile = useMediaQuery(MOBILE_BP);
   const initialShowText = {
     first: false,
     second: false,
@@ -103,40 +106,36 @@ const AsideIntroduce: FC<{
 
   useEffect(() => {
     setLoadAsideBar(true);
-  }, []);
+  }, [isOpen]);
 
   return (
     <aside
-      style={{ width: isOpen ? '100%' : '79px' }}
+      style={{ width: isOpen ? '100%' : isMobile && !isOpen ? '50px' : '79px' }}
       className={cn(s.container, loadAsideBar && s.loadAsideBar, {
         [s[`container--close`]]: !isOpen,
       })}
     >
       {isOpen ? (
         <>
-          <div className={s.fullInfo}>
-            <p
-              className={cn(s[`fullInfo-hello`], s.appearance, showText.first && s.appearanceShow)}
-            >
+          <div className={cn(s.fullInfo, isOpen && s.active)}>
+            <p className={cn(s[`fullInfo-hello`], s.appearance, showText.first && s.active)}>
               <i>{messages.HELLO}</i>
             </p>
-            <p className={cn(s.appearance, showText.second && s.appearanceShow)}>
+            <p className={cn(s.appearance, showText.second && s.active)}>
               {messages.MY_NAME_IS_ALINA_HUZ_AND_I}
             </p>
             <MainHeading
               text={messages.UI_UX_DESIGNER}
               isH1Tag
-              className={cn(s[`fullInfo-title`], s.appearance, showText.third && s.appearanceShow)}
+              className={cn(s[`fullInfo-title`], s.appearance, showText.third && s.active)}
             />
-            <p className={cn(s[`fullInfo-about`], s.appearance, showText.four && s.appearanceShow)}>
+            <p className={cn(s[`fullInfo-about`], s.appearance, showText.four && s.active)}>
               {messages.DESIGN_FOR_ME_IS}
             </p>
-            <p className={cn(s.appearance, showText.five && s.appearanceShow)}>
-              {messages.I_WANT_TO_HELP}
-            </p>
+            <p className={cn(s.appearance, showText.five && s.active)}>{messages.I_WANT_TO_HELP}</p>
           </div>
 
-          <div className={cn(s.appearance, showText.six && s.appearanceShow)}>
+          <div className={cn(s.appearance, showText.six && s.active)}>
             <NextBlockShadow colorScheme="black" />
           </div>
         </>

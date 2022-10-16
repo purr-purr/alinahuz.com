@@ -25,6 +25,10 @@
       width: 406px;
       height: 600px;
     }
+
+    @include media-mobile {
+      display: none;
+    }
   }
 
   &:before {

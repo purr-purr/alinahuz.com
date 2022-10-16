@@ -1,6 +1,6 @@
 import { forwardRef } from 'react';
 import messages from 'src/helpers/messages';
-import AsideIntroduce from '@modules/pages/mainPage/components/AsideIntroduce';
+import AsideIntroduce from '@modules/pages/mainPage/components/MainScreen/AsideIntroduce';
 
 // @ts-ignore
 import WAVES_VIDEO from '@assets/images/waves_video.mp4';

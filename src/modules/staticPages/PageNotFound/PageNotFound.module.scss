@@ -23,7 +23,9 @@
     }
 
     @include media-mobile {
-      display: none;
+      top: calc((100% - 285px) / 2);
+      width: 130px;
+      height: 166px;
     }
   }
 
@@ -56,7 +58,7 @@
   @include media-mobile {
     font-size: 30px;
     line-height: 36px;
-    margin-bottom: 86px;
+    margin-bottom: 50px;
   }
 }
 
@@ -74,6 +76,12 @@
     max-width: 380px;
     font-size: 18px;
     line-height: 22px;
+  }
+
+  @include media-mobile {
+    max-width: 328px;
+    font-size: 14px;
+    line-height: 17px;
   }
 }
 
