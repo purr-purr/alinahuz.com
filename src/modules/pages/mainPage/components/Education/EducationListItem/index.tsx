@@ -31,14 +31,14 @@ const EducationListItem: FC<{
         <rect className={s.shape1} />
         <rect className={s.shape2} />
       </svg>
-      <div className={s.inner}>
+      <article className={s.inner}>
         <h5 className={s.title}>{title}</h5>
         <p className={s.description}>
           {platform}
           <br />
           {date}
         </p>
-      </div>
+      </article>
     </li>
   );
 };

@@ -31,7 +31,12 @@ const TextLink: FC<{
 
   const element = createElement(
     type === 'button' ? 'button' : type === 'text' ? 'p' : 'a',
-    { class: classNameList, onClick: onClick, target: inNewTab ? '_blank' : '_self', href: href },
+    {
+      className: classNameList,
+      onClick: onClick,
+      target: inNewTab ? '_blank' : '_self',
+      href: href,
+    },
     text,
   );
 

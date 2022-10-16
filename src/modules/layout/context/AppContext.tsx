@@ -1,4 +1,4 @@
-import React from 'react';
+import { createContext } from 'react';
 
 type AppContextType = {
   isDarkMode: boolean;
@@ -12,7 +12,7 @@ type AppContextType = {
   handleSwitchFullScreenCarouselMode: (index: number, isActive: boolean) => void;
 };
 
-const AppContext = React.createContext<AppContextType>({
+const AppContext = createContext<AppContextType>({
   isDarkMode: false,
   handleSwitchDarkMode: () => {},
   isNavigationMode: false,

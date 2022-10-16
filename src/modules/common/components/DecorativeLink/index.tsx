@@ -17,6 +17,7 @@ const DecorativeLink: FC<{
     { [s[`container--black`]]: isBlackColorState },
     className && className,
   );
+
   return isExternalLink ? (
     <a className={classNameList} href={href} onClick={onClick} target="_blank">
       {text}

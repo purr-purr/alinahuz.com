@@ -8,6 +8,7 @@ import Skills from '@modules/pages/mainPage/components/Skills';
 import Experience from '@modules/pages/mainPage/components/Experience';
 import Education from '@modules/pages/mainPage/components/Education';
 import Contacts from '@modules/pages/mainPage/components/Contacts';
+import { STARTED_SECOND_SCREEN } from '@helpers/const';
 
 const MainPage = () => {
   const { handleSwitchDarkMode } = useContext(AppContext);
@@ -47,7 +48,9 @@ const MainPage = () => {
     function updatePosition() {
       const scrollY = window.scrollY;
       setScrollPosition(scrollY);
-      scrollY >= 700 && scrollY < mainScreenHeight ? setSecondScreen(true) : setSecondScreen(false);
+      scrollY >= STARTED_SECOND_SCREEN && scrollY < mainScreenHeight
+        ? setSecondScreen(true)
+        : setSecondScreen(false);
     }
 
     window.addEventListener('scroll', updatePosition);
