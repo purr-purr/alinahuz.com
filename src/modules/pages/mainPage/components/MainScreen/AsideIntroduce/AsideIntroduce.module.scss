@@ -56,6 +56,8 @@
   @include media-mobile {
     font-size: 12px;
     line-height: 14px;
+    right: -43px;
+    top: 50px;
   }
 }
 
@@ -74,6 +76,7 @@
   width: 804px;
   margin: auto;
   text-align: center;
+  opacity: 0;
 
   @include media-laptop {
     max-width: 700px;
@@ -82,6 +85,11 @@
 
   @include media-mobile {
     max-width: 328px;
+  }
+
+  &.active {
+    opacity: 1;
+    transition: opacity 2s linear;
   }
 
   &-hello {
@@ -117,9 +125,8 @@
 
 .appearance {
   opacity: 0;
-  transition: opacity .4s ease-in-out;
 
-  &Show {
+  &.active {
     opacity: 1;
     transition: opacity .4s ease-in-out;
   }

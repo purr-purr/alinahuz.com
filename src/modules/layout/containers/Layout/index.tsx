@@ -4,7 +4,7 @@ import AppContext from '../../context/AppContext';
 import Header from '@modules/layout/containers/Header';
 import Footer from '@modules/layout/containers/Footer';
 import PageNotFound from '@modules/staticPages/PageNotFound';
-import FullScreenCarousel from '@modules/common/components/FullScreenCarousel';
+import FullScreenCarousel from '@modules/pages/mainPage/components/SelectedWorks/SelectedWorksCarousel';
 
 import s from './Layout.module.scss';
 

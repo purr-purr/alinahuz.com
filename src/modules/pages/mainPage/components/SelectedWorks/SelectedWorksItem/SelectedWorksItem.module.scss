@@ -26,9 +26,17 @@
     transform: scale(0.95);
     transition: all .4s ease-in-out;
 
+    @include media-mobile {
+      transform: unset;
+    }
+
     & .poster {
       transform: scale(1.1);
       transition: all .4s ease-in-out;
+
+      @include media-mobile {
+        transform: unset;
+      }
     }
   }
 

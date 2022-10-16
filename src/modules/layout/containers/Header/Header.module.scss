@@ -8,10 +8,10 @@
   z-index: 7;
 
   @include media-laptop {
-    padding: 28px 32px 28px 42px;
+    padding: 18px 32px 18px 42px;
   }
 
   @include media-mobile {
-    padding: 16px 6px 16px 16px;
+    padding: 4px 6px 4px 16px;
   }
 }

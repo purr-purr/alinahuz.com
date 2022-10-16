@@ -1,9 +1,1 @@
-<svg width="625" height="431" viewBox="0 0 625 431" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M0.5 0L312.5 0M624.5 0L312.5 0M312.5 0L312.5 430M312.5 0L155.634 155.66M312.5 0L469.367 155.66M312.5 0L214.567 331.96M312.5 0L410.434 331.96M312.5 0L192.034 49.88M312.5 0L432.967 49.88" stroke="url(#paint0_radial_133_369)" stroke-linecap="round"/>
-<defs>
-<radialGradient id="paint0_radial_133_369" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(313.367 -4.84583e-05) rotate(90) scale(454.08 694.736)">
-<stop stop-color="white"/>
-<stop offset="1" stop-color="#292929" stop-opacity="0"/>
-</radialGradient>
-</defs>
-</svg>
+<svg xmlns="http://www.w3.org/2000/svg" width="625" height="431" fill="none" xmlns:v="https://vecta.io/nano"><path d="M0.5 0L312.5 0M624.5 0L312.5 0M312.5 0L312.5 430M312.5 0L155.634 155.66M312.5 0L469.367 155.66M312.5 0L214.567 331.96M312.5 0L410.434 331.96M312.5 0L192.034 49.88M312.5 0L432.967 49.88" stroke="url(#A)" stroke-linecap="round"/><defs><radialGradient id="A" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(313.367 -4.84583e-05) rotate(90) scale(454.08 694.736)"><stop stop-color="#fff"/><stop offset="1" stop-color="#292929" stop-opacity="0"/></radialGradient></defs></svg>
