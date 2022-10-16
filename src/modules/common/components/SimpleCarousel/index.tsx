@@ -31,7 +31,7 @@ const SimpleCarousel: FC<{
   };
 
   return (
-    <div className={cn(s.container, className)}>
+    <figure className={cn(s.container, className)}>
       <img
         onMouseEnter={onPlay}
         onMouseOut={onPlay}
@@ -40,7 +40,7 @@ const SimpleCarousel: FC<{
         src={picturesData[curIndex].path}
         alt={messages.CERTIFICATE}
       />
-    </div>
+    </figure>
   );
 };
 export default SimpleCarousel;

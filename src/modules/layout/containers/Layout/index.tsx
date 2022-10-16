@@ -1,5 +1,6 @@
 import { FC, useCallback, useEffect, useState } from 'react';
 import { useLocation } from 'react-router';
+
 import AppContext from '../../context/AppContext';
 import Header from '@modules/layout/containers/Header';
 import Footer from '@modules/layout/containers/Footer';
@@ -7,6 +8,7 @@ import PageNotFound from '@modules/staticPages/PageNotFound';
 import FullScreenCarousel from '@modules/pages/mainPage/components/SelectedWorks/SelectedWorksCarousel';
 
 import s from './Layout.module.scss';
+import { STARTED_SECOND_SCREEN } from '@helpers/const';
 
 const Layout: FC = ({ children }) => {
   const { pathname } = useLocation();
@@ -53,7 +55,7 @@ const Layout: FC = ({ children }) => {
       <AppContext.Provider value={context}>
         <Header
           isDarkModeActive={isDarkMode || isNavigationMode}
-          isHideLogo={window.scrollY > 700 || pathname === '/404'}
+          isHideLogo={window.scrollY > STARTED_SECOND_SCREEN || pathname === '/404'}
         />
         {pathname !== '/404' ? (
           <>

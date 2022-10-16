@@ -1,4 +1,5 @@
 import { FC } from 'react';
+import messages from '@helpers/messages';
 
 import ALINA_HUZ_LOGO_BLACK from '@assets/images/ALINA_HUZ--black.svg';
 import ALINA_HUZ_LOGO_WHITE from '@assets/images/ALINA_HUZ--white.svg';
@@ -17,7 +18,7 @@ const Logo: FC<{
       <img
         className={s.container}
         src={isBlackColor ? ALINA_HUZ_LOGO_BLACK : ALINA_HUZ_LOGO_WHITE}
-        alt="Alina Huz logo"
+        alt={messages.ALINA_HUZ_LOGO}
       />
     </a>
   );

@@ -12,7 +12,7 @@ const Skills = forwardRef<HTMLDivElement>((props, ref) => {
       <SubHeading text={messages.SKILLS} />
       <div className={s.infoBlock}>
         <p className={s.description}>{messages.MY_MAIN_TOOL_IS_FIGMA_I_HAVE_A_HIGH_LEVEL}</p>
-        <TextLink text={messages.VIEW_CV} href="/Alina_Huz_UI_UX_designer_CV.pdf" />
+        <TextLink inNewTab text={messages.VIEW_CV} href="/Alina_Huz_UI_UX_designer_CV.pdf" />
       </div>
     </article>
   );

@@ -16,14 +16,14 @@ const MainScreen = forwardRef<HTMLDivElement, IMainScreen>((props, ref) => {
   return (
     <article ref={ref} className={s.container}>
       <AsideIntroduce isOpen={props.isSecondScreen} />
-      <div className={s.content}>
+      <figure className={s.content}>
         <img className={s.logo} src={ALINA_HUZ_LOGO_WHITE} alt={messages.ALINA_HUZ_LOGO} />
         <div className={s.waves}>
           <video width="100%" height="100%" preload="auto" autoPlay loop controls={false} muted>
             <source src={WAVES_VIDEO} type="video/mp4" />
           </video>
         </div>
-      </div>
+      </figure>
     </article>
   );
 });

@@ -1,15 +1,15 @@
 import { useContext, useState } from 'react';
 import AppContext from '@modules/layout/context/AppContext';
-
+import { useMediaQuery } from '@modules/common/hooks';
+import { MOBILE_BP } from '@helpers/const';
 import messages from '@helpers/messages';
 import { selectedWorks, SOCIALS_LINKS } from '@helpers/data';
+
 import SelectedWorksItem from '@modules/pages/mainPage/components/SelectedWorks/SelectedWorksItem';
 import DecorativeLink from '@modules/common/components/DecorativeLink';
 import TextLink from '@modules/common/components/TextLink';
 
 import s from './SelectedWorksList.module.scss';
-import useMediaQuery from '../../../../../common/hooks/useMediaQuery';
-import { MOBILE_BP } from '@helpers/const';
 
 const SelectedWorksList = () => {
   const isMobile = useMediaQuery(MOBILE_BP);

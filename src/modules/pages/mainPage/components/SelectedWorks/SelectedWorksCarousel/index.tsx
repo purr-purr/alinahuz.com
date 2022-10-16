@@ -1,7 +1,7 @@
 import { FC } from 'react';
 import Carousel from 'nuka-carousel';
 
-import useMediaQuery from '@modules/common/hooks/useMediaQuery';
+import { useMediaQuery } from '@modules/common/hooks';
 import { LAPTOP_BP } from '@helpers/const';
 import { selectedWorks } from '@helpers/data';
 import messages from '@helpers/messages';
@@ -20,17 +20,17 @@ const SelectedWorksCarousel: FC<{
   const isLaptop = useMediaQuery(LAPTOP_BP);
 
   return (
-    <div className={s.container}>
+    <article className={s.container}>
       <Carousel adaptiveHeight className={s.carousel} withoutControls slideIndex={activeSlide}>
         {selectedWorks.map((item) => (
           <div className={s[`carousel-inner`]} key={item.number}>
-            <div className={s.closeBtn}>
+            <header className={s.closeBtn}>
               <BurgerMenuIcon
                 onClick={burgerIconClick}
                 isOpenState={isOpenState}
                 isBlackColor={isLaptop ? true : item.isBlackState}
               />
-            </div>
+            </header>
             <div className={s[`carousel-item`]}>
               <div className={s.info}>
                 <span className={s.number}>{item.number}</span>
@@ -57,7 +57,7 @@ const SelectedWorksCarousel: FC<{
           </div>
         ))}
       </Carousel>
-    </div>
+    </article>
   );
 };
 export default SelectedWorksCarousel;

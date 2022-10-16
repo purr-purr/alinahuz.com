@@ -1,6 +1,6 @@
 import { forwardRef } from 'react';
 import { MOBILE_BP } from '@helpers/const';
-import useMediaQuery from '@modules/common/hooks/useMediaQuery';
+import { useMediaQuery } from '@modules/common/hooks';
 
 import messages from '@helpers/messages';
 import { certificatePicture } from '@helpers/data';
@@ -19,10 +19,10 @@ const Education = forwardRef<HTMLDivElement, IEducation>((props, ref) => {
   const isMobile = useMediaQuery(MOBILE_BP);
   return (
     <article ref={ref} className={s.container} id="education">
-      <div>
+      <aside>
         <SubHeading text={messages.EDUCATION} isWhiteColor />
         {!isMobile && <SimpleCarousel className={s.carousel} picturesData={certificatePicture} />}
-      </div>
+      </aside>
       <div className={s.infoBlock}>
         <EducationList isActive={props.isActive} />
         <EducationDegree />

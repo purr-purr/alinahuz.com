@@ -1,13 +1,13 @@
 import { FC, SetStateAction, useEffect, useState } from 'react';
 import cn from 'classnames';
+import { MOBILE_BP } from '@helpers/const';
+import { useMediaQuery } from '@modules/common/hooks';
 
 import messages from '@helpers/messages';
 import MainHeading from '@modules/common/components/MainHeading';
 import NextBlockShadow from '@modules/common/components/NextBlockShadow';
 
 import s from './AsideIntroduce.module.scss';
-import useMediaQuery from '@modules/common/hooks/useMediaQuery';
-import { MOBILE_BP } from '@helpers/const';
 
 const AsideIntroduce: FC<{
   isOpen?: boolean;
@@ -117,7 +117,7 @@ const AsideIntroduce: FC<{
     >
       {isOpen ? (
         <>
-          <div className={cn(s.fullInfo, isOpen && s.active)}>
+          <article className={cn(s.fullInfo, isOpen && s.active)}>
             <p className={cn(s[`fullInfo-hello`], s.appearance, showText.first && s.active)}>
               <i>{messages.HELLO}</i>
             </p>
@@ -133,17 +133,17 @@ const AsideIntroduce: FC<{
               {messages.DESIGN_FOR_ME_IS}
             </p>
             <p className={cn(s.appearance, showText.five && s.active)}>{messages.I_WANT_TO_HELP}</p>
-          </div>
+          </article>
 
           <div className={cn(s.appearance, showText.six && s.active)}>
             <NextBlockShadow colorScheme="black" />
           </div>
         </>
       ) : (
-        <div className={s.shortHeading}>
+        <article className={s.shortHeading}>
           <p>{messages.UI_UX_DESIGNER}</p>
           <p>{messages.BASED_IN_IRELAND}</p>
-        </div>
+        </article>
       )}
     </aside>
   );
