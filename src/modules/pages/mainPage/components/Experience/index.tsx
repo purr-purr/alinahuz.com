@@ -10,7 +10,7 @@ const Experience = forwardRef<HTMLDivElement>((props, ref) => {
     <article ref={ref} className={s.container}>
       <SubHeading text={messages.EXPERIENCE} />
       <div className={s.infoBlock}>
-        <p className={s.description}>{messages.MY_MAIN_TOOL_IS_FIGMA_I_HAVE_A_HIGH_LEVEL}</p>
+        <p className={s.description}>{messages.I_HAVE_EXPERIENCE_DESIGNING_COMMERCE}</p>
         <ExperienceList />
       </div>
     </article>

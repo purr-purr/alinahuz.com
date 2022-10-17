@@ -38,7 +38,7 @@ const messages = {
   I_DECIDED_TO_BECOME_A_DESIGNER:
     'I decided to become a designer because I' +
     ' wanted to have a creative' +
-    ' IT-related profession, to have a source for realising my inspiration,' +
+    ' IT-related profession, to have a source for realizing my inspiration,' +
     ' to be independent and mobile.\n',
   I_HAVE_A_PHARMACEUTICAL_EDUCATION:
     'I have a pharmaceutical education and I' +
@@ -60,33 +60,24 @@ const messages = {
   DUE_TO_THE_WAR_IN_MY_COUNTY:
     'Due to the war in my country, I had to flee' +
     ' Ukraine in the' +
-    ' spring of 2022.     And at this stage of my life I am in Ireland and ' +
+    ' spring of 2022.     And at this stage of my life, I am in Ireland, and ' +
     'I am looking for a great job    for myself.',
   MY_MAIN_TOOL_IS_FIGMA_I_HAVE_A_HIGH_LEVEL:
-    'My main tool is Figma. I have a' +
-    ' high level of it and am' +
-    ' constantly improving my skills. To work with bitmap images I use Adobe Photoshop.\n' +
-    'I can work in Adobe XD, but I prefer Figma to this tool.\n' +
-    'I can do research, realisation of personas, user flow maps, prediction ' +
-    'of interaction scenarios. I can create banners/animation banners,' +
-    ' typographic logo design, low/high fidelity wireframes.\n' +
-    'I have shown myself well in the ability to do redesign. I have a' +
-    ' basic understanding of HTML and CSS.\n' +
-    'I use my skills to create a product that solves user problems and ' +
-    'meets business goals.',
+    'My main tool is Figma. I have a high level of it and am constantly improving my skills. ' +
+    'To work with bitmap images I use Adobe Photoshop. I can work in Adobe XD, but I prefer Figma to this tool. ' +
+    'I can do research, realization of personas, user flow maps, prediction of interaction scenarios.' +
+    ' I can create banners/animation banners, typographic logo designs, and low/high fidelity wireframes. ' +
+    'I have shown myself well in the ability to redesign. I have a basic understanding of HTML and CSS.' +
+    ' I use my skills to create a product that solves user problems and meets business goals.',
   I_HAVE_EXPERIENCE_DESIGNING_COMMERCE:
-    'I have experience designing commerce' +
-    ' and corporate' +
-    ' websites, landing pages, and portfolios while studying and working. ' +
-    'In my work, I always try to follow trends, but not overdo it. \n' +
-    'Reproduction of full-fledged visual design layouts taking into account' +
-    ' typography, composition, color science, Gestalt principles,' +
-    ' and understanding of UCD.\n' +
-    'I have experience of working in a team with a front-end developer.' +
-    ' In my work, I received information and presented my projects directly' +
-    ' to the client (digital manager, owner).\n' +
-    'I am not afraid of difficult tasks and always take them with passion ' +
-    'as a challenge, and I am not afraid to ask a lot of questions.',
+    'I have experience designing commerce and corporate websites, landing pages,' +
+    ' and portfolios while studying and working. In my work, I always try to follow trends, but not overdo it. \n' +
+    'Reproduction of full-fledged visual design layouts taking into account typography, composition, ' +
+    'color science, Gestalt principles, and understanding of UCD. \n' +
+    'I have experience working in a team with developers and QA. In my work, I received information and ' +
+    'presented my projects directly to the client (digital manager, owner).\n' +
+    'I am not afraid of difficult tasks and always take them with passion as a challenge, and ' +
+    'I am not afraid to ask a lot of questions.',
   RESPONSIBILITIES_AND_ACHIEVEMENTS: 'Responsibilities & Achievements',
   MAIN_RESPONSIBILITIES: 'Main responsibilities:',
   MAIN_ACHIEVEMENTS: 'Main achievements:',
