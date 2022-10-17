@@ -8,6 +8,8 @@
   z-index: 6;
   background-color: $main-gray-color;
   transition: width 0.7s linear;
+  animation-name: loadAsideBar;
+  animation-duration: 2s;
 
   &--close:before {
     content: '';
@@ -19,11 +21,6 @@
     background: url('../../../../../../assets/images/arrow_down_icon.svg');
     @include floating-animation;
   }
-}
-
-.loadAsideBar {
-  animation-name: loadAsideBar;
-  animation-duration: 2s;
 }
 
 @keyframes loadAsideBar {
@@ -76,7 +73,6 @@
   width: 804px;
   margin: auto;
   text-align: center;
-  opacity: 0;
 
   @include media-laptop {
     max-width: 700px;
@@ -85,11 +81,6 @@
 
   @include media-mobile {
     max-width: 328px;
-  }
-
-  &.active {
-    opacity: 1;
-    transition: opacity 2s linear;
   }
 
   &-hello {
@@ -123,11 +114,44 @@
   }
 }
 
-.appearance {
+.step1, .step2, .step3, .step4, .step5, .step6, {
   opacity: 0;
+  animation-duration: 1.5s;
+  animation-name: appearance;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+  animation-timing-function: linear;
+}
 
-  &.active {
+.step1 {
+  animation-delay: 1s;
+}
+
+.step2 {
+  animation-delay: 1.5s;
+}
+
+.step3 {
+  animation-delay: 0s;
+}
+
+.step4 {
+  animation-delay: 2s;
+}
+
+.step5 {
+  animation-delay: 2.5s;
+}
+
+.step6 {
+  animation-delay: 3s;
+}
+
+@keyframes appearance {
+  from {
+    opacity: 0;
+  }
+  to {
     opacity: 1;
-    transition: opacity .4s ease-in-out;
   }
 }
