@@ -24,7 +24,7 @@ const Education = forwardRef<HTMLDivElement, IEducation>((props, ref) => {
         {!isMobile && <SimpleCarousel className={s.carousel} picturesData={certificatePicture} />}
       </aside>
       <div className={s.infoBlock}>
-        <EducationList isActive={props.isActive} />
+        <EducationList isActive={!isMobile && props.isActive} />
         <EducationDegree />
       </div>
     </article>

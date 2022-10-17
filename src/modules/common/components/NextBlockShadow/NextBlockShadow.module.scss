@@ -33,6 +33,7 @@
   @include floating-animation;
 
   @include media-mobile {
-    bottom: 16px;
+    bottom: 20px;
+    height: 40px;
   }
 }

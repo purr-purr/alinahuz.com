@@ -1,6 +1,6 @@
 {
-  "short_name": "RAD",
-  "name": "Create React App Sample",
+  "short_name": "Alina Huz",
+  "name": "Alina Huz UI/UX Designer",
   "icons": [
     {
       "src": "favicon.svg",
@@ -10,6 +10,6 @@
   ],
   "start_url": ".",
   "display": "standalone",
-  "theme_color": "#000000",
-  "background_color": "#ffffff"
+  "theme_color": "#0c0c0c",
+  "background_color": "#f0f0f0"
 }

@@ -51,10 +51,20 @@
 
 .shape1 {
   stroke-dashoffset: 1600;
+
+  @include media-mobile {
+    stroke-dashoffset: 0;
+    stroke-dasharray: 1600;
+  }
 }
 
 .shape2 {
   stroke-dashoffset: -1600;
+
+  @include media-mobile {
+    stroke-dashoffset: 0;
+    stroke-dasharray: 1600;
+  }
 }
 
 .active .shape1,

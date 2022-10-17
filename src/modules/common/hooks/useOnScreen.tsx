@@ -1,9 +1,13 @@
 import { useEffect, useState } from 'react';
+import { useMediaQuery } from '@modules/common/hooks/index';
+import { MOBILE_BP } from '@helpers/const';
 
 const useOnScreen = (ref: any, threshold?: number) => {
+  const isMobile = useMediaQuery(MOBILE_BP);
   const [isIntersecting, setIntersecting] = useState(false);
 
-  const windowHeight = window.innerHeight - 50;
+  const windowMargin = isMobile ? 30 : 50;
+  const windowHeight = window.innerHeight - windowMargin;
   const windowRootMargin = `0px 0px -${windowHeight}px 0px`;
 
   const observer = new IntersectionObserver(

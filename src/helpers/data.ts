@@ -117,13 +117,11 @@ export const selectedWorks = [
       ' is the provision of transport and logistics services for the B2B' +
       ' sector between Poland and Ukraine.',
     implementation:
-      'As a result of research, it turned out that the target audience of' +
-      ' the site is young progressive people and interior designers ' +
-      'interested in buying vintage and designer items for comfort' +
-      ' and to complement their home decor. Therefore, it was decided ' +
-      'to make a website with a modern minimalistic clean design.\n' +
-      'The corporate colors of the project - blue and orange - were chosen' +
-      ' as accent colors for the landing page.',
+      'The new site should be simple and clean, as well as similar in appearance to ' +
+      'existing "Delivery Group" sites. One of the main requirements was to create' +
+      ' a design that the client himself could later supplement with information ' +
+      'blocks, images, or other information. As a result, the site had to be easily' +
+      ' maintained and easily scalable. The client also chose blue as the main color.',
     link: 'https://www.behance.net/gallery/149550087/Website-for-a-DELIVERY-INTERNATIONAL-POLAND',
     screenShots: [
       { path: screenShotsPath('poland-1') },

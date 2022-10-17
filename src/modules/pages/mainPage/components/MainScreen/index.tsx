@@ -1,4 +1,6 @@
 import { forwardRef } from 'react';
+import cn from 'classnames';
+
 import messages from 'src/helpers/messages';
 import AsideIntroduce from '@modules/pages/mainPage/components/MainScreen/AsideIntroduce';
 
@@ -17,7 +19,11 @@ const MainScreen = forwardRef<HTMLDivElement, IMainScreen>((props, ref) => {
     <article ref={ref} className={s.container}>
       <AsideIntroduce isOpen={props.isSecondScreen} />
       <figure className={s.content}>
-        <img className={s.logo} src={ALINA_HUZ_LOGO_WHITE} alt={messages.ALINA_HUZ_LOGO} />
+        <img
+          className={cn(s.logo, props.isSecondScreen && s.hide)}
+          src={ALINA_HUZ_LOGO_WHITE}
+          alt={messages.ALINA_HUZ_LOGO}
+        />
         <div className={s.waves}>
           <video width="100%" height="100%" preload="auto" autoPlay loop controls={false} muted>
             <source src={WAVES_VIDEO} type="video/mp4" />

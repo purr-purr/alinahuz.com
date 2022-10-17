@@ -1,6 +1,7 @@
 import { createRef, useContext, useEffect, useState } from 'react';
+import { MOBILE_BP, STARTED_MOB_SECOND_SCREEN, STARTED_SECOND_SCREEN } from '@helpers/const';
 import AppContext from '@modules/layout/context/AppContext';
-import { useOnScreen } from '@modules/common/hooks';
+import { useMediaQuery, useOnScreen } from '@modules/common/hooks';
 import MainScreen from '@modules/pages/mainPage/components/MainScreen';
 import SelectedWorks from '@modules/pages/mainPage/components/SelectedWorks';
 import AboutMe from '@modules/pages/mainPage/components/AboutMe';
@@ -8,10 +9,10 @@ import Skills from '@modules/pages/mainPage/components/Skills';
 import Experience from '@modules/pages/mainPage/components/Experience';
 import Education from '@modules/pages/mainPage/components/Education';
 import Contacts from '@modules/pages/mainPage/components/Contacts';
-import { STARTED_SECOND_SCREEN } from '@helpers/const';
 
 const MainPage = () => {
   const { handleSwitchDarkMode } = useContext(AppContext);
+  const isMobile = useMediaQuery(MOBILE_BP);
 
   const mainScreenRef = createRef<HTMLDivElement>();
   const educationRef = createRef<HTMLDivElement>();
@@ -44,11 +45,13 @@ const MainPage = () => {
     mainScreenRef.current && setMainScreenHeight(mainScreenRef.current.clientHeight);
   }, []);
 
+  const newSecondScreenBp = isMobile ? STARTED_MOB_SECOND_SCREEN : STARTED_SECOND_SCREEN;
+
   useEffect(() => {
     function updatePosition() {
       const scrollY = window.scrollY;
       setScrollPosition(scrollY);
-      scrollY >= STARTED_SECOND_SCREEN && scrollY < mainScreenHeight
+      scrollY >= newSecondScreenBp && scrollY < mainScreenHeight
         ? setSecondScreen(true)
         : setSecondScreen(false);
     }

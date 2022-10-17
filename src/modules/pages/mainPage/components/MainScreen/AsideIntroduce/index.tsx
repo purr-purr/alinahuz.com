@@ -2,8 +2,8 @@ import { FC, SetStateAction, useEffect, useState } from 'react';
 import cn from 'classnames';
 import { MOBILE_BP } from '@helpers/const';
 import { useMediaQuery } from '@modules/common/hooks';
-
 import messages from '@helpers/messages';
+
 import MainHeading from '@modules/common/components/MainHeading';
 import NextBlockShadow from '@modules/common/components/NextBlockShadow';
 
@@ -98,14 +98,12 @@ const AsideIntroduce: FC<{
     });
   };
 
-  useEffect(() => {
-    isOpen ? showTextDelay() : setShowText(initialShowText);
-  }, [isOpen]);
-
   const [loadAsideBar, setLoadAsideBar] = useState(false);
 
   useEffect(() => {
     setLoadAsideBar(true);
+    console.log(isOpen);
+    isOpen ? showTextDelay() : setShowText(initialShowText);
   }, [isOpen]);
 
   return (

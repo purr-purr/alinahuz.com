@@ -8,9 +8,11 @@ import PageNotFound from '@modules/staticPages/PageNotFound';
 import FullScreenCarousel from '@modules/pages/mainPage/components/SelectedWorks/SelectedWorksCarousel';
 
 import s from './Layout.module.scss';
-import { STARTED_SECOND_SCREEN } from '@helpers/const';
+import { MOBILE_BP, STARTED_MOB_SECOND_SCREEN, STARTED_SECOND_SCREEN } from '@helpers/const';
+import { useMediaQuery } from '@modules/common/hooks';
 
 const Layout: FC = ({ children }) => {
+  const isMobile = useMediaQuery(MOBILE_BP);
   const { pathname } = useLocation();
   const [isDarkMode, setIsDarkMode] = useState(false);
   const [isNavigationMode, setIsNavigationMode] = useState(false);
@@ -50,12 +52,14 @@ const Layout: FC = ({ children }) => {
     else document.body.style.overflow = 'visible';
   }, [isNavigationMode, isFullScreenCarouselMode.isActive]);
 
+  const newSecondScreenBp = isMobile ? STARTED_MOB_SECOND_SCREEN : STARTED_SECOND_SCREEN;
+
   return (
     <main className={s.container}>
       <AppContext.Provider value={context}>
         <Header
           isDarkModeActive={isDarkMode || isNavigationMode}
-          isHideLogo={window.scrollY > STARTED_SECOND_SCREEN || pathname === '/404'}
+          isHideLogo={window.scrollY > newSecondScreenBp || pathname === '/404'}
         />
         {pathname !== '/404' ? (
           <>
