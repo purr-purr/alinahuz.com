@@ -18,7 +18,7 @@ const Header: FC<{
 
   return (
     <header className={s.container}>
-      {isHideLogo && <Logo isBlackColor={isDarkModeActive} />}
+      {!isHideLogo && <Logo isBlackColor={isDarkModeActive} />}
       <BurgerMenuIcon
         isOpenState={isNavigationMode}
         isBlackColor={isDarkModeActive}

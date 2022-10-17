@@ -52,15 +52,18 @@ const Layout: FC = ({ children }) => {
     else document.body.style.overflow = 'visible';
   }, [isNavigationMode, isFullScreenCarouselMode.isActive]);
 
-  const newSecondScreenBp = isMobile ? STARTED_MOB_SECOND_SCREEN : STARTED_SECOND_SCREEN;
+  const secondScreenPoint = isMobile ? STARTED_MOB_SECOND_SCREEN : STARTED_SECOND_SCREEN;
 
   return (
     <main className={s.container}>
       <AppContext.Provider value={context}>
         <Header
           isDarkModeActive={isDarkMode || isNavigationMode}
-          isHideLogo={window.scrollY > newSecondScreenBp || pathname === '/404'}
+          isHideLogo={
+            pathname === '/404' ? false : window.scrollY < secondScreenPoint ? true : false
+          }
         />
+
         {pathname !== '/404' ? (
           <>
             <section className={s.section}>{children}</section>
