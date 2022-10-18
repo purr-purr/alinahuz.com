@@ -64,9 +64,9 @@ const messages = {
     'I am looking for a great job    for myself.',
   MY_MAIN_TOOL_IS_FIGMA_I_HAVE_A_HIGH_LEVEL:
     'My main tool is Figma. I have a high level of it and am constantly improving my skills. ' +
-    'To work with bitmap images I use Adobe Photoshop. I can work in Adobe XD, but I prefer Figma to this tool. ' +
-    'I can do research, realization of personas, user flow maps, prediction of interaction scenarios.' +
-    ' I can create banners/animation banners, typographic logo designs, and low/high fidelity wireframes. ' +
+    'To work with bitmap images I use Adobe Photoshop. I can work in Adobe XD, but I prefer Figma to this tool. \n' +
+    'I can do research, realization of personas, user flow maps, prediction of interaction scenarios. \n' +
+    ' I can create banners/animation banners, typographic logo designs, and low/high fidelity wireframes. \n' +
     'I have shown myself well in the ability to redesign. I have a basic understanding of HTML and CSS.' +
     ' I use my skills to create a product that solves user problems and meets business goals.',
   I_HAVE_EXPERIENCE_DESIGNING_COMMERCE:

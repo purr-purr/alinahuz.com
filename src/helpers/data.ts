@@ -92,13 +92,13 @@ export const selectedWorks = [
     description:
       'Portfolio landing page for a front-end developer who specializes in React.js with a focus on UI development. ',
     implementation:
-      'As a result of research, it turned out that the target audience ' +
-      'of the site is young progressive people and interior designers' +
-      ' interested in buying vintage and designer items for comfort and ' +
-      'to complement their home decor. Therefore, it was decided to make' +
-      ' a website with a modern minimalistic clean design.\n' +
-      'The corporate colors of the project - blue and orange - were ' +
-      'chosen as accent colors for the landing page.',
+      'From the information that I collected during the UX research and person analysis, I can conclude that' +
+      ' it is necessary to create a site that would distinguish the developer, immediately show the high' +
+      ' level of his skills, provide users with the most relevant data that they could find in a short time.' +
+      ' And even a person who does not have much experience in the selection of IT specialists will easily find' +
+      ' and understand the strengths of the developer.\n' +
+      'The design concept is to display screen by screen and have two color themes (dark and light) ' +
+      'with inversion of contrasting colors.',
     link: 'https://www.behance.net/gallery/149560407/Landing-page-portfolio-for-WEB-DEVELOPER',
     screenShots: [
       { path: screenShotsPath('web-1') },
@@ -117,11 +117,10 @@ export const selectedWorks = [
       ' is the provision of transport and logistics services for the B2B' +
       ' sector between Poland and Ukraine.',
     implementation:
-      'The new site should be simple and clean, as well as similar in appearance to ' +
-      'existing "Delivery Group" sites. One of the main requirements was to create' +
-      ' a design that the client himself could later supplement with information ' +
-      'blocks, images, or other information. As a result, the site had to be easily' +
-      ' maintained and easily scalable. The client also chose blue as the main color.',
+      'The new site should be simple and clean, as well as similar in appearance to existing "Delivery Group" sites.' +
+      ' One of the main requirements was to create a design that the client himself could later supplement ' +
+      'with information blocks, images, or other information. As a result, the site had to be easily maintained' +
+      ' and easily scalable. The client also chose blue as the main color.',
     link: 'https://www.behance.net/gallery/149550087/Website-for-a-DELIVERY-INTERNATIONAL-POLAND',
     screenShots: [
       { path: screenShotsPath('poland-1') },
@@ -141,13 +140,16 @@ export const selectedWorks = [
       ' B2B sector (business entities and the corporate sector) both in' +
       ' Ukraine and abroad.',
     implementation:
-      'As a result of research, it turned out that the target audience of the' +
-      ' site is young progressive people and interior designers interested ' +
-      'in buying vintage and designer items for comfort and to complement ' +
-      'their home decor. Therefore, it was decided to make a website with' +
-      ' a modern minimalistic clean design.\n' +
-      'The corporate colors of the project - blue and orange - were chosen ' +
-      'as accent colors for the landing page.',
+      'The task of this project was to redesign and create one user-friendly site from two old, oversized sites, ' +
+      'with many pages leading nowhere. Provided that the first screen and company news pages have already' +
+      ' been created and approved. \n' +
+      'My main goal was to follow an almost ready-made style guide when creating new pages, conduct research,' +
+      ' identify the weaknesses of previous versions of the site, interview company employees who were also ' +
+      'part of the target audience of the site, and based on the results of this search, create a design for ' +
+      'a new site without losing information. \n' +
+      'As a result, my redesign helped not only improve the appearance of the site, but also create a truly ' +
+      'functional service for all users. The conversion has increased and the new version of the site has ' +
+      'received a lot of positive feedback from regular users.',
     link: 'https://delivery-auto.com/en-us',
     screenShots: [
       { path: screenShotsPath('delivery-1') },
@@ -167,13 +169,12 @@ export const selectedWorks = [
       'the foundation has started activities to help all those' +
       ' who suffer from the severe aggression of the enemy.',
     implementation:
-      'As a result of research, it turned out that the target audience of ' +
-      'the site is young progressive people and interior designers' +
-      ' interested in buying vintage and designer items for comfort' +
-      ' and to complement their home decor. Therefore, it was decided ' +
-      'to make a website with a modern minimalistic clean design.\n' +
-      'The corporate colors of the project - blue and orange - were ' +
-      'chosen as accent colors for the landing page.',
+      'The task of the project was to create a simple website with clear functionality- accepting charitable payments.\n' +
+      'After analyzing competitors, and identifying the purpose of the company, I came to the conclusion that the ' +
+      'design of the site should be clean, informative, and understandable to any user because donations can come' +
+      ' from both people and large organizations.\n' +
+      'In the design, I used light colors, and blue and yellow, the traditional colors of the Ukrainian flag, became' +
+      ' accents.',
     link: 'https://www.behance.net/alinahuz',
     screenShots: [
       { path: screenShotsPath('fund-1') },
@@ -188,16 +189,12 @@ export const selectedWorks = [
     reverseState: false,
     title: 'Blash Vintage',
     description:
-      'Portfolio landing page for a front-end developer who specializes' +
-      ' in React.js with a focus on UI development. ',
+      'Landing page for a store that combines beautiful and high-quality things for the home. Personal study project.',
     implementation:
-      'As a result of research, it turned out that the target audience of' +
-      ' the site is young progressive people and interior designers' +
-      ' interested in buying vintage and designer items for comfort ' +
-      'and to complement their home decor. Therefore, it was decided' +
-      ' to make a website with a modern minimalistic clean design.\n' +
-      'The corporate colors of the project - blue and orange - were' +
-      ' chosen as accent colors for the landing page.',
+      'As a result of research, it turned out that the target audience of the site is young progressive people ' +
+      'and interior designers interested in buying vintage and designer items for comfort and to complement ' +
+      'their home decor. Therefore, it was decided to make a website with a modern minimalistic clean design.\n' +
+      'The corporate colors of the project - blue and orange - were chosen as accent colors for the landing page.',
     link: 'https://www.behance.net/gallery/144175041/Landing-for-Blash-Vintage',
     screenShots: [
       { path: screenShotsPath('blash-1') },
@@ -216,13 +213,13 @@ export const selectedWorks = [
       'manufactures and sells jewelry made of precious stones and' +
       ' precious metals. Personal study project.',
     implementation:
-      'As a result of research, it turned out that the target audience ' +
-      'of the site is young progressive people and interior designers ' +
-      'interested in buying vintage and designer items for comfort' +
-      ' and to complement their home decor. Therefore, it was ' +
-      'decided to make a website with a modern minimalistic clean design.\n' +
-      'The corporate colors of the project - blue and orange - were' +
-      ' chosen as accent colors for the landing page.',
+      "I conducted an analysis of the site's potential customers and researched competitors. Since it turned " +
+      'out that the target audience of the site is mainly women who are looking for new jewelry for themselves ' +
+      'and men who are looking for a gift for women, it was decided to create a minimalistic design with a clear' +
+      ' structure where using the advanced search tool, you can quickly select jewelry for every taste. \n' +
+      'The color palette includes pastel colors, and accent colors in shades of burgundy, which evokes in users ' +
+      'associations with high cost and sophistication, and also instills a sense of prestige of the company.\n' +
+      'During the work, the main page, catalog pages, product page, and 404 page were created.',
     link: 'https://www.behance.net/gallery/101989775/Online-store-for-a-jewelry-company-JEWELRYUA',
     screenShots: [
       { path: screenShotsPath('jewelry-1') },
@@ -240,13 +237,14 @@ export const selectedWorks = [
       'A multi-page site for an insurance company that specializes' +
       ' in traditional: insurance, coinsurance, reinsurance.',
     implementation:
-      'As a result of research, it turned out that the target audience of ' +
-      'the site is young progressive people and interior designers ' +
-      'interested in buying vintage and designer items for comfort ' +
-      'and to complement their home decor. Therefore, it was decided' +
-      ' to make a website with a modern minimalistic clean design.\n' +
-      'The corporate colors of the project - blue and orange - were' +
-      ' chosen as accent colors for the landing page.',
+      'I conducted an analysis of the target audience of the site, as well as an analysis of the business ' +
+      'environment of the customer company. It turned out that for sites that are even indirectly related' +
+      ' to healthcare, the law provides for the need for a design with the implementation of a version for' +
+      ' people with visual impairments, I worked on such functionality for the first time.\n' +
+      'This version includes the ability to view the site in black and white, a dark version with increased' +
+      ' concentration, and a version with varying degrees of the increased font size. You can conveniently' +
+      ' manage these versions through an additional pop-up panel.\n' +
+      'It was decided to make the design simple and user-friendly, in light colors with green accents.',
     link: 'https://astramed-ic.com/',
     screenShots: [
       { path: screenShotsPath('astramed-1') },
@@ -266,14 +264,13 @@ export const selectedWorks = [
       '(Santa Claus and Snow Maiden) with children from December' +
       ' 14 to December 27. Personal study project.',
     implementation:
-      'As a result of research, it turned out that the target audience' +
-      ' of the site is young progressive people and interior' +
-      ' designers interested in buying vintage and designer' +
-      ' items for comfort and to complement their home decor. ' +
-      'Therefore, it was decided to make a website with a modern' +
-      ' minimalistic clean design.\n' +
-      'The corporate colors of the project - blue and orange - were' +
-      ' chosen as accent colors for the landing page.',
+      'After analyzing the target audience, I realized that the landing page has a very narrow focus, since ' +
+      'its potential customers are parents or a group of parents of preschool and school children. \n' +
+      "The task was to create a selling site that could impress and motivate users to order the company's services.\n" +
+      "I decided to create a design that conveys the atmosphere of the magic of New Year's Eve. " +
+      "Used bright contrasting colors to guide users' attention.\n" +
+      'I wanted to remind a potential client - a parent of a child about his childhood and forgotten ' +
+      'faith in miracles.',
     link: 'https://www.behance.net/gallery/111236373/landing-page-for-event-agency',
     screenShots: [
       { path: screenShotsPath('new-year-1') },

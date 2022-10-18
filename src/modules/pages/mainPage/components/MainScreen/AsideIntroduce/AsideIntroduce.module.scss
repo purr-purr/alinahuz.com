@@ -124,27 +124,27 @@
 }
 
 .step1 {
-  animation-delay: 1s;
-}
-
-.step2 {
   animation-delay: 1.5s;
 }
 
-.step3 {
-  animation-delay: 0s;
-}
-
-.step4 {
+.step2 {
   animation-delay: 2s;
 }
 
-.step5 {
+.step3 {
+  animation-delay: 1s;
+}
+
+.step4 {
   animation-delay: 2.5s;
 }
 
-.step6 {
+.step5 {
   animation-delay: 3s;
+}
+
+.step6 {
+  animation-delay: 3.5s;
 }
 
 @keyframes appearance {

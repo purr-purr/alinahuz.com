@@ -48,6 +48,7 @@
   max-width: 544px;
   font-size: 14px;
   line-height: 17px;
+  white-space: break-spaces;
 
   @include media-laptop {
     max-width: 460px;
