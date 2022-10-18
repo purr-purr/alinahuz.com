@@ -25,7 +25,15 @@ const MainScreen = forwardRef<HTMLDivElement, IMainScreen>((props, ref) => {
           alt={messages.ALINA_HUZ_LOGO}
         />
         <div className={s.waves}>
-          <video width="100%" height="100%" preload="auto" autoPlay loop controls={false} muted>
+          <video
+            width="100%"
+            height="100%"
+            preload="auto"
+            playsInline
+            autoPlay
+            loop
+            controls={false}
+          >
             <source src={WAVES_VIDEO} type="video/mp4" />
           </video>
         </div>

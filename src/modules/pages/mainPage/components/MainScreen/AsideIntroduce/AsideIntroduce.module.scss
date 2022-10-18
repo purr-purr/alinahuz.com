@@ -1,7 +1,7 @@
 .container {
   display: flex;
   flex-direction: column;
-  height: 100vh;
+  min-height: 100vh;
   position: sticky;
   top: 0;
   left: 0;
@@ -73,6 +73,8 @@
   width: 804px;
   margin: auto;
   text-align: center;
+  padding-top: 120px;
+  padding-bottom: 120px;
 
   @include media-laptop {
     max-width: 700px;
@@ -81,14 +83,12 @@
 
   @include media-mobile {
     max-width: 328px;
+    padding-top: 70px;
+    padding-bottom: 70px;
   }
 
   &-hello {
     margin-bottom: 20px;
-
-    @include media-laptop {
-      margin-bottom: 50px;
-    }
   }
 
   &-title {
