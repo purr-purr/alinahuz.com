@@ -30,6 +30,7 @@ const MainScreen = forwardRef<HTMLDivElement, IMainScreen>((props, ref) => {
             height="100%"
             preload="auto"
             playsInline
+            muted
             autoPlay
             loop
             controls={false}

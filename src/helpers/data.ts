@@ -175,7 +175,7 @@ export const selectedWorks = [
       ' from both people and large organizations.\n' +
       'In the design, I used light colors, and blue and yellow, the traditional colors of the Ukrainian flag, became' +
       ' accents.',
-    link: 'https://www.behance.net/alinahuz',
+    link: 'https://shaposhnikov.in/assets-file/projects/whih_fund/index_en.html',
     screenShots: [
       { path: screenShotsPath('fund-1') },
       { path: screenShotsPath('fund-2') },
