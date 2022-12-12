@@ -1,0 +1,75 @@
+.container {
+  display: flex;
+  padding-bottom: 200px;
+  @include block-padding(28px);
+  background-color: $main-gray-color;
+  position: relative;
+  z-index: 2;
+  overflow-y: hidden;
+
+  @include media-laptop {
+    padding-top: 0;
+    padding-bottom: 150px;
+    @include block-padding(42px);
+  }
+
+  @include media-mobile {
+    padding-bottom: 100px;
+    @include block-padding(16px);
+    flex-direction: column;
+    align-items: baseline;
+  }
+
+  &:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 621px;
+    height: 919px;
+    background: url("../../../../../assets/images/patterns/patterns_left-side.svg") no-repeat center / 100%;
+    pointer-events: none;
+    z-index: 1;
+
+    @include media-laptop {
+      top: 50px;
+      width: 322px;
+      height: 476px;
+    }
+
+    @include media-mobile {
+      display: none;
+    }
+  }
+}
+
+.description {
+  margin-bottom: 50px;
+  max-width: 544px;
+  font-size: 14px;
+  line-height: 17px;
+  white-space: break-spaces;
+
+  @include media-laptop {
+    max-width: 460px;
+  }
+
+  @include media-mobile {
+    font-size: 12px;
+    line-height: 15px;
+    margin-top: 24px;
+  }
+}
+
+.infoBlock {
+  width: 50%;
+  margin-left: auto;
+
+  @include media-laptop {
+    width: 60%;
+  }
+
+  @include media-mobile {
+    width: 100%;
+  }
+}

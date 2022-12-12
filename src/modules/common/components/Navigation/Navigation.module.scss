@@ -1,0 +1,54 @@
+.container {
+  @include flex-justify(center);
+  flex-direction: column;
+  width: 100%;
+  height: 100vh;
+  background-color: $main-gray-color;
+  padding: 30px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 2;
+
+  &:before,
+  &:after {
+    content: '';
+    position: absolute;
+    top: calc((100% - 919px) / 2);
+    width: 621px;
+    height: 919px;
+    pointer-events: none;
+    z-index: 1;
+
+    @include media-laptop {
+      top: calc((100% - 600px) / 2);
+      width: 406px;
+      height: 600px;
+    }
+
+    @include media-mobile {
+      display: none;
+    }
+  }
+
+  &:before {
+    background: url("../../../../assets/images/patterns/patterns_left-side.svg") no-repeat center / 100%;
+    left: 0;
+  }
+
+  &:after {
+    background: url("../../../../assets/images/patterns/patterns_right-side.svg") no-repeat center / 100%;
+    right: 0;
+  }
+
+  & li {
+    width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 50px;
+
+    &:not(:last-of-type) {
+      margin-bottom: 50px;
+    }
+  }
+}

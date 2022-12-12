@@ -1,0 +1,16 @@
+// Breakpoints use in mixins
+$low-mobile-bp: 360px;
+$mobile-bp: 1024px;
+$laptop-bp: 1300px;
+
+// Colors
+$main-black-color: #0c0c0c;
+$main-gray-color: #f0f0f0;
+$secondary-gray-color: #7c7c7c;
+$full-black-color: #000;
+$full-white-color: #fff;
+$next-block-blur: linear-gradient(
+                360deg,
+                rgba(46, 46, 46, 0.16) -25.3%,
+                rgba(176, 176, 176, 0) 91.96%
+);
