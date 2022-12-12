@@ -17,4 +17,5 @@ const Skills = forwardRef<HTMLDivElement>((props, ref) => {
     </article>
   );
 });
+
 export default Skills;

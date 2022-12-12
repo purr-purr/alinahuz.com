@@ -1,4 +1,5 @@
 import { FC } from 'react';
+import cn from 'classnames';
 
 import s from './BurgerMenuIcon.module.scss';
 
@@ -8,7 +9,7 @@ const BurgerMenuIcon: FC<{
   isOpenState: boolean;
 }> = ({ isBlackColor = false, onClick, isOpenState = false }) => {
   return (
-    <button onClick={onClick} className={s.container}>
+    <button onClick={onClick} className={cn(s.container, isOpenState && s[`container--short`])}>
       <svg className={s.icon} viewBox="0 0 53 7" fill="none" xmlns="http://www.w3.org/2000/svg">
         <rect
           className={s[`icon-line`]}

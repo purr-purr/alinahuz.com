@@ -28,4 +28,5 @@ const DecorativeLink: FC<{
     </HashLink>
   );
 };
+
 export default DecorativeLink;

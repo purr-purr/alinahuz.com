@@ -42,4 +42,5 @@ const EducationListItem: FC<{
     </li>
   );
 };
+
 export default EducationListItem;

@@ -21,4 +21,5 @@ const EducationList: FC<{ isActive: boolean }> = ({ isActive }) => {
     </ul>
   );
 };
+
 export default EducationList;

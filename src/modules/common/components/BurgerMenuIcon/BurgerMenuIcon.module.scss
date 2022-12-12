@@ -17,6 +17,10 @@
   @include media-mobile {
     width: 73px;
   }
+
+  &--short {
+    margin-right: 5px;
+  }
 }
 
 .icon {

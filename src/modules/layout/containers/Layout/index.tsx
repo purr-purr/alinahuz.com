@@ -7,9 +7,10 @@ import Footer from '@modules/layout/containers/Footer';
 import PageNotFound from '@modules/staticPages/PageNotFound';
 import FullScreenCarousel from '@modules/pages/mainPage/components/SelectedWorks/SelectedWorksCarousel';
 
-import s from './Layout.module.scss';
 import { MOBILE_BP, STARTED_MOB_SECOND_SCREEN, STARTED_SECOND_SCREEN } from '@helpers/const';
 import { useMediaQuery } from '@modules/common/hooks';
+
+import s from './Layout.module.scss';
 
 const Layout: FC = ({ children }) => {
   const isMobile = useMediaQuery(MOBILE_BP);
@@ -59,9 +60,7 @@ const Layout: FC = ({ children }) => {
       <AppContext.Provider value={context}>
         <Header
           isDarkModeActive={isDarkMode || isNavigationMode}
-          isHideLogo={
-            pathname === '/404' ? false : window.scrollY < secondScreenPoint ? true : false
-          }
+          isHideLogo={pathname === '/404' ? false : window.scrollY < secondScreenPoint}
         />
 
         {pathname !== '/404' ? (

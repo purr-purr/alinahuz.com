@@ -9,7 +9,7 @@ const isBrowserSupportsHistory = 'pushState' in window.history;
 const queryClient = new QueryClient();
 const NoFound = () => <Redirect to="/404" />;
 
-function App() {
+const App = () => {
   return (
     <BrowserRouter forceRefresh={!isBrowserSupportsHistory}>
       <QueryClientProvider client={queryClient}>
@@ -24,6 +24,6 @@ function App() {
       </QueryClientProvider>
     </BrowserRouter>
   );
-}
+};
 
 export default App;

@@ -30,4 +30,5 @@ const AboutMe = forwardRef<HTMLDivElement, IAboutMe>((props, ref) => {
     </article>
   );
 });
+
 export default AboutMe;

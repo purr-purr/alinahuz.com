@@ -30,4 +30,5 @@ const Education = forwardRef<HTMLDivElement, IEducation>((props, ref) => {
     </article>
   );
 });
+
 export default Education;

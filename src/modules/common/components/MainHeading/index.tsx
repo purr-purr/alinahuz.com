@@ -20,4 +20,5 @@ const MainHeading: FC<{
   );
   return element;
 };
+
 export default MainHeading;

@@ -34,4 +34,5 @@ const EducationDegree: FC = () => {
     </>
   );
 };
+
 export default EducationDegree;

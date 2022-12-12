@@ -42,4 +42,5 @@ const MainScreen = forwardRef<HTMLDivElement, IMainScreen>((props, ref) => {
     </article>
   );
 });
+
 export default MainScreen;

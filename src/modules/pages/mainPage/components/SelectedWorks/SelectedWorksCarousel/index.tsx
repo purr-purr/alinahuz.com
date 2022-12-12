@@ -60,4 +60,5 @@ const SelectedWorksCarousel: FC<{
     </article>
   );
 };
+
 export default SelectedWorksCarousel;
