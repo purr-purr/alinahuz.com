@@ -99,6 +99,9 @@ const messages = {
   SCROLL_DOWN: 'Scroll down',
   ERROR_CODE: '404',
   GO_TO_MAIN: 'Go to main',
+  BLOCK: 'Block',
+  CLICK: 'Click',
+  OPENED_FULL_INFO: 'Opened full info',
   IM_SORRY_BUT_PAGE_NOT_AVAILABLE: "I'm sorry, but the page you requested is not available.",
   I_HAVE_A_GREAT_DESIRE_TO_DEVELOP:
     'I have a great desire to develop and' +

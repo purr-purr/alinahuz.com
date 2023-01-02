@@ -1,6 +1,6 @@
 import { useContext, useState } from 'react';
 import AppContext from '@modules/layout/context/AppContext';
-import { useMediaQuery } from '@modules/common/hooks';
+import { useAnalyticsEventTracker, useMediaQuery } from '@modules/common/hooks';
 import { MOBILE_BP } from '@helpers/const';
 import messages from '@helpers/messages';
 import { selectedWorks, SOCIALS_LINKS } from '@helpers/data';
@@ -17,6 +17,13 @@ const SelectedWorksList = () => {
   const sliceArray = fullView ? selectedWorks : selectedWorks.slice(0, 3);
 
   const { handleSwitchFullScreenCarouselMode, isFullScreenCarouselMode } = useContext(AppContext);
+
+  const gaEventTracker = useAnalyticsEventTracker(`${messages.SELECTED_WORKS} ${messages.BLOCK}`);
+
+  const seeMoreWorksButton = () => {
+    setFullView(true);
+    gaEventTracker(`${messages.CLICK}: ${messages.SEE_MORE_WORKS}`);
+  };
 
   return (
     <>
@@ -47,7 +54,7 @@ const SelectedWorksList = () => {
         <div className={s.seeMore}>
           <TextLink
             className={s[`seeMore-item`]}
-            onClick={() => setFullView(true)}
+            onClick={() => seeMoreWorksButton()}
             text={messages.SEE_MORE_WORKS}
             type="button"
             isWhiteColorState
