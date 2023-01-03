@@ -1,4 +1,4 @@
-import { createRef, useContext, useEffect, useState } from 'react';
+import React, { createRef, useContext, useEffect, useState } from 'react';
 import { MOBILE_BP, STARTED_MOB_SECOND_SCREEN, STARTED_SECOND_SCREEN } from '@helpers/const';
 import AppContext from '@modules/layout/context/AppContext';
 import { useMediaQuery, useOnScreen } from '@modules/common/hooks';
@@ -114,4 +114,4 @@ const MainPage = () => {
   );
 };
 
-export default MainPage;
+export default React.memo(MainPage);
