@@ -6,15 +6,16 @@ import CustomSwitch from './modules/common/components/CustomSwitch';
 import MainPage from '@modules/pages/mainPage';
 import { useEffect } from 'react';
 
-const TRACKING_ID = 'G-L38R9BZTP9';
-ReactGA.initialize(TRACKING_ID);
-
 const modulesData = [{ path: '/', title: 'mainPage', component: MainPage }];
 const isBrowserSupportsHistory = 'pushState' in window.history;
 const queryClient = new QueryClient();
 const NoFound = () => <Redirect to="/404" />;
 
 const App = () => {
+  const TRACKING_ID = 'G-L38R9BZTP9';
+  ReactGA.initialize(TRACKING_ID);
+  console.log('init', TRACKING_ID);
+
   useEffect(() => {
     const currentLocation = window.location.pathname + window.location.search;
     const location = currentLocation === '/' ? 'home' : currentLocation;
