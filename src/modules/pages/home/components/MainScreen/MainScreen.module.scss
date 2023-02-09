@@ -1,0 +1,69 @@
+.container {
+	width: 100%;
+	height: 250vh;
+	background-color: $main-black-color;
+	position: relative;
+
+	@include media-mobile {
+		height: calc(100vh + 300px);
+	}
+}
+
+.content {
+	height: 100%;
+	width: 100%;
+	position: absolute;
+	top: -55px;
+	left: 0;
+}
+
+.logo {
+	width: 682px;
+	height: 50px;
+	position: sticky;
+	top: calc((100% - 50px) / 2);
+	left: calc((100% - 682px) / 2);
+	z-index: 5;
+
+	@include media-laptop {
+		width: 412px;
+		height: 30px;
+		top: calc((100% - 30px) / 2);
+		left: calc((100% - 412px) / 2);
+	}
+
+	@include media-mobile {
+		width: 162px;
+		height: 13px;
+		top: calc((100% - 13px) / 2);
+		left: calc((100% - 162px) / 2);
+	}
+
+	&.hide {
+		opacity: 0;
+		transition: opacity 0.3s ease-in-out;
+	}
+}
+
+.waves {
+	width: 100%;
+	height: 100vh;
+	position: sticky;
+	top: 0;
+	left: 0;
+	z-index: 4;
+
+	&:before {
+		content: '';
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		background: rgba(0, 0, 0, 0.83);
+	}
+
+	video {
+		object-fit: cover;
+	}
+}

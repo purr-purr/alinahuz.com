@@ -1,10 +1,10 @@
 .container {
-  cursor: pointer;
-  width: 164px;
-  height: 12px;
-  
-  @include media-mobile {
-    width: 123px;
-    height: 9px;
-  }
+	cursor: pointer;
+	width: 164px;
+	height: 12px;
+
+	@include media-mobile {
+		width: 123px;
+		height: 9px;
+	}
 }

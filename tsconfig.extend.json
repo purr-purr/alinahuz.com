@@ -1,10 +1,10 @@
 {
-  "compilerOptions": {
-    "baseUrl": ".",
-    "paths": {
-      "@modules/*": ["src/modules/*"],
-      "@helpers/*": ["src/helpers/*"],
-      "@assets/*": ["src/assets/*"]
-    }
-  }
+	"compilerOptions": {
+		"baseUrl": ".",
+		"paths": {
+			"@modules/*": ["src/modules/*"],
+			"@utils/*": ["src/utils/*"],
+			"@assets/*": ["src/assets/*"]
+		}
+	}
 }

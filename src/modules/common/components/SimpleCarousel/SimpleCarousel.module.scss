@@ -9,7 +9,8 @@
   height: auto;
 
   &:hover {
-    cursor: url("../../../../assets/images/cursor/cursor_pause.svg") 50 50, pointer;
+    cursor: url('../../assets/cursor/cursor_pause.svg') 50 50,
+    pointer;
   }
 }
 
