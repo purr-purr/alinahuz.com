@@ -1,59 +1,59 @@
 .container {
-	@include block-padding(67px);
-	padding-bottom: 36px;
-	text-align: right;
-	background-color: $main-black-color;
-	position: relative;
+  @include block-padding(67px);
+  padding-bottom: 36px;
+  text-align: right;
+  background-color: $main-black-color;
+  position: relative;
 
-	@include media-laptop {
-		@include block-padding(42px);
-		padding-bottom: 28px;
-	}
+  @include media-laptop {
+    @include block-padding(42px);
+    padding-bottom: 28px;
+  }
 
-	@include media-mobile {
-		@include block-padding(16px);
-		padding-bottom: 16px;
-	}
+  @include media-mobile {
+    @include block-padding(16px);
+    padding-bottom: 16px;
+  }
 
-	p {
-		font-weight: 400;
-		font-size: 14px;
-		line-height: 1.2;
-		color: $secondary-gray-color;
+  p {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.2;
+    color: $secondary-gray-color;
 
-		@include media-laptop {
-			font-size: 14px;
-		}
+    @include media-laptop {
+      font-size: 14px;
+    }
 
-		@include media-mobile {
-			font-size: 12px;
-		}
-	}
+    @include media-mobile {
+      font-size: 12px;
+    }
+  }
 
-	span {
-		font-weight: 700;
-	}
+  span {
+    font-weight: 700;
+  }
 }
 
-.scrollTop {
-	background-color: transparent;
-	border: none;
-	padding: 10px;
-	position: absolute;
-	left: 18px;
-	bottom: 18px;
-	width: 27px;
-	height: 80px;
-	z-index: 2;
-	@include floating-animation;
+.scrollToTop {
+  background-color: transparent;
+  border: none;
+  padding: 10px;
+  position: absolute;
+  left: 18px;
+  bottom: 18px;
+  width: 27px;
+  height: 80px;
+  z-index: 2;
+  @include floating-animation;
 
-	@include media-laptop {
-		left: 28px;
-	}
+  @include media-laptop {
+    left: 28px;
+  }
 
-	@include media-mobile {
-		left: 6px;
-		height: 60px;
-		bottom: 36px;
-	}
+  @include media-mobile {
+    left: 6px;
+    height: 60px;
+    bottom: 36px;
+  }
 }

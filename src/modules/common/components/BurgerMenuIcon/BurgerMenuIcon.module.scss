@@ -1,44 +1,45 @@
 .container {
-	display: flex;
-	width: 80px;
-	height: 28px;
-	position: relative;
-	cursor: pointer;
-	margin-left: auto;
-	background-color: transparent;
-	border: 0;
-	padding: 10px;
-	z-index: 9;
+  display: flex;
+  width: 80px;
+  height: 28px;
+  position: relative;
+  cursor: pointer;
+  margin-left: auto;
+  background-color: transparent;
+  border: 0;
+  padding: 10px;
+  z-index: 9;
 
-	@include media-laptop {
-		width: 92px;
-	}
+  @include media-laptop {
+    width: 92px;
+  }
 
-	@include media-mobile {
-		width: 73px;
-	}
+  @include media-mobile {
+    width: 73px;
+  }
 
-	&--short {
-		margin-right: 5px;
-	}
+  &--short {
+    margin-right: 5px;
+  }
 }
 
+
 .icon {
-	width: 60px;
-	height: 8px;
+  width: 60px;
+  height: 8px;
 
-	@include media-laptop {
-		width: 72px;
-	}
+  @include media-laptop {
+    width: 72px;
+  }
 
-	@include media-mobile {
-		width: 53px;
-		height: 7px;
-	}
+  @include media-mobile {
+    width: 53px;
+    height: 7px;
+  }
 
-	&-line {
-		width: 100%;
-		height: 2px;
-		transition: all 0.3s ease-in-out;
-	}
+  &-line {
+    width: 100%;
+    height: 2px;
+    transition: all 0.3s ease-in-out;
+  }
 }

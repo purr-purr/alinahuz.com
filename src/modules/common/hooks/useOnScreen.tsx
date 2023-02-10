@@ -8,9 +8,9 @@ const useOnScreen = (ref: any, threshold?: number) => {
 	const isMobile = useMediaQuery(MOBILE_BP);
 	const [isIntersecting, setIntersecting] = useState(false);
 
-	const windowMargin = isMobile ? 30 : 50;
-	const windowHeight = window.innerHeight - windowMargin;
-	const windowRootMargin = `0px 0px -${windowHeight}px 0px`;
+	const getMarginFromBP = isMobile ? 30 : 50;
+	const windowMargin = window.innerHeight - getMarginFromBP;
+	const windowRootMargin = `0px 0px -${windowMargin}px 0px`;
 
 	const observer = new IntersectionObserver(
 		([entry]) => {

@@ -22,7 +22,7 @@ const MainScreen = forwardRef<HTMLDivElement, IMainScreen>((props, ref) => {
 				<img
 					className={cn(s.logo, props.isSecondScreen && s.hide)}
 					src={ALINA_HUZ_LOGO_WHITE}
-					alt={messages.ALINA_HUZ_LOGO}
+					alt={messages.ALINA_HUZ}
 				/>
 				<div className={s.waves}>
 					<video

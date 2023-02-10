@@ -1,5 +1,6 @@
 import { FC } from 'react';
 
+import { scrollToTop } from '@utils/index';
 import messages from '@utils/messages';
 
 import ALINA_HUZ_LOGO_BLACK from '@assets/images/ALINA_HUZ--black.svg';
@@ -11,7 +12,7 @@ const Logo: FC<{
 	isBlackColor?: boolean;
 }> = ({ isBlackColor = false }) => {
 	const clickOnLogo = () => {
-		window.scrollTo({ top: 0, behavior: 'smooth' });
+		scrollToTop();
 		window.location.reload();
 	};
 	return (
@@ -19,7 +20,7 @@ const Logo: FC<{
 			<img
 				className={s.container}
 				src={isBlackColor ? ALINA_HUZ_LOGO_BLACK : ALINA_HUZ_LOGO_WHITE}
-				alt={messages.ALINA_HUZ_LOGO}
+				alt={messages.ALINA_HUZ}
 			/>
 		</a>
 	);

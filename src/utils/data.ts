@@ -1,24 +1,16 @@
+import {
+	getCertificatePath,
+	getPosterPath,
+	getScreenShotsPath,
+} from '@utils/index';
+
 import messages from './messages';
 
-export const posterPath = (path: string) => {
-	return require(`@assets/images/selectedWorks/posters/poster_${path}.jpg`)
-		.default;
-};
-
-export const screenShotsPath = (path: string) => {
-	return require(`@assets/images/selectedWorks/screenShots/screenShots_${path}.jpg`)
-		.default;
-};
-
-export const certificatePicturePath = (path: string) => {
-	return require(`@assets/images/certificate/certificate_${path}.jpg`).default;
-};
-
 export const certificatePicture = [
-	{ path: certificatePicturePath('first') },
-	{ path: certificatePicturePath('second') },
-	{ path: certificatePicturePath('third') },
-	{ path: certificatePicturePath('four') },
+	{ path: getCertificatePath('first') },
+	{ path: getCertificatePath('second') },
+	{ path: getCertificatePath('third') },
+	{ path: getCertificatePath('four') },
 ];
 
 export const menuLinks = [
@@ -86,7 +78,7 @@ export const contactsLinks = [
 
 export const selectedWorks = [
 	{
-		poster: posterPath('web'),
+		poster: getPosterPath('web'),
 		number: 1,
 		isBlackState: true,
 		reverseState: false,
@@ -104,13 +96,13 @@ export const selectedWorks = [
 		link:
 			'https://www.behance.net/gallery/149560407/Landing-page-portfolio-for-WEB-DEVELOPER',
 		screenShots: [
-			{ path: screenShotsPath('web-1') },
-			{ path: screenShotsPath('web-2') },
-			{ path: screenShotsPath('web-3') },
+			{ path: getScreenShotsPath('web-1') },
+			{ path: getScreenShotsPath('web-2') },
+			{ path: getScreenShotsPath('web-3') },
 		],
 	},
 	{
-		poster: posterPath('poland'),
+		poster: getPosterPath('poland'),
 		number: 2,
 		isBlackState: false,
 		reverseState: true,
@@ -127,13 +119,13 @@ export const selectedWorks = [
 		link:
 			'https://www.behance.net/gallery/149550087/Website-for-a-DELIVERY-INTERNATIONAL-POLAND',
 		screenShots: [
-			{ path: screenShotsPath('poland-1') },
-			{ path: screenShotsPath('poland-2') },
-			{ path: screenShotsPath('poland-3') },
+			{ path: getScreenShotsPath('poland-1') },
+			{ path: getScreenShotsPath('poland-2') },
+			{ path: getScreenShotsPath('poland-3') },
 		],
 	},
 	{
-		poster: posterPath('delivery'),
+		poster: getPosterPath('delivery'),
 		number: 3,
 		isBlackState: true,
 		reverseState: false,
@@ -156,13 +148,13 @@ export const selectedWorks = [
 			'received a lot of positive feedback from regular users.',
 		link: 'https://delivery-auto.com/en-us',
 		screenShots: [
-			{ path: screenShotsPath('delivery-1') },
-			{ path: screenShotsPath('delivery-2') },
-			{ path: screenShotsPath('delivery-3') },
+			{ path: getScreenShotsPath('delivery-1') },
+			{ path: getScreenShotsPath('delivery-2') },
+			{ path: getScreenShotsPath('delivery-3') },
 		],
 	},
 	{
-		poster: posterPath('fund'),
+		poster: getPosterPath('fund'),
 		number: 4,
 		isBlackState: false,
 		reverseState: true,
@@ -181,13 +173,13 @@ export const selectedWorks = [
 			' accents.',
 		link: 'https://whih.com.ua/index_en.html',
 		screenShots: [
-			{ path: screenShotsPath('fund-1') },
-			{ path: screenShotsPath('fund-2') },
-			{ path: screenShotsPath('fund-3') },
+			{ path: getScreenShotsPath('fund-1') },
+			{ path: getScreenShotsPath('fund-2') },
+			{ path: getScreenShotsPath('fund-3') },
 		],
 	},
 	{
-		poster: posterPath('blash'),
+		poster: getPosterPath('blash'),
 		number: 5,
 		isBlackState: true,
 		reverseState: false,
@@ -201,13 +193,13 @@ export const selectedWorks = [
 			'The corporate colors of the project - blue and orange - were chosen as accent colors for the landing page.',
 		link: 'https://www.behance.net/gallery/144175041/Landing-for-Blash-Vintage',
 		screenShots: [
-			{ path: screenShotsPath('blash-1') },
-			{ path: screenShotsPath('blash-2') },
-			{ path: screenShotsPath('blash-3') },
+			{ path: getScreenShotsPath('blash-1') },
+			{ path: getScreenShotsPath('blash-2') },
+			{ path: getScreenShotsPath('blash-3') },
 		],
 	},
 	{
-		poster: posterPath('jewelry'),
+		poster: getPosterPath('jewelry'),
 		number: 6,
 		isBlackState: false,
 		reverseState: true,
@@ -227,13 +219,13 @@ export const selectedWorks = [
 		link:
 			'https://www.behance.net/gallery/101989775/Online-store-for-a-jewelry-company-JEWELRYUA',
 		screenShots: [
-			{ path: screenShotsPath('jewelry-1') },
-			{ path: screenShotsPath('jewelry-2') },
-			{ path: screenShotsPath('jewelry-3') },
+			{ path: getScreenShotsPath('jewelry-1') },
+			{ path: getScreenShotsPath('jewelry-2') },
+			{ path: getScreenShotsPath('jewelry-3') },
 		],
 	},
 	{
-		poster: posterPath('astramed'),
+		poster: getPosterPath('astramed'),
 		number: 7,
 		isBlackState: true,
 		reverseState: false,
@@ -252,13 +244,13 @@ export const selectedWorks = [
 			'It was decided to make the design simple and user-friendly, in light colors with green accents.',
 		link: 'https://astramed-ic.com/',
 		screenShots: [
-			{ path: screenShotsPath('astramed-1') },
-			{ path: screenShotsPath('astramed-2') },
-			{ path: screenShotsPath('astramed-3') },
+			{ path: getScreenShotsPath('astramed-1') },
+			{ path: getScreenShotsPath('astramed-2') },
+			{ path: getScreenShotsPath('astramed-3') },
 		],
 	},
 	{
-		poster: posterPath('new-year'),
+		poster: getPosterPath('new-year'),
 		number: 8,
 		isBlackState: false,
 		reverseState: true,
@@ -279,9 +271,9 @@ export const selectedWorks = [
 		link:
 			'https://www.behance.net/gallery/111236373/landing-page-for-event-agency',
 		screenShots: [
-			{ path: screenShotsPath('new-year-1') },
-			{ path: screenShotsPath('new-year-2') },
-			{ path: screenShotsPath('new-year-3') },
+			{ path: getScreenShotsPath('new-year-1') },
+			{ path: getScreenShotsPath('new-year-2') },
+			{ path: getScreenShotsPath('new-year-3') },
 		],
 	},
 ];

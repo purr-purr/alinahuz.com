@@ -1,6 +1,7 @@
 .container {
   background-color: $main-black-color;
-  padding-top: 238px;
+  padding-top: 228px;
+  margin-top: 10px;
   position: relative;
 
   @include media-laptop {

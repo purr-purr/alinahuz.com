@@ -1,4 +1,5 @@
 const messages = {
+	ALINA_HUZ: 'Alina Huz',
 	UI_UX_DESIGNER: 'UI/UX Designer',
 	JUNIOR_UI_UX_DESIGNER: 'Junior UI/UX Designer',
 	WEB_DESIGNER: 'Web Designer',
@@ -15,8 +16,6 @@ const messages = {
 		'I believe that good experiences change lives and it is our role' +
 		' to deliver the best brand experiences to users, converting' +
 		' access into sales and building customer loyalty.',
-	ALINA_HUZ_LOGO: 'Alina Huz Logo',
-	SELECTED_WORKS: 'Selected works',
 	POSTER: 'poster',
 	DRIBBBLE: 'dribbble',
 	BEHANCE: 'behance',
@@ -28,10 +27,11 @@ const messages = {
 	WORKS: 'works',
 	ABOUT_ME: 'About me',
 	ABOUT: 'About',
-	SKILLS: 'skills',
-	EDUCATION: 'education',
-	EXPERIENCE: 'experience',
+	SKILLS: 'Skills',
+	EDUCATION: 'Education',
+	EXPERIENCE: 'Experience',
 	CONTACTS: 'Contacts',
+	SELECTED_WORKS: 'Selected works',
 	VIEW_CV: 'View CV',
 	VIEW_PROJECT: 'View project',
 	MAIL_ME: 'mail me',

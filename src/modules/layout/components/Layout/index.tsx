@@ -14,12 +14,14 @@ import {
 	STARTED_MOB_SECOND_SCREEN,
 	STARTED_SECOND_SCREEN,
 } from '@utils/const';
+import { scrollToTop } from '@utils/index';
 
 import s from './Layout.module.scss';
 
 const Layout: FC = ({ children }) => {
 	const isMobile = useMediaQuery(MOBILE_BP);
 	const { pathname } = useLocation();
+	const is404Page = pathname === '/404';
 	const [isDarkMode, setIsDarkMode] = useState(false);
 	const [isNavigationMode, setIsNavigationMode] = useState(false);
 	const [isFullScreenCarouselMode, setIsFullScreenCarouselMode] = useState({
@@ -28,7 +30,7 @@ const Layout: FC = ({ children }) => {
 	});
 
 	useEffect(() => {
-		window.scrollTo({ top: 0, behavior: 'auto' });
+		scrollToTop();
 	}, []);
 
 	const handleSwitchDarkMode = useCallback((value: boolean) => {
@@ -56,9 +58,8 @@ const Layout: FC = ({ children }) => {
 	};
 
 	useEffect(() => {
-		if (isNavigationMode || isFullScreenCarouselMode.isActive)
-			document.body.style.overflow = 'hidden';
-		else document.body.style.overflow = 'visible';
+		document.body.style.overflow =
+			isNavigationMode || isFullScreenCarouselMode.isActive ? 'hidden' : 'visible';
 	}, [isNavigationMode, isFullScreenCarouselMode.isActive]);
 
 	const secondScreenPoint = isMobile
@@ -68,32 +69,28 @@ const Layout: FC = ({ children }) => {
 	return (
 		<main className={s.container}>
 			<AppContext.Provider value={context}>
-				<Header
-					isHideLogo={
-						pathname === '/404' ? false : window.scrollY < secondScreenPoint
-					}
-				/>
+				<Header isHideLogo={!is404Page && window.scrollY < secondScreenPoint} />
 
-				{pathname !== '/404' ? (
+				{is404Page ? (
+					<PageNotFound />
+				) : (
 					<>
 						<section className={s.section}>{children}</section>
 
 						{isFullScreenCarouselMode.isActive && (
 							<FullScreenCarousel
 								isOpenState={isFullScreenCarouselMode.isActive}
+								activeSlide={isFullScreenCarouselMode.index - 1}
 								burgerIconClick={() =>
 									handleSwitchFullScreenCarouselMode(
 										0,
 										!isFullScreenCarouselMode.isActive,
 									)
 								}
-								activeSlide={isFullScreenCarouselMode.index - 1}
 							/>
 						)}
 						<Footer />
 					</>
-				) : (
-					<PageNotFound />
 				)}
 			</AppContext.Provider>
 		</main>

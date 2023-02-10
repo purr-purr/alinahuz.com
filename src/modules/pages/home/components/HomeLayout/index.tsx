@@ -1,4 +1,4 @@
-import React, { createRef, useContext, useEffect, useState } from 'react';
+import { createRef, memo, useContext, useEffect, useState } from 'react';
 
 import AppContext from '@modules/layout/context/AppContext';
 import AboutMe from '@modules/pages/home/components/AboutMe';
@@ -16,9 +16,10 @@ import {
 	STARTED_MOB_SECOND_SCREEN,
 	STARTED_SECOND_SCREEN,
 } from '@utils/const';
+import messages from '@utils/messages';
 
 const Home = () => {
-	const { handleSwitchDarkMode } = useContext(AppContext);
+	const { handleSwitchDarkMode, isNavigationMode } = useContext(AppContext);
 	const isMobile = useMediaQuery(MOBILE_BP);
 
 	const mainScreenRef = createRef<HTMLDivElement>();
@@ -72,37 +73,44 @@ const Home = () => {
 		return () => window.removeEventListener('scroll', updatePosition);
 	}, [scrollPosition]);
 
+	// useEffect(() => {
+	// 	if (isDarkModeOff) {
+	// 		handleSwitchDarkMode(false);
+	// 	}
+	// 	if (isDarkModeOn) {
+	// 		handleSwitchDarkMode(true);
+	// 	}
+	// }, [
+	// 	isEducationVisible,
+	// 	isContactsVisible,
+	// 	isAboutMeVisible,
+	// 	isSelectedWorksVisible,
+	// 	isSkillsVisible,
+	// 	isExperienceVisible,
+	// 	isSecondScreen,
+	// ]);
 	useEffect(() => {
-		if (isDarkModeOff) {
-			handleSwitchDarkMode(false);
-		}
-		if (isDarkModeOn) {
-			handleSwitchDarkMode(true);
-		}
-	}, [
-		isEducationVisible,
-		isContactsVisible,
-		isAboutMeVisible,
-		isSelectedWorksVisible,
-		isSkillsVisible,
-		isExperienceVisible,
-		isSecondScreen,
-	]);
+		isDarkModeOff && handleSwitchDarkMode(false);
+		isDarkModeOn && handleSwitchDarkMode(true);
+	}, [isDarkModeOff, isDarkModeOn]);
 
 	useEffect(() => {
-		isEducationVisible
-			? (document.title = `Education | Alina Huz`)
-			: isContactsVisible
-			? (document.title = `Contacts | Alina Huz`)
-			: isAboutMeVisible
-			? (document.title = `About Me | Alina Huz`)
-			: isSelectedWorksVisible
-			? (document.title = `Selected Works | Alina Huz`)
-			: isSkillsVisible
-			? (document.title = `Skills | Alina Huz`)
-			: isExperienceVisible
-			? (document.title = `Experience | Alina Huz`)
-			: (document.title = `UI/UX Designer | Alina Huz`);
+		const getTitle = () => {
+			return isEducationVisible
+				? messages.EDUCATION
+				: isContactsVisible
+				? messages.CONTACTS
+				: isAboutMeVisible
+				? messages.ABOUT_ME
+				: isSelectedWorksVisible
+				? messages.SELECTED_WORKS
+				: isSkillsVisible
+				? messages.SKILLS
+				: isExperienceVisible
+				? messages.EXPERIENCE
+				: messages.UI_UX_DESIGNER;
+		};
+		document.title = `${getTitle()} | ${messages.ALINA_HUZ}`;
 	}, [
 		isEducationVisible,
 		isContactsVisible,
@@ -111,6 +119,7 @@ const Home = () => {
 		isExperienceVisible,
 		isSkillsVisible,
 	]);
+
 	return (
 		<>
 			<MainScreen ref={mainScreenRef} isSecondScreen={isSecondScreen} />
@@ -124,4 +133,4 @@ const Home = () => {
 	);
 };
 
-export default React.memo(Home);
+export default memo(Home);

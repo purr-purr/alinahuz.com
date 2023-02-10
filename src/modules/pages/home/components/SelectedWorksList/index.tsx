@@ -47,18 +47,19 @@ const SelectedWorksList = () => {
 					/>
 				))}
 			</ul>
-			{fullView ? (
-				<div className={s.findMore}>
-					<p className={s[`findMore-text`]}>
-						{messages.IF_YOU_WANT_YOU_CAN_FIND_MORE}
-					</p>
-					<div className={s[`findMore-links`]}>
-						<DecorativeLink text={messages.DRIBBBLE} href={SOCIALS_LINKS.dribbble} />
-						<DecorativeLink text={messages.BEHANCE} href={SOCIALS_LINKS.behance} />
-					</div>
-				</div>
-			) : (
-				<div className={s.seeMore}>
+
+			<div className={fullView ? s.findMore : s.seeMore}>
+				{fullView ? (
+					<>
+						<p className={s[`findMore-text`]}>
+							{messages.IF_YOU_WANT_YOU_CAN_FIND_MORE}
+						</p>
+						<div className={s[`findMore-links`]}>
+							<DecorativeLink text={messages.DRIBBBLE} href={SOCIALS_LINKS.dribbble} />
+							<DecorativeLink text={messages.BEHANCE} href={SOCIALS_LINKS.behance} />
+						</div>
+					</>
+				) : (
 					<TextLink
 						className={s[`seeMore-item`]}
 						onClick={() => seeMoreWorksButton()}
@@ -67,8 +68,8 @@ const SelectedWorksList = () => {
 						isWhiteColorState
 						size="md"
 					/>
-				</div>
-			)}
+				)}
+			</div>
 		</>
 	);
 };

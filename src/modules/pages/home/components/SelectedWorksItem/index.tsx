@@ -12,7 +12,7 @@ const SelectedWorksItem: FC<{
 	poster: string;
 	number: number;
 	isReverseState?: boolean;
-	onClick?: () => void;
+	onClick: () => void;
 }> = ({
 	title,
 	description,

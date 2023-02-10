@@ -1,6 +1,7 @@
 .container {
   display: flex;
-  padding-top: 140px;
+  margin-top: 10px;
+  padding-top: 130px;
   padding-bottom: 200px;
   @include block-padding(28px);
   background-color: $main-black-color;
