@@ -10,7 +10,7 @@
 }
 
 .content {
-  height: 100%;
+  height: calc(100% + 55px);
   width: 100%;
   position: absolute;
   top: -55px;
@@ -41,7 +41,6 @@
 
   &.hide {
     opacity: 0;
-    transition: opacity 0.3s ease-in-out;
   }
 }
 

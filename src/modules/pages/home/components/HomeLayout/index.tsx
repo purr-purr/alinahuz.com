@@ -19,7 +19,7 @@ import {
 import messages from '@utils/messages';
 
 const Home = () => {
-	const { handleSwitchDarkMode, isNavigationMode } = useContext(AppContext);
+	const { handleSwitchDarkMode } = useContext(AppContext);
 	const isMobile = useMediaQuery(MOBILE_BP);
 
 	const mainScreenRef = createRef<HTMLDivElement>();
@@ -73,22 +73,6 @@ const Home = () => {
 		return () => window.removeEventListener('scroll', updatePosition);
 	}, [scrollPosition]);
 
-	// useEffect(() => {
-	// 	if (isDarkModeOff) {
-	// 		handleSwitchDarkMode(false);
-	// 	}
-	// 	if (isDarkModeOn) {
-	// 		handleSwitchDarkMode(true);
-	// 	}
-	// }, [
-	// 	isEducationVisible,
-	// 	isContactsVisible,
-	// 	isAboutMeVisible,
-	// 	isSelectedWorksVisible,
-	// 	isSkillsVisible,
-	// 	isExperienceVisible,
-	// 	isSecondScreen,
-	// ]);
 	useEffect(() => {
 		isDarkModeOff && handleSwitchDarkMode(false);
 		isDarkModeOn && handleSwitchDarkMode(true);

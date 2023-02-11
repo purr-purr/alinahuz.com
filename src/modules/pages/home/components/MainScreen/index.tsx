@@ -5,7 +5,6 @@ import cn from 'classnames';
 import messages from 'src/utils/messages';
 
 import ALINA_HUZ_LOGO_WHITE from '@assets/images/ALINA_HUZ--white.svg';
-// @ts-ignore
 import WAVES_VIDEO from '@modules/pages/home/assets/waves_video.mp4';
 
 import s from './MainScreen.module.scss';
