@@ -16,6 +16,7 @@
     "craco": "^0.0.3",
     "craco-alias": "^3.0.1",
     "craco-sass-resources-loader": "^1.1.0",
+    "dotenv": "^16.0.3",
     "eslint": "7.22.0",
     "eslint-config-airbnb": "^18.2.1",
     "eslint-config-airbnb-base": "^14.2.1",
@@ -26,11 +27,11 @@
     "eslint-plugin-prettier": "3.3.1",
     "eslint-plugin-react": "^7.26.1",
     "eslint-plugin-react-hooks": "^4.2.0",
+    "ftp-deploy": "^2.4.3",
     "nuka-carousel": "^5.3.0",
     "prettier": "2.2.1",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
-    "react-ga": "^3.3.1",
     "react-query": "^3.29.0",
     "react-router": "^5.2.1",
     "react-router-dom": "^5.3.0",
@@ -43,8 +44,8 @@
   "scripts": {
     "start": "craco start",
     "build": "craco build",
+    "deploy": "craco build && node deploy",
     "test": "craco test",
-    "generateIcons": "fantasticon --config .fantasticonrc.js",
     "eject": "react-scripts eject",
     "dev:prettier": "prettier --write .",
     "dev:prettier-check": "prettier --check .",
@@ -67,5 +68,8 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "@ianvs/prettier-plugin-sort-imports": "^3.7.1"
   }
 }
