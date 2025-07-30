@@ -7,6 +7,8 @@
 You can run and build application with the following commands
 
 ```
+nvm use 16.17.0
+
 yarn install
 
 yarn start

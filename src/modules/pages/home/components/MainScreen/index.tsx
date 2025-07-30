@@ -1,8 +1,8 @@
 import { forwardRef } from 'react';
 
 import AsideIntroduce from '@modules/pages/home/components/AsideIntroduce';
+import messages from '@src/utils/messages';
 import cn from 'classnames';
-import messages from 'src/utils/messages';
 
 import ALINA_HUZ_LOGO_WHITE from '@assets/images/ALINA_HUZ--white.svg';
 import WAVES_VIDEO from '@modules/pages/home/assets/waves_video.mp4';

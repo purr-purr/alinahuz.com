@@ -4,7 +4,8 @@
 		"paths": {
 			"@modules/*": ["src/modules/*"],
 			"@utils/*": ["src/utils/*"],
-			"@assets/*": ["src/assets/*"]
+			"@assets/*": ["src/assets/*"],
+			"@src/*": ["src/*"]
 		}
 	}
 }

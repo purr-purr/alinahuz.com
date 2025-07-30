@@ -1,44 +1,45 @@
 .container {
-  background-color: $main-black-color;
-  padding-top: 228px;
-  margin-top: 10px;
-  position: relative;
+	background-color: $main-black-color;
+	padding-top: 228px;
+	margin-top: 10px;
+	position: relative;
 
-  @include media-laptop {
-    padding-top: 150px;
-  }
+	@include media-laptop {
+		padding-top: 150px;
+	}
 
-  @include media-mobile {
-    padding-top: 100px;
-  }
+	@include media-mobile {
+		padding-top: 100px;
+	}
 }
 
 .heading {
-  max-width: 847px;
-  position: relative;
+	max-width: 847px;
+	position: relative;
 
-  @include media-laptop {
-    max-width: 565px;
-  }
+	@include media-laptop {
+		max-width: 565px;
+	}
 
-  @include media-mobile {
-    max-width: 283px;
-  }
+	@include media-mobile {
+		max-width: 283px;
+	}
 
-  &:after {
-    content: '';
-    position: absolute;
-    bottom: -278px;
-    left: calc((100% - 360px) / 2);
-    width: 360px;
-    height: 248px;
-    background: url('../../assets/selectedWorks/patterns_selected-works.svg') no-repeat center / 100%;
+	&:after {
+		content: '';
+		position: absolute;
+		bottom: -278px;
+		left: calc((100% - 360px) / 2);
+		width: 360px;
+		height: 248px;
+		background: url('../../assets/selectedWorks/patterns_selected-works.svg')
+			no-repeat center / 100%;
 
-    @include media-mobile {
-      bottom: -168px;
-      left: calc((100% - 220px) / 2);
-      width: 220px;
-      height: 152px;
-    }
-  }
+		@include media-mobile {
+			bottom: -168px;
+			left: calc((100% - 220px) / 2);
+			width: 220px;
+			height: 152px;
+		}
+	}
 }
